@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Apr  7 11:59:07 2016
+# Process ID: 20619
+# Current directory: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/vio_4p8g_synth_1
+# Command line: vivado -log vio_4p8g.vds -mode batch -messageDb vivado.pb -notrace -source vio_4p8g.tcl
+# Log file: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/vio_4p8g_synth_1/vio_4p8g.vds
+# Journal file: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/vio_4p8g_synth_1/vivado.jou
+#-----------------------------------------------------------
+source vio_4p8g.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/evka/code/ip_repo/myip_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'vio_4p8g' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_4p8g.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'vio_4p8g' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_4p8g_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'vio_4p8g' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_4p8g_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'vio_4p8g' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_4p8g_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'vio_4p8g' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_4p8g_sim_netlist.vhdl'. Please regenerate to continue.
+Command: synth_design -top vio_4p8g -part xc7vx690tffg1927-2 -fanout_limit 400 -keep_equivalent_registers -no_lc -shreg_min_size 5 -mode out_of_context
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'vio_4p8g' is locked:
+* IP definition 'VIO (Virtual Input/Output) (3.0)' for IP 'vio_4p8g' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xc7vx690t'
+3 Infos, 7 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xc7vx690t'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  7 11:59:18 2016...

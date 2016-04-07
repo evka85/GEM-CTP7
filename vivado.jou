@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Tue Feb 16 17:40:01 2016
+# Process ID: 2139
+# Current directory: /home/alex
+# Command line: vivado
+# Log file: /home/alex/vivado.log
+# Journal file: /home/alex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /data/alex/repos/CTP7-v7-TAMU-link-demo/workspace/tamu_ctp7_v7/tamu_ctp7_v7.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+archive_project /data/alex/tamu_ctp7_v7_demo.xpr.zip -force -exclude_run_results -include_config_settings
