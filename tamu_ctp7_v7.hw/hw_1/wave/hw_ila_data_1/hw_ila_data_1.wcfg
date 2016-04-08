@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="4">
+	</WVObjectSize>
+	<wvobject fp_name="i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_playback_data" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_playback_data[15:0]</obj_property>
+		<obj_property name="ObjectShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_playback_data[15:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_playback_charisk" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_playback_charisk[1:0]</obj_property>
+		<obj_property name="ObjectShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_playback_charisk[1:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_rx_data" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_rx_data[15:0]</obj_property>
+		<obj_property name="ObjectShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_rx_data[15:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_rx_charisk" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_rx_charisk[1:0]</obj_property>
+		<obj_property name="ObjectShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_rx_charisk[1:0]</obj_property>
+	</wvobject>
+</wave_config>
+

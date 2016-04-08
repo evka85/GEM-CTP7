@@ -26,6 +26,7 @@ use work.ctp7_utils_pkg.all;
 use work.ttc_pkg.all;
 use work.capture_playback_pkg.all;
 use work.tamu_ctp7_v7_build_cfg.all;
+use work.gem_pkg.all;
 
 --============================================================================
 --                                                          Entity declaration
@@ -295,6 +296,11 @@ architecture tamu_ctp7_v7_arch of tamu_ctp7_v7 is
 
   signal s_rx_capture_ctrl   : t_capture_ctrl_arr(11 downto 0);
   signal s_rx_capture_status : t_capture_status_arr(11 downto 0);
+  
+  -------------------------- GEM ----------------------------------
+  signal oh_reg_request      : t_reg_request;
+  signal oh_reg_response     : t_reg_response;
+
 
 --============================================================================
 --                                                          Architecture begin
@@ -418,7 +424,9 @@ begin
 
       clk_gth_tx_usrclk_arr_i => s_clk_gth_tx_usrclk_arr,
       clk_gth_rx_usrclk_arr_i => s_clk_gth_rx_usrclk_arr
-
+      
+      oh_reg_request_o        => oh_reg_request;
+      oh_reg_response_i       => oh_reg_response;
       );
 
   i_register_file : entity work.register_file
@@ -475,39 +483,39 @@ begin
       gth_gt_drp_arr_i     => s_gth_gt_drp_out_arr
       );
 
-  i_io_link_3p2g_demo_ctrl : io_link_3p2g_demo_ctrl
-    port map(
-      clk_160_bc_i => s_ttc_clks.clk_160,
-      ttc_cmds_i   => s_ttc_cmds,
+--  i_io_link_3p2g_demo_ctrl : io_link_3p2g_demo_ctrl
+--    port map(
+--      clk_160_bc_i => s_ttc_clks.clk_160,
+--      ttc_cmds_i   => s_ttc_cmds,
 
-      clk_gth_tx_usrclk_i => s_clk_gth_tx_usrclk_arr(11 downto 0),
-      clk_gth_rx_usrclk_i => s_clk_gth_rx_usrclk_arr(11 downto 0),
+--      clk_gth_tx_usrclk_i => s_clk_gth_tx_usrclk_arr(11 downto 0),
+--      clk_gth_rx_usrclk_i => s_clk_gth_rx_usrclk_arr(11 downto 0),
 
-      gth_tx_data_o => s_gth_tx_data_arr(11 downto 0),
-      gth_rx_data_i => s_gth_rx_data_arr(11 downto 0),
+--      gth_tx_data_o => s_gth_tx_data_arr(11 downto 0),
+--      gth_rx_data_i => s_gth_rx_data_arr(11 downto 0),
 
-      enable_tx_cdc_fifo_i => s_gth_gt_txreset_done(11 downto 0),
-      enable_rx_cdc_fifo_i => s_gth_gt_rxreset_done(11 downto 0),
+--      enable_tx_cdc_fifo_i => s_gth_gt_txreset_done(11 downto 0),
+--      enable_rx_cdc_fifo_i => s_gth_gt_rxreset_done(11 downto 0),
 
-      rx_capture_ctrl_i   => s_rx_capture_ctrl,
-      rx_capture_status_o => s_rx_capture_status,
+--      rx_capture_ctrl_i   => s_rx_capture_ctrl,
+--      rx_capture_status_o => s_rx_capture_status,
 
-      BRAM_CTRL_RX_RAM_addr => BRAM_CTRL_RX_RAM_addr,
-      BRAM_CTRL_RX_RAM_clk  => BRAM_CTRL_RX_RAM_clk,
-      BRAM_CTRL_RX_RAM_din  => BRAM_CTRL_RX_RAM_din,
-      BRAM_CTRL_RX_RAM_dout => BRAM_CTRL_RX_RAM_dout,
-      BRAM_CTRL_RX_RAM_en   => BRAM_CTRL_RX_RAM_en,
-      BRAM_CTRL_RX_RAM_rst  => BRAM_CTRL_RX_RAM_rst,
-      BRAM_CTRL_RX_RAM_we   => BRAM_CTRL_RX_RAM_we,
+--      BRAM_CTRL_RX_RAM_addr => BRAM_CTRL_RX_RAM_addr,
+--      BRAM_CTRL_RX_RAM_clk  => BRAM_CTRL_RX_RAM_clk,
+--      BRAM_CTRL_RX_RAM_din  => BRAM_CTRL_RX_RAM_din,
+--      BRAM_CTRL_RX_RAM_dout => BRAM_CTRL_RX_RAM_dout,
+--      BRAM_CTRL_RX_RAM_en   => BRAM_CTRL_RX_RAM_en,
+--      BRAM_CTRL_RX_RAM_rst  => BRAM_CTRL_RX_RAM_rst,
+--      BRAM_CTRL_RX_RAM_we   => BRAM_CTRL_RX_RAM_we,
 
-      BRAM_CTRL_TX_RAM_addr => BRAM_CTRL_TX_RAM_addr,
-      BRAM_CTRL_TX_RAM_clk  => BRAM_CTRL_TX_RAM_clk,
-      BRAM_CTRL_TX_RAM_din  => BRAM_CTRL_TX_RAM_din,
-      BRAM_CTRL_TX_RAM_dout => BRAM_CTRL_TX_RAM_dout,
-      BRAM_CTRL_TX_RAM_en   => BRAM_CTRL_TX_RAM_en,
-      BRAM_CTRL_TX_RAM_rst  => BRAM_CTRL_TX_RAM_rst,
-      BRAM_CTRL_TX_RAM_we   => BRAM_CTRL_TX_RAM_we
-      );
+--      BRAM_CTRL_TX_RAM_addr => BRAM_CTRL_TX_RAM_addr,
+--      BRAM_CTRL_TX_RAM_clk  => BRAM_CTRL_TX_RAM_clk,
+--      BRAM_CTRL_TX_RAM_din  => BRAM_CTRL_TX_RAM_din,
+--      BRAM_CTRL_TX_RAM_dout => BRAM_CTRL_TX_RAM_dout,
+--      BRAM_CTRL_TX_RAM_en   => BRAM_CTRL_TX_RAM_en,
+--      BRAM_CTRL_TX_RAM_rst  => BRAM_CTRL_TX_RAM_rst,
+--      BRAM_CTRL_TX_RAM_we   => BRAM_CTRL_TX_RAM_we
+--      );
 
   i_io_link_4p8g_demo_ctrl : io_link_4p8g_demo_ctrl
     port map(
@@ -574,6 +582,20 @@ begin
     s_gth_rx_serial_arr(i).gthrxn <= '0';
     s_gth_rx_serial_arr(i).gthrxp <= '1';
   end generate;
+
+  ------------------------------- GEM ------------------------------
+  optohybrid_single_inst : work.optohybrid_single
+    port map(
+      reset_i                 => s_gth_common_reset
+      ttc_clk_i               => s_ttc_clks,
+      ttc_cmds_i              => s_ttc_cmds,
+      gth_rx_usrclk_i         => s_clk_gth_rx_usrclk_arr(6),
+      gth_tx_usrclk_i         => s_clk_gth_tx_usrclk_arr(6),
+      gth_rx_data_i           => s_gth_rx_data_arr(6),
+      gth_tx_data_o           => s_gth_tx_data_arr(6),
+      reg_request_i           => oh_reg_request;
+      reg_response_o          => oh_reg_response;
+    );  
 
 end tamu_ctp7_v7_arch;
 

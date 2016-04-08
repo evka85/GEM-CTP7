@@ -56,7 +56,7 @@ package tamu_ctp7_v7_build_cfg is
     (gth_3p2g, false),                  -- GTH FW Ch 10
     (gth_3p2g, false),                  -- GTH FW Ch 11
 
-    (gth_4p8g, TRUE),                   -- GTH FW Ch 12
+    (gth_4p8g, true),                   -- GTH FW Ch 12
     (gth_4p8g, false),                  -- GTH FW Ch 13
     (gth_4p8g, false),                  -- GTH FW Ch 14
     (gth_4p8g, false),                  -- GTH FW Ch 15
@@ -68,6 +68,7 @@ package tamu_ctp7_v7_build_cfg is
     (gth_4p8g, false),                  -- GTH FW Ch 21
     (gth_4p8g, false),                  -- GTH FW Ch 22
     (gth_4p8g, false),                  -- GTH FW Ch 23
+    
     (gth_4p8g, false),                  -- GTH FW Ch 24
     (gth_4p8g, false),                  -- GTH FW Ch 25
     (gth_4p8g, false),                  -- GTH FW Ch 26

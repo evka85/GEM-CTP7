@@ -218,8 +218,8 @@ package gth_pkg is
     RXPHALIGNDONE   : std_logic;
     RXSYNCDONE      : std_logic;
     RXSYNCOUT       : std_logic;
-    rxdisperrcnt    : std_logic_vector(31 downto 0);
-    rxnotintablecnt : std_logic_vector(31 downto 0);
+    rxdisperr       : std_logic_vector(3 downto 0);
+    rxnotintable    : std_logic_vector(3 downto 0);
   end record;
 
   type t_gth_misc_ctrl is record

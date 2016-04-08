@@ -29,22 +29,6 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/new/synchronizer.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/synchronizer.vhd"/>
-          <Attr Name="ImportTime" Val="1455639745"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/edge_detect.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/edge_detect.vhd"/>
-          <Attr Name="ImportTime" Val="1455639745"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/new/TTC_decoder.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/TTC_decoder.vhd"/>
@@ -93,6 +77,24 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/gem/link/link_tx_tracking.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/gem/link/link_rx_tracking.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/gem/gem_pkg.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/new/ttc_pkg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/ttc_pkg.vhd"/>
@@ -117,14 +119,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/io_link_3p2g_demo.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/io_link_3p2g_demo.vhd"/>
-          <Attr Name="ImportTime" Val="1455639745"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/new/ttc_cmd.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/ttc_cmd.vhd"/>
@@ -136,6 +130,14 @@
       <File Path="$PSRCDIR/sources_1/imports/new/pulse_extend.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/pulse_extend.vhd"/>
+          <Attr Name="ImportTime" Val="1455639745"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/ctp7_ttc_clocks.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/ctp7_ttc_clocks.vhd"/>
           <Attr Name="ImportTime" Val="1455639745"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -189,18 +191,16 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/ctp7_ttc_clocks.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/new/gth_clk_bufs.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/ctp7_ttc_clocks.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/gth_clk_bufs.vhd"/>
           <Attr Name="ImportTime" Val="1455639745"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/gth_clk_bufs.vhd">
+      <File Path="$PSRCDIR/gem/link/optohybrid_single.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/gth_clk_bufs.vhd"/>
-          <Attr Name="ImportTime" Val="1455639745"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -213,9 +213,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_axi_bram_ctrl_gth_reg_file_0/v7_bd_axi_bram_ctrl_gth_reg_file_0.xci"/>
-        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_axi_bram_ctrl_drp_0/v7_bd_axi_bram_ctrl_drp_0.xci"/>
-        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_axi_bram_ctrl_0_0/v7_bd_axi_bram_ctrl_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="hdl/v7_bd.hwdef"/>
         <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="hw_handoff/v7_bd_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="hw_handoff/v7_bd.hwh"/>
@@ -238,34 +235,13 @@
         <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_axi_bram_ctrl_tx_ram_0/v7_bd_axi_bram_ctrl_tx_ram_0.xci"/>
         <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_axi_bram_ctrl_rx_ram_0/v7_bd_axi_bram_ctrl_rx_ram_0.xci"/>
         <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_axi_bram_ctrl_reg_file_0/v7_bd_axi_bram_ctrl_reg_file_0.xci"/>
+        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_axi_bram_ctrl_gth_reg_file_0/v7_bd_axi_bram_ctrl_gth_reg_file_0.xci"/>
+        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_axi_bram_ctrl_drp_0/v7_bd_axi_bram_ctrl_drp_0.xci"/>
+        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_axi_bram_ctrl_0_0/v7_bd_axi_bram_ctrl_0_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/register_file.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/register_file.vhd"/>
-          <Attr Name="ImportTime" Val="1455647353"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/io_link_4p8g_demo_ctrl.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/io_link_4p8g_demo_ctrl.vhd"/>
-          <Attr Name="ImportTime" Val="1455639745"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/io_link_3p2g_demo_ctrl.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/io_link_3p2g_demo_ctrl.vhd"/>
-          <Attr Name="ImportTime" Val="1455639745"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/gth_wrapper.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/gth_wrapper.vhd"/>
           <Attr Name="ImportTime" Val="1455647353"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -295,6 +271,22 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/io_link_4p8g_demo_ctrl.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/io_link_4p8g_demo_ctrl.vhd"/>
+          <Attr Name="ImportTime" Val="1455639745"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/gth_wrapper.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/gth_wrapper.vhd"/>
+          <Attr Name="ImportTime" Val="1455647353"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/new/tamu_ctp7_v7.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/tamu_ctp7_v7.vhd"/>
@@ -303,7 +295,64 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/playback_capture_ram/ip/playback_capture_ram/pb_cap_ram.coe">
+      <File Path="$PSRCDIR/sources_1/imports/new/synchronizer.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/synchronizer.vhd"/>
+          <Attr Name="ImportTime" Val="1455639745"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/edge_detect.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/edge_detect.vhd"/>
+          <Attr Name="ImportTime" Val="1455639745"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/io_link_3p2g_demo.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/io_link_3p2g_demo.vhd"/>
+          <Attr Name="ImportTime" Val="1455639745"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/gem/link/link_tx_trigger.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/gem/link/link_rx_trigger.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/gem/link/link_request.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/io_link_3p2g_demo_ctrl.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/io_link_3p2g_demo_ctrl.vhd"/>
+          <Attr Name="ImportTime" Val="1455639745"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/pb_cap_ram.coe">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/playback_capture_ram/pb_cap_ram.coe"/>
           <Attr Name="ImportTime" Val="1455639745"/>
@@ -311,7 +360,18 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/archive_project_summary.txt"/>
+      <File Path="$PSRCDIR/sources_1/imports/tamu_ctp7_v7/archive_project_summary.txt">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/archive_project_summary.txt"/>
+          <Attr Name="ImportTime" Val="1459852734"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_tx_rx_3p2g/ip/ila_tx_rx_3p2g/ila_tx_rx_3p2g.upgrade_log">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/ila_tx_rx_3p2g/ip/ila_tx_rx_3p2g/ila_tx_rx_3p2g.upgrade_log"/>
+          <Attr Name="ImportTime" Val="1460081934"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="tamu_ctp7_v7"/>
@@ -337,6 +397,7 @@
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="tamu_ctp7_v7"/>
+        <Option Name="SimMode" Val="post-implementation"/>
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>
@@ -370,21 +431,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="ila_tx_rx_3p2g" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_tx_rx_3p2g">
-      <File Path="$PSRCDIR/ila_tx_rx_3p2g/ip/ila_tx_rx_3p2g/ila_tx_rx_3p2g.xci">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/ila_tx_rx_3p2g/ila_tx_rx_3p2g.xci"/>
-          <Attr Name="ImportTime" Val="1455639745"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="ila_tx_rx_3p2g"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="playback_capture_ram" Type="BlockSrcs" RelSrcDir="$PSRCDIR/playback_capture_ram">
       <File Path="$PSRCDIR/playback_capture_ram/ip/playback_capture_ram/playback_capture_ram.xci">
         <FileInfo>
@@ -412,6 +458,47 @@
       </File>
       <Config>
         <Option Name="TopModule" Val="fifo_cdc_18b"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ila_tx_rx_3p2g" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_tx_rx_3p2g">
+      <File Path="$PSRCDIR/ila_tx_rx_3p2g/ip/ila_tx_rx_3p2g/ila_tx_rx_3p2g.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/ila_tx_rx_3p2g/ila_tx_rx_3p2g.xci"/>
+          <Attr Name="ImportTime" Val="1455639745"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="ila_tx_rx_3p2g"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fifo_gtx_tx" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_gtx_tx">
+      <File Path="$PSRCDIR/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fifo_gtx_tx"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fifo_gtx_rx" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_gtx_rx">
+      <File Path="$PSRCDIR/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fifo_gtx_rx"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -449,10 +536,10 @@
       <Strategy Version="1" Minor="2">
         <StratHandle Name="stage2_strategy" Flow="Vivado Synthesis 2015"/>
         <Step Id="synth_design">
-          <Option Id="NoCombineLuts">1</Option>
           <Option Id="ShregMinSize">5</Option>
-          <Option Id="KeepEquivalentRegisters">1</Option>
+          <Option Id="NoCombineLuts">1</Option>
           <Option Id="RepFanoutThreshold">400</Option>
+          <Option Id="KeepEquivalentRegisters">1</Option>
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -461,22 +548,10 @@
       <Strategy Version="1" Minor="2">
         <StratHandle Name="stage2_strategy" Flow="Vivado Synthesis 2015"/>
         <Step Id="synth_design">
-          <Option Id="NoCombineLuts">1</Option>
           <Option Id="ShregMinSize">5</Option>
-          <Option Id="KeepEquivalentRegisters">1</Option>
-          <Option Id="RepFanoutThreshold">400</Option>
-        </Step>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-    </Run>
-    <Run Id="ila_tx_rx_3p2g_synth_1" Type="Ft3:Synth" SrcSet="ila_tx_rx_3p2g" Part="xc7vx690tffg1927-2" ConstrsSet="ila_tx_rx_3p2g" Description="" Dir="$PRUNDIR/ila_tx_rx_3p2g_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="stage2_strategy" Flow="Vivado Synthesis 2015"/>
-        <Step Id="synth_design">
           <Option Id="NoCombineLuts">1</Option>
-          <Option Id="ShregMinSize">5</Option>
-          <Option Id="KeepEquivalentRegisters">1</Option>
           <Option Id="RepFanoutThreshold">400</Option>
+          <Option Id="KeepEquivalentRegisters">1</Option>
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -485,10 +560,10 @@
       <Strategy Version="1" Minor="2">
         <StratHandle Name="stage2_strategy" Flow="Vivado Synthesis 2015"/>
         <Step Id="synth_design">
-          <Option Id="NoCombineLuts">1</Option>
           <Option Id="ShregMinSize">5</Option>
-          <Option Id="KeepEquivalentRegisters">1</Option>
+          <Option Id="NoCombineLuts">1</Option>
           <Option Id="RepFanoutThreshold">400</Option>
+          <Option Id="KeepEquivalentRegisters">1</Option>
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -497,11 +572,38 @@
       <Strategy Version="1" Minor="2">
         <StratHandle Name="stage2_strategy" Flow="Vivado Synthesis 2015"/>
         <Step Id="synth_design">
-          <Option Id="NoCombineLuts">1</Option>
           <Option Id="ShregMinSize">5</Option>
-          <Option Id="KeepEquivalentRegisters">1</Option>
+          <Option Id="NoCombineLuts">1</Option>
           <Option Id="RepFanoutThreshold">400</Option>
+          <Option Id="KeepEquivalentRegisters">1</Option>
         </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="ila_tx_rx_3p2g_synth_1" Type="Ft3:Synth" SrcSet="ila_tx_rx_3p2g" Part="xc7vx690tffg1927-2" ConstrsSet="ila_tx_rx_3p2g" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ila_tx_rx_3p2g_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="fifo_gtx_tx_synth_1" Type="Ft3:Synth" SrcSet="fifo_gtx_tx" Part="xc7vx690tffg1927-2" ConstrsSet="fifo_gtx_tx" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/fifo_gtx_tx_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="fifo_gtx_rx_synth_1" Type="Ft3:Synth" SrcSet="fifo_gtx_rx" Part="xc7vx690tffg1927-2" ConstrsSet="fifo_gtx_rx" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/fifo_gtx_rx_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
@@ -551,22 +653,6 @@
         <Step Id="write_bitstream"/>
       </Strategy>
     </Run>
-    <Run Id="ila_tx_rx_3p2g_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="ila_tx_rx_3p2g" Description="Vivado Implementation Defaults" SynthRun="ila_tx_rx_3p2g_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="stage2_strategy" Flow="Vivado Implementation 2015"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design">
-          <Option Id="Verbose">1</Option>
-        </Step>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design" EnableStepBool="1"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design" EnableStepBool="1"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-    </Run>
     <Run Id="playback_capture_ram_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="playback_capture_ram" Description="Vivado Implementation Defaults" SynthRun="playback_capture_ram_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="stage2_strategy" Flow="Vivado Implementation 2015"/>
@@ -596,6 +682,54 @@
         <Step Id="phys_opt_design" EnableStepBool="1"/>
         <Step Id="route_design"/>
         <Step Id="post_route_phys_opt_design" EnableStepBool="1"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="ila_tx_rx_3p2g_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="ila_tx_rx_3p2g" Description="Vivado Implementation Defaults" SynthRun="ila_tx_rx_3p2g_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+          <Desc>Vivado Implementation Defaults</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="fifo_gtx_tx_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="fifo_gtx_tx" Description="Vivado Implementation Defaults" SynthRun="fifo_gtx_tx_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+          <Desc>Vivado Implementation Defaults</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="fifo_gtx_rx_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="fifo_gtx_rx" Description="Vivado Implementation Defaults" SynthRun="fifo_gtx_rx_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+          <Desc>Vivado Implementation Defaults</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
     </Run>

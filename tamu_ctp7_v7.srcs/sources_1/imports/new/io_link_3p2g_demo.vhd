@@ -64,7 +64,7 @@ architecture io_link_3p2g_demo_arch of io_link_3p2g_demo is
 --                                                     Constant   declarations
 --============================================================================
 
-constant C_ILA_PROBE_CH : integer := 1; -- DUT CH for ILA debugging
+constant C_ILA_PROBE_CH : integer := 6; -- DUT CH for ILA debugging
 
 --============================================================================
 --                                                           Type declarations
@@ -461,6 +461,8 @@ begin
             probe1 => s_playback_charisk,
             probe2 => s_rx_data,
             probe3 => s_rx_charisk
+            --probe4 => gth_rx_data_i.rxnotintable,
+            --probe5 => gth_rx_data_i.rxdisperr
          );
       end generate;
       

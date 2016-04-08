@@ -1,0 +1,2 @@
+Language File-Name           IP              Library         File-Path                                                                            
+VHDL,    ila_tx_rx_3p2g.vhd, ila_tx_rx_3p2g, xil_defaultlib, ../../../../tamu_ctp7_v7.srcs/ila_tx_rx_3p2g/ip/ila_tx_rx_3p2g/sim/ila_tx_rx_3p2g.vhd

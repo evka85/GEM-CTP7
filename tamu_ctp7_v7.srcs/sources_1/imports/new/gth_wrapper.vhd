@@ -14,6 +14,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
+use ieee.std_logic_misc.all;
 
 library UNISIM;
 use UNISIM.VCOMPONENTS.all;
@@ -333,6 +334,8 @@ begin
 
       s_gth_tx_data_arr(n) <= gth_tx_data_arr_i(n);
       gth_rx_data_arr_o(n) <= s_gth_rx_data_arr(n);
+      s_gth_rx_status_arr(n).rxnotintable <= s_gth_rx_data_arr(n).rxnotintable;
+      s_gth_rx_status_arr(n).rxdisperr <= s_gth_rx_data_arr(n).rxdisperr;
 
       i_gth_single_3p2g : entity work.gth_single_3p2g
         generic map
@@ -366,18 +369,6 @@ begin
           gth_rx_data_o     => s_gth_rx_data_arr(n)
           );
         
-          process(clk_gth_rx_usrclk_i)
-          begin
-            if (rising_edge(clk_gth_rx_usrclk_i)) then
-                if ((or_reduce(s_gth_rx_data_arr(n).rxnotintable) = '1') and (s_gth_rx_status_arr(n).rxnotintablecnt /= x"ffffffff")) then
-                    s_gth_rx_status_arr(n).rxnotintablecnt <= s_gth_rx_status_arr(n).rxnotintablecnt + 1;
-                end if;
-                if ((or_reduce(s_gth_rx_data_arr(n).rxdisperr) = '1') and (s_gth_rx_status_arr(n).rxdisperrcnt /= x"ffffffff")) then
-                    s_gth_rx_status_arr(n).rxdisperrcnt <= s_gth_rx_status_arr(n).rxdisperrcnt + 1;
-                end if;
-            end if;
-          end process;
-          
     end generate;
 
 

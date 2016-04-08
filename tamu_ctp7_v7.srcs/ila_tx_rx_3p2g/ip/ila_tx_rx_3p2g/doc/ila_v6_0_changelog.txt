@@ -1,3 +1,8 @@
+2015.4:
+ * Version 6.0 (Rev. 1)
+ * No change
+ * Revision change in one or more subcores
+
 2015.3:
  * Version 6.0
  * Fixed Timing10 DRC violations in ILA IP.
