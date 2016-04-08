@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:fifo_generator:13.0
--- IP Revision: 1
+-- IP Revision: 0
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY fifo_generator_v13_0_1;
-USE fifo_generator_v13_0_1.fifo_generator_v13_0_1;
+LIBRARY fifo_generator_v13_0_0;
+USE fifo_generator_v13_0_0.fifo_generator_v13_0_0;
 
 ENTITY fifo_gtx_rx IS
   PORT (
@@ -75,7 +75,7 @@ ARCHITECTURE fifo_gtx_rx_arch OF fifo_gtx_rx IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF fifo_gtx_rx_arch: ARCHITECTURE IS "yes";
 
-  COMPONENT fifo_generator_v13_0_1 IS
+  COMPONENT fifo_generator_v13_0_0 IS
     GENERIC (
       C_COMMON_CLOCK : INTEGER;
       C_COUNT_TYPE : INTEGER;
@@ -512,7 +512,7 @@ ARCHITECTURE fifo_gtx_rx_arch OF fifo_gtx_rx IS
       axis_prog_full : OUT STD_LOGIC;
       axis_prog_empty : OUT STD_LOGIC
     );
-  END COMPONENT fifo_generator_v13_0_1;
+  END COMPONENT fifo_generator_v13_0_0;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF wr_clk: SIGNAL IS "xilinx.com:signal:clock:1.0 write_clk CLK";
   ATTRIBUTE X_INTERFACE_INFO OF rd_clk: SIGNAL IS "xilinx.com:signal:clock:1.0 read_clk CLK";
@@ -523,7 +523,7 @@ ARCHITECTURE fifo_gtx_rx_arch OF fifo_gtx_rx IS
   ATTRIBUTE X_INTERFACE_INFO OF full: SIGNAL IS "xilinx.com:interface:fifo_write:1.0 FIFO_WRITE FULL";
   ATTRIBUTE X_INTERFACE_INFO OF empty: SIGNAL IS "xilinx.com:interface:fifo_read:1.0 FIFO_READ EMPTY";
 BEGIN
-  U0 : fifo_generator_v13_0_1
+  U0 : fifo_generator_v13_0_0
     GENERIC MAP (
       C_COMMON_CLOCK => 0,
       C_COUNT_TYPE => 0,

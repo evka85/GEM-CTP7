@@ -298,8 +298,8 @@ architecture tamu_ctp7_v7_arch of tamu_ctp7_v7 is
   signal s_rx_capture_status : t_capture_status_arr(11 downto 0);
   
   -------------------------- GEM ----------------------------------
-  signal oh_reg_request      : t_reg_request;
-  signal oh_reg_response     : t_reg_response;
+  signal oh_reg_request_arr  : t_reg_request_arr(11 downto 0);
+  signal oh_reg_response_arr : t_reg_response_arr(11 downto 0);
 
 
 --============================================================================
@@ -423,10 +423,10 @@ begin
       gth_misc_status_arr_i   => s_gth_misc_status_arr,
 
       clk_gth_tx_usrclk_arr_i => s_clk_gth_tx_usrclk_arr,
-      clk_gth_rx_usrclk_arr_i => s_clk_gth_rx_usrclk_arr
+      clk_gth_rx_usrclk_arr_i => s_clk_gth_rx_usrclk_arr,
       
-      oh_reg_request_o        => oh_reg_request;
-      oh_reg_response_i       => oh_reg_response;
+      oh_reg_request_arr_o    => oh_reg_request_arr,
+      oh_reg_response_arr_i   => oh_reg_response_arr
       );
 
   i_register_file : entity work.register_file
@@ -584,18 +584,23 @@ begin
   end generate;
 
   ------------------------------- GEM ------------------------------
-  optohybrid_single_inst : work.optohybrid_single
-    port map(
-      reset_i                 => s_gth_common_reset
-      ttc_clk_i               => s_ttc_clks,
-      ttc_cmds_i              => s_ttc_cmds,
-      gth_rx_usrclk_i         => s_clk_gth_rx_usrclk_arr(6),
-      gth_tx_usrclk_i         => s_clk_gth_tx_usrclk_arr(6),
-      gth_rx_data_i           => s_gth_rx_data_arr(6),
-      gth_tx_data_o           => s_gth_tx_data_arr(6),
-      reg_request_i           => oh_reg_request;
-      reg_response_o          => oh_reg_response;
-    );  
+  
+  gen_io_link_3p2g_demo : for i in 0 to 11 generate
+
+    optohybrid_single_inst : entity work.optohybrid_single
+      port map(
+        reset_i                 => s_gth_gt_rxreset(i),
+        ttc_clk_i               => s_ttc_clks,
+        ttc_cmds_i              => s_ttc_cmds,
+        gth_rx_usrclk_i         => s_clk_gth_rx_usrclk_arr(i),
+        gth_tx_usrclk_i         => s_clk_gth_tx_usrclk_arr(i),
+        gth_rx_data_i           => s_gth_rx_data_arr(i),
+        gth_tx_data_o           => s_gth_tx_data_arr(i),
+        reg_request_i           => oh_reg_request_arr(i),
+        reg_response_o          => oh_reg_response_arr(i)
+      );
+      
+  end generate;
 
 end tamu_ctp7_v7_arch;
 

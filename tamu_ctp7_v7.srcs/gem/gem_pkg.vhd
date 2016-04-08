@@ -68,6 +68,9 @@ package gem_pkg is
         en                      : std_logic;
     end record;
 
+    type t_reg_request_arr is array(integer range <>) of t_reg_request;
+    type t_reg_response_arr is array(integer range <>) of t_reg_response;
+
     --========================--
     --== Trigger data input ==--
     --========================--

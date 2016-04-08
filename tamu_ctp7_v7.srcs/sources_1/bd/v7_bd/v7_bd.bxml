@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="v7_bd" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1457454103"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1457454103"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1457454103"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1460124109"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1460124109"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1460124109"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/v7_bd_axi_bram_ctrl_0_0/v7_bd_axi_bram_ctrl_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_bram_ctrl_0"/>

@@ -1,5 +1,5 @@
 ################################################################################
-# Vivado (TM) v2015.4 (64-bit)
+# Vivado (TM) v2015.3 (64-bit)
 #
 # README.txt: Please read the sections below to understand the steps required
 #             to simulate the design for a simulator, the directory structure
@@ -70,10 +70,14 @@ By default, when the -script_name switch is not specified, export_simulation wil
 create the following script name:-
 
 <simulation_top>.sh  (Unix)
+<simulation_top>.bat (Windows)
+
 When exporting the files for an IP using the -of_objects switch, export_simulation
 will create the following script name:-
 
 <ip-name>.sh  (Unix)
+<ip-name>.bat (Windows)
+
 Export simulation will create the setup files for the target simulator specified
 with the -simulator switch.
 

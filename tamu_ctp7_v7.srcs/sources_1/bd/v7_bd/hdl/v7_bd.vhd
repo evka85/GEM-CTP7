@@ -1,8 +1,8 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
---Date        : Tue Feb 16 17:42:05 2016
---Host        : moonraker.cern.ch running 64-bit Scientific Linux CERN SLC release 6.7 (Carbon)
+--Date        : Fri Apr  8 16:01:47 2016
+--Host        : evka-macpro running 64-bit Ubuntu 14.04.4 LTS
 --Command     : generate_target v7_bd.bd
 --Design      : v7_bd
 --Purpose     : IP block netlist

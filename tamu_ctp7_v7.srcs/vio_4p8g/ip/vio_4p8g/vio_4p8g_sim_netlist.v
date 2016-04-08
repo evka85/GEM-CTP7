@@ -1,8 +1,8 @@
 // Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-// Date        : Thu Apr  7 15:13:11 2016
-// Host        : evka-pc running 64-bit Ubuntu 14.04.4 LTS
+// Tool Version: Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+// Date        : Fri Apr  8 16:08:24 2016
+// Host        : evka-macpro running 64-bit Ubuntu 14.04.4 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_4p8g_sim_netlist.v
 // Design      : vio_4p8g
@@ -2121,6 +2121,8 @@ module vio_4p8g_vio_v3_0_9_decoder
     SR,
     internal_cnt_rst,
     \wr_en_reg[4]_0 ,
+    \wr_en_reg[4]_1 ,
+    \wr_en_reg[4]_2 ,
     E,
     \sl_oport_o[16]_INST_0 ,
     bus_rst,
@@ -2129,27 +2131,25 @@ module vio_4p8g_vio_v3_0_9_decoder
     s_daddr_o,
     \Bus_Data_out_reg[15] ,
     \Probe_out_reg_int_reg[0] ,
-    bus_dwe,
     bus_den,
-    \wr_en[4]_i_3 ,
-    \wr_en[4]_i_5 );
+    bus_dwe);
   output bus_drdy;
   output committ;
   output [0:0]SR;
   output internal_cnt_rst;
   output \wr_en_reg[4]_0 ;
+  output \wr_en_reg[4]_1 ;
+  output \wr_en_reg[4]_2 ;
   output [0:0]E;
   output [15:0]\sl_oport_o[16]_INST_0 ;
   input bus_rst;
   input [15:0]Q;
   input UNCONN_IN;
-  input [7:0]s_daddr_o;
+  input [16:0]s_daddr_o;
   input [15:0]\Bus_Data_out_reg[15] ;
   input \Probe_out_reg_int_reg[0] ;
-  input bus_dwe;
   input bus_den;
-  input \wr_en[4]_i_3 ;
-  input \wr_en[4]_i_5 ;
+  input bus_dwe;
 
   wire [15:0]\Bus_Data_out_reg[15] ;
   wire \Bus_data_out[0]_i_1_n_0 ;
@@ -2186,15 +2186,17 @@ module vio_4p8g_vio_v3_0_9_decoder
   wire [15:0]probe_out_modified;
   wire rd_en_p1;
   wire rd_en_p2;
-  wire [7:0]s_daddr_o;
+  wire [16:0]s_daddr_o;
   wire [15:0]\sl_oport_o[16]_INST_0 ;
   wire wr_control_reg;
   wire \wr_en[2]_i_1_n_0 ;
+  wire \wr_en[2]_i_2_n_0 ;
   wire \wr_en[4]_i_1_n_0 ;
-  wire \wr_en[4]_i_3 ;
-  wire \wr_en[4]_i_4_n_0 ;
-  wire \wr_en[4]_i_5 ;
+  wire \wr_en[4]_i_2_n_0 ;
+  wire \wr_en[4]_i_6_n_0 ;
   wire \wr_en_reg[4]_0 ;
+  wire \wr_en_reg[4]_1 ;
+  wire \wr_en_reg[4]_2 ;
   wire wr_probe_out_modified;
   wire [2:0]xsdb_addr_2_0_p1;
   wire [2:0]xsdb_addr_2_0_p2;
@@ -2613,6 +2615,7 @@ module vio_4p8g_vio_v3_0_9_decoder
         .D(Q[9]),
         .Q(probe_out_modified[9]),
         .R(SR));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT2 #(
     .INIT(4'h2)) 
     rd_en_p1_i_1
@@ -2632,41 +2635,71 @@ module vio_4p8g_vio_v3_0_9_decoder
         .Q(rd_en_p2),
         .R(bus_rst));
   LUT6 #(
-    .INIT(64'h0100000000000000)) 
+    .INIT(64'h0000000000000001)) 
     \wr_en[2]_i_1 
-       (.I0(s_daddr_o[0]),
+       (.I0(\wr_en[2]_i_2_n_0 ),
         .I1(s_daddr_o[2]),
         .I2(\wr_en_reg[4]_0 ),
-        .I3(s_daddr_o[1]),
-        .I4(bus_dwe),
-        .I5(bus_den),
+        .I3(\wr_en_reg[4]_2 ),
+        .I4(\wr_en_reg[4]_1 ),
+        .I5(\wr_en[4]_i_6_n_0 ),
         .O(\wr_en[2]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h0100000000000000)) 
-    \wr_en[4]_i_1 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  LUT2 #(
+    .INIT(4'hB)) 
+    \wr_en[2]_i_2 
        (.I0(s_daddr_o[0]),
         .I1(s_daddr_o[1]),
-        .I2(\wr_en_reg[4]_0 ),
-        .I3(s_daddr_o[2]),
-        .I4(bus_dwe),
-        .I5(bus_den),
+        .O(\wr_en[2]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000000010000)) 
+    \wr_en[4]_i_1 
+       (.I0(\wr_en[4]_i_2_n_0 ),
+        .I1(\wr_en_reg[4]_0 ),
+        .I2(\wr_en_reg[4]_2 ),
+        .I3(\wr_en_reg[4]_1 ),
+        .I4(s_daddr_o[2]),
+        .I5(\wr_en[4]_i_6_n_0 ),
         .O(\wr_en[4]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
     \wr_en[4]_i_2 
-       (.I0(\wr_en[4]_i_3 ),
-        .I1(\wr_en[4]_i_4_n_0 ),
-        .I2(\wr_en[4]_i_5 ),
+       (.I0(s_daddr_o[0]),
+        .I1(s_daddr_o[1]),
+        .O(\wr_en[4]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    \wr_en[4]_i_3 
+       (.I0(s_daddr_o[7]),
+        .I1(s_daddr_o[3]),
+        .I2(s_daddr_o[6]),
         .I3(s_daddr_o[5]),
+        .I4(s_daddr_o[4]),
+        .I5(s_daddr_o[8]),
         .O(\wr_en_reg[4]_0 ));
   LUT4 #(
     .INIT(16'hFFFE)) 
     \wr_en[4]_i_4 
-       (.I0(s_daddr_o[4]),
-        .I1(s_daddr_o[3]),
-        .I2(s_daddr_o[7]),
-        .I3(s_daddr_o[6]),
-        .O(\wr_en[4]_i_4_n_0 ));
+       (.I0(s_daddr_o[9]),
+        .I1(s_daddr_o[11]),
+        .I2(s_daddr_o[14]),
+        .I3(s_daddr_o[16]),
+        .O(\wr_en_reg[4]_2 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \wr_en[4]_i_5 
+       (.I0(s_daddr_o[13]),
+        .I1(s_daddr_o[15]),
+        .I2(s_daddr_o[10]),
+        .I3(s_daddr_o[12]),
+        .O(\wr_en_reg[4]_1 ));
+  LUT2 #(
+    .INIT(4'h7)) 
+    \wr_en[4]_i_6 
+       (.I0(bus_dwe),
+        .I1(bus_den),
+        .O(\wr_en[4]_i_6_n_0 ));
   FDRE \wr_en_reg[2] 
        (.C(UNCONN_IN),
         .CE(1'b1),
@@ -2718,7 +2751,7 @@ module vio_4p8g_vio_v3_0_9_decoder
   FDRE xsdb_addr_8_p1_reg
        (.C(UNCONN_IN),
         .CE(1'b1),
-        .D(s_daddr_o[5]),
+        .D(s_daddr_o[8]),
         .Q(xsdb_addr_8_p1),
         .R(1'b0));
   FDRE xsdb_addr_8_p2_reg
@@ -2727,12 +2760,13 @@ module vio_4p8g_vio_v3_0_9_decoder
         .D(xsdb_addr_8_p1),
         .Q(xsdb_addr_8_p2),
         .R(1'b0));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
-    .INIT(8'hF8)) 
+    .INIT(8'hEA)) 
     xsdb_drdy_i_1
-       (.I0(bus_dwe),
+       (.I0(rd_en_p2),
         .I1(bus_den),
-        .I2(rd_en_p2),
+        .I2(bus_dwe),
         .O(xsdb_drdy_i_1_n_0));
   FDRE xsdb_drdy_reg
        (.C(UNCONN_IN),
@@ -2748,10 +2782,12 @@ module vio_4p8g_vio_v3_0_9_probe_in_one
     CLK,
     bus_rst,
     internal_cnt_rst,
-    bus_den,
-    bus_dwe,
     s_daddr_o,
     \wr_en[4]_i_5 ,
+    \wr_en[4]_i_4 ,
+    \wr_en[4]_i_3 ,
+    bus_den,
+    bus_dwe,
     E,
     probe_in0,
     clk);
@@ -2759,10 +2795,12 @@ module vio_4p8g_vio_v3_0_9_probe_in_one
   input CLK;
   input bus_rst;
   input internal_cnt_rst;
-  input bus_den;
-  input bus_dwe;
   input [2:0]s_daddr_o;
   input \wr_en[4]_i_5 ;
+  input \wr_en[4]_i_4 ;
+  input \wr_en[4]_i_3 ;
+  input bus_den;
+  input bus_dwe;
   input [0:0]E;
   input [31:0]probe_in0;
   input clk;
@@ -2784,10 +2822,10 @@ module vio_4p8g_vio_v3_0_9_probe_in_one
   wire \Bus_Data_out[8]_i_2_n_0 ;
   wire \Bus_Data_out[9]_i_2_n_0 ;
   wire CLK;
-  wire \DECODER_INST/rd_en_int_7 ;
   wire [0:0]E;
   wire [15:0]Q;
   wire Read_int;
+  wire Read_int_i_2_n_0;
   wire [3:0]addr_count;
   wire \addr_count[0]_i_1_n_0 ;
   wire \addr_count[1]_i_1_n_0 ;
@@ -2812,8 +2850,11 @@ module vio_4p8g_vio_v3_0_9_probe_in_one
   wire [31:0]p_63_out;
   wire [31:0]probe_in0;
   (* DONT_TOUCH *) wire [31:0]probe_in_reg;
+  wire rd_probe_in;
   wire read_done;
   wire [2:0]s_daddr_o;
+  wire \wr_en[4]_i_3 ;
+  wire \wr_en[4]_i_4 ;
   wire \wr_en[4]_i_5 ;
 
   LUT5 #(
@@ -3216,33 +3257,43 @@ module vio_4p8g_vio_v3_0_9_probe_in_one
         .D(mem_probe_in[9]),
         .Q(Q[9]),
         .R(1'b0));
-  LUT6 #(
-    .INIT(64'h0000000020000000)) 
+  LUT5 #(
+    .INIT(32'h00000008)) 
     Read_int_i_1
+       (.I0(Read_int_i_2_n_0),
+        .I1(s_daddr_o[2]),
+        .I2(\wr_en[4]_i_5 ),
+        .I3(\wr_en[4]_i_4 ),
+        .I4(\wr_en[4]_i_3 ),
+        .O(rd_probe_in));
+  LUT4 #(
+    .INIT(16'h2000)) 
+    Read_int_i_2
        (.I0(bus_den),
         .I1(bus_dwe),
-        .I2(s_daddr_o[2]),
-        .I3(s_daddr_o[1]),
-        .I4(s_daddr_o[0]),
-        .I5(\wr_en[4]_i_5 ),
-        .O(\DECODER_INST/rd_en_int_7 ));
+        .I2(s_daddr_o[1]),
+        .I3(s_daddr_o[0]),
+        .O(Read_int_i_2_n_0));
   FDRE Read_int_reg
        (.C(CLK),
         .CE(1'b1),
-        .D(\DECODER_INST/rd_en_int_7 ),
+        .D(rd_probe_in),
         .Q(Read_int),
         .R(1'b0));
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \addr_count[0]_i_1 
        (.I0(addr_count[0]),
         .O(\addr_count[0]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \addr_count[1]_i_1 
        (.I0(addr_count[1]),
         .I1(addr_count[0]),
         .O(\addr_count[1]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \addr_count[2]_i_1 
@@ -3260,6 +3311,7 @@ module vio_4p8g_vio_v3_0_9_probe_in_one
         .I4(addr_count[2]),
         .I5(Read_int),
         .O(addr_count_reg0));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \addr_count[3]_i_2 
@@ -3268,6 +3320,7 @@ module vio_4p8g_vio_v3_0_9_probe_in_one
         .I2(addr_count[2]),
         .I3(addr_count[3]),
         .O(\addr_count[3]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \addr_count[3]_i_3 
@@ -4770,6 +4823,7 @@ module vio_4p8g_vio_v3_0_9_probe_in_one
         .D(probe_in0[9]),
         .Q(probe_in_reg[9]),
         .R(1'b0));
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT5 #(
     .INIT(32'h00080000)) 
     read_done_i_1
@@ -5303,28 +5357,28 @@ endmodule
 module vio_4p8g_vio_v3_0_9_probe_out_all
    (probe_out0,
     \Bus_data_out_reg[0] ,
-    \G_PROBE_OUT[0].wr_probe_out_reg[0]_0 ,
-    \G_PROBE_OUT[0].wr_probe_out_reg[0]_1 ,
     SR,
     committ,
     Q,
     UNCONN_IN,
     clk,
     s_daddr_o,
+    bus_den,
     bus_dwe,
-    bus_den);
+    \wr_en[4]_i_4 ,
+    \wr_en[4]_i_5 );
   output [0:0]probe_out0;
   output \Bus_data_out_reg[0] ;
-  output \G_PROBE_OUT[0].wr_probe_out_reg[0]_0 ;
-  output \G_PROBE_OUT[0].wr_probe_out_reg[0]_1 ;
   input [0:0]SR;
   input committ;
   input [0:0]Q;
   input UNCONN_IN;
   input clk;
-  input [16:0]s_daddr_o;
-  input bus_dwe;
+  input [8:0]s_daddr_o;
   input bus_den;
+  input bus_dwe;
+  input \wr_en[4]_i_4 ;
+  input \wr_en[4]_i_5 ;
 
   wire \Bus_data_out_reg[0] ;
   (* async_reg = "true" *) wire Committ_1;
@@ -5333,9 +5387,6 @@ module vio_4p8g_vio_v3_0_9_probe_out_all
   wire \G_PROBE_OUT[0].wr_probe_out[0]_i_1_n_0 ;
   wire \G_PROBE_OUT[0].wr_probe_out[0]_i_2_n_0 ;
   wire \G_PROBE_OUT[0].wr_probe_out[0]_i_3_n_0 ;
-  wire \G_PROBE_OUT[0].wr_probe_out_reg[0]_0 ;
-  wire \G_PROBE_OUT[0].wr_probe_out_reg[0]_1 ;
-  wire \G_PROBE_OUT[0].wr_probe_out_reg_n_0_[0] ;
   wire [0:0]Q;
   wire [0:0]SR;
   wire UNCONN_IN;
@@ -5344,7 +5395,10 @@ module vio_4p8g_vio_v3_0_9_probe_out_all
   wire clk;
   wire committ;
   wire [0:0]probe_out0;
-  wire [16:0]s_daddr_o;
+  wire [8:0]s_daddr_o;
+  wire \wr_en[4]_i_4 ;
+  wire \wr_en[4]_i_5 ;
+  wire wr_probe_out;
 
   (* ASYNC_REG *) 
   (* KEEP = "yes" *) 
@@ -5363,45 +5417,46 @@ module vio_4p8g_vio_v3_0_9_probe_out_all
         .Q(Committ_2),
         .R(1'b0));
   vio_4p8g_vio_v3_0_9_probe_out_one \G_PROBE_OUT[0].PROBE_OUT0_INST 
-       (.\G_PROBE_OUT[0].wr_probe_out_reg[0] (\G_PROBE_OUT[0].wr_probe_out_reg_n_0_[0] ),
-        .\Probe_out_reg[0]_0 (\G_PROBE_OUT[0].PROBE_OUT0_INST_n_1 ),
+       (.\Probe_out_reg[0]_0 (\G_PROBE_OUT[0].PROBE_OUT0_INST_n_1 ),
         .Q(Q),
         .SR(SR),
         .UNCONN_IN(UNCONN_IN),
         .clk(clk),
-        .p_1_in(Committ_2),
-        .probe_out0(probe_out0));
+        .p_0_in(Committ_2),
+        .probe_out0(probe_out0),
+        .wr_probe_out(wr_probe_out));
   LUT6 #(
-    .INIT(64'h0000000000000800)) 
+    .INIT(64'h0000000000000008)) 
     \G_PROBE_OUT[0].wr_probe_out[0]_i_1 
-       (.I0(bus_dwe),
-        .I1(bus_den),
-        .I2(s_daddr_o[2]),
-        .I3(s_daddr_o[8]),
-        .I4(\G_PROBE_OUT[0].wr_probe_out[0]_i_2_n_0 ),
-        .I5(\G_PROBE_OUT[0].wr_probe_out[0]_i_3_n_0 ),
+       (.I0(bus_den),
+        .I1(bus_dwe),
+        .I2(\G_PROBE_OUT[0].wr_probe_out[0]_i_2_n_0 ),
+        .I3(\G_PROBE_OUT[0].wr_probe_out[0]_i_3_n_0 ),
+        .I4(\wr_en[4]_i_4 ),
+        .I5(\wr_en[4]_i_5 ),
         .O(\G_PROBE_OUT[0].wr_probe_out[0]_i_1_n_0 ));
-  LUT2 #(
-    .INIT(4'hE)) 
+  LUT3 #(
+    .INIT(8'hFE)) 
     \G_PROBE_OUT[0].wr_probe_out[0]_i_2 
-       (.I0(s_daddr_o[0]),
-        .I1(s_daddr_o[1]),
+       (.I0(s_daddr_o[6]),
+        .I1(s_daddr_o[3]),
+        .I2(s_daddr_o[7]),
         .O(\G_PROBE_OUT[0].wr_probe_out[0]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    .INIT(64'hFFFFFFFFFFFFFEFF)) 
     \G_PROBE_OUT[0].wr_probe_out[0]_i_3 
-       (.I0(\G_PROBE_OUT[0].wr_probe_out_reg[0]_0 ),
-        .I1(s_daddr_o[7]),
-        .I2(s_daddr_o[6]),
-        .I3(s_daddr_o[10]),
-        .I4(s_daddr_o[9]),
-        .I5(\G_PROBE_OUT[0].wr_probe_out_reg[0]_1 ),
+       (.I0(s_daddr_o[1]),
+        .I1(s_daddr_o[0]),
+        .I2(s_daddr_o[2]),
+        .I3(s_daddr_o[8]),
+        .I4(s_daddr_o[5]),
+        .I5(s_daddr_o[4]),
         .O(\G_PROBE_OUT[0].wr_probe_out[0]_i_3_n_0 ));
   FDRE \G_PROBE_OUT[0].wr_probe_out_reg[0] 
        (.C(UNCONN_IN),
         .CE(1'b1),
         .D(\G_PROBE_OUT[0].wr_probe_out[0]_i_1_n_0 ),
-        .Q(\G_PROBE_OUT[0].wr_probe_out_reg_n_0_[0] ),
+        .Q(wr_probe_out),
         .R(1'b0));
   FDRE \Probe_out_reg_int_reg[0] 
        (.C(UNCONN_IN),
@@ -5409,23 +5464,6 @@ module vio_4p8g_vio_v3_0_9_probe_out_all
         .D(\G_PROBE_OUT[0].PROBE_OUT0_INST_n_1 ),
         .Q(\Bus_data_out_reg[0] ),
         .R(1'b0));
-  LUT5 #(
-    .INIT(32'hFFFFFFFE)) 
-    \wr_en[4]_i_3 
-       (.I0(s_daddr_o[3]),
-        .I1(s_daddr_o[15]),
-        .I2(s_daddr_o[16]),
-        .I3(s_daddr_o[5]),
-        .I4(s_daddr_o[4]),
-        .O(\G_PROBE_OUT[0].wr_probe_out_reg[0]_1 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \wr_en[4]_i_5 
-       (.I0(s_daddr_o[12]),
-        .I1(s_daddr_o[11]),
-        .I2(s_daddr_o[14]),
-        .I3(s_daddr_o[13]),
-        .O(\G_PROBE_OUT[0].wr_probe_out_reg[0]_0 ));
 endmodule
 
 (* ORIG_REF_NAME = "vio_v3_0_9_probe_out_one" *) 
@@ -5435,33 +5473,33 @@ module vio_4p8g_vio_v3_0_9_probe_out_one
     SR,
     Q,
     UNCONN_IN,
-    p_1_in,
+    p_0_in,
     clk,
-    \G_PROBE_OUT[0].wr_probe_out_reg[0] );
+    wr_probe_out);
   output [0:0]probe_out0;
   output \Probe_out_reg[0]_0 ;
   input [0:0]SR;
   input [0:0]Q;
   input UNCONN_IN;
-  input p_1_in;
+  input p_0_in;
   input clk;
-  input \G_PROBE_OUT[0].wr_probe_out_reg[0] ;
+  input wr_probe_out;
 
-  wire \G_PROBE_OUT[0].wr_probe_out_reg[0] ;
   wire \Probe_out_reg[0]_0 ;
   wire [0:0]Q;
   (* DIRECT_RESET *) wire [0:0]SR;
   wire UNCONN_IN;
   wire clk;
   wire \data_int[0]_i_1_n_0 ;
-  wire p_1_in;
+  wire p_0_in;
   (* DONT_TOUCH *) wire [0:0]probe_out0;
+  wire wr_probe_out;
 
   (* DONT_TOUCH *) 
   (* KEEP = "yes" *) 
   FDRE \Probe_out_reg[0] 
        (.C(clk),
-        .CE(p_1_in),
+        .CE(p_0_in),
         .D(\Probe_out_reg[0]_0 ),
         .Q(probe_out0),
         .R(SR));
@@ -5469,7 +5507,7 @@ module vio_4p8g_vio_v3_0_9_probe_out_one
     .INIT(4'hE)) 
     \data_int[0]_i_1 
        (.I0(SR),
-        .I1(\G_PROBE_OUT[0].wr_probe_out_reg[0] ),
+        .I1(wr_probe_out),
         .O(\data_int[0]_i_1_n_0 ));
   FDRE \data_int_reg[0] 
        (.C(UNCONN_IN),
@@ -6953,9 +6991,9 @@ module vio_4p8g_vio_v3_0_9_vio
   wire [15:0]Bus_Data_out;
   wire DECODER_INST_n_4;
   wire DECODER_INST_n_5;
+  wire DECODER_INST_n_6;
+  wire DECODER_INST_n_7;
   wire PROBE_OUT_ALL_INST_n_1;
-  wire PROBE_OUT_ALL_INST_n_2;
-  wire PROBE_OUT_ALL_INST_n_3;
   wire [16:0]bus_addr;
   (* DONT_TOUCH *) wire bus_clk;
   wire \bus_data_int_reg_n_0_[10] ;
@@ -7246,7 +7284,7 @@ module vio_4p8g_vio_v3_0_9_vio
   assign probe_out99[0] = \<const0> ;
   vio_4p8g_vio_v3_0_9_decoder DECODER_INST
        (.\Bus_Data_out_reg[15] (Bus_Data_out),
-        .E(DECODER_INST_n_5),
+        .E(DECODER_INST_n_7),
         .\Probe_out_reg_int_reg[0] (PROBE_OUT_ALL_INST_n_1),
         .Q({\bus_data_int_reg_n_0_[15] ,\bus_data_int_reg_n_0_[14] ,\bus_data_int_reg_n_0_[13] ,\bus_data_int_reg_n_0_[12] ,\bus_data_int_reg_n_0_[11] ,\bus_data_int_reg_n_0_[10] ,\bus_data_int_reg_n_0_[9] ,\bus_data_int_reg_n_0_[8] ,\bus_data_int_reg_n_0_[7] ,\bus_data_int_reg_n_0_[6] ,\bus_data_int_reg_n_0_[5] ,\bus_data_int_reg_n_0_[4] ,\bus_data_int_reg_n_0_[3] ,\bus_data_int_reg_n_0_[2] ,\bus_data_int_reg_n_0_[1] ,p_2_in}),
         .SR(clear),
@@ -7257,16 +7295,16 @@ module vio_4p8g_vio_v3_0_9_vio
         .bus_rst(bus_rst),
         .committ(committ),
         .internal_cnt_rst(internal_cnt_rst),
-        .s_daddr_o({bus_addr[10:6],bus_addr[2:0]}),
+        .s_daddr_o(bus_addr),
         .\sl_oport_o[16]_INST_0 (bus_do),
-        .\wr_en[4]_i_3 (PROBE_OUT_ALL_INST_n_3),
-        .\wr_en[4]_i_5 (PROBE_OUT_ALL_INST_n_2),
-        .\wr_en_reg[4]_0 (DECODER_INST_n_4));
+        .\wr_en_reg[4]_0 (DECODER_INST_n_4),
+        .\wr_en_reg[4]_1 (DECODER_INST_n_5),
+        .\wr_en_reg[4]_2 (DECODER_INST_n_6));
   GND GND
        (.G(\<const0> ));
   vio_4p8g_vio_v3_0_9_probe_in_one PROBE_IN_INST
        (.CLK(bus_clk),
-        .E(DECODER_INST_n_5),
+        .E(DECODER_INST_n_7),
         .Q(Bus_Data_out),
         .bus_den(bus_den),
         .bus_dwe(bus_dwe),
@@ -7275,11 +7313,11 @@ module vio_4p8g_vio_v3_0_9_vio
         .internal_cnt_rst(internal_cnt_rst),
         .probe_in0(probe_in0),
         .s_daddr_o(bus_addr[2:0]),
-        .\wr_en[4]_i_5 (DECODER_INST_n_4));
+        .\wr_en[4]_i_3 (DECODER_INST_n_4),
+        .\wr_en[4]_i_4 (DECODER_INST_n_6),
+        .\wr_en[4]_i_5 (DECODER_INST_n_5));
   vio_4p8g_vio_v3_0_9_probe_out_all PROBE_OUT_ALL_INST
        (.\Bus_data_out_reg[0] (PROBE_OUT_ALL_INST_n_1),
-        .\G_PROBE_OUT[0].wr_probe_out_reg[0]_0 (PROBE_OUT_ALL_INST_n_2),
-        .\G_PROBE_OUT[0].wr_probe_out_reg[0]_1 (PROBE_OUT_ALL_INST_n_3),
         .Q(p_2_in),
         .SR(clear),
         .UNCONN_IN(bus_clk),
@@ -7288,7 +7326,9 @@ module vio_4p8g_vio_v3_0_9_vio
         .clk(clk),
         .committ(committ),
         .probe_out0(probe_out0),
-        .s_daddr_o(bus_addr));
+        .s_daddr_o(bus_addr[8:0]),
+        .\wr_en[4]_i_4 (DECODER_INST_n_6),
+        .\wr_en[4]_i_5 (DECODER_INST_n_5));
   (* C_BUILD_REVISION = "0" *) 
   (* C_CORE_INFO1 = "0" *) 
   (* C_CORE_INFO2 = "0" *) 
@@ -7503,6 +7543,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(\reg_do[8]_i_2_n_0 ),
         .I2(sl_iport_i[4]),
         .O(\reg_do[10]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT4 #(
     .INIT(16'h0800)) 
     \reg_do[10]_i_2 
@@ -7527,6 +7568,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I3(sl_iport_i[6]),
         .I4(\reg_do[1]_i_2_n_0 ),
         .O(reg_do[1]));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
     .INIT(32'h00800000)) 
     \reg_do[1]_i_2 
@@ -7536,6 +7578,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I3(sl_iport_i[7]),
         .I4(sl_iport_i[8]),
         .O(\reg_do[1]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'h0800)) 
     \reg_do[2]_i_1 
@@ -7544,6 +7587,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I2(sl_iport_i[4]),
         .I3(reg_test[2]),
         .O(\reg_do[2]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
     .INIT(16'h0800)) 
     \reg_do[3]_i_1 
@@ -7552,6 +7596,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I2(sl_iport_i[4]),
         .I3(reg_test[3]),
         .O(\reg_do[3]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT4 #(
     .INIT(16'h0800)) 
     \reg_do[4]_i_1 
@@ -7570,6 +7615,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I4(reg_test[5]),
         .I5(\reg_do[5]_i_2_n_0 ),
         .O(reg_do[5]));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
     .INIT(32'hBFFFFFFC)) 
     \reg_do[5]_i_2 
@@ -7579,6 +7625,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I3(sl_iport_i[9]),
         .I4(sl_iport_i[8]),
         .O(\reg_do[5]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
     .INIT(16'h0800)) 
     \reg_do[6]_i_1 
@@ -7587,6 +7634,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I2(sl_iport_i[4]),
         .I3(reg_test[6]),
         .O(\reg_do[6]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'h0800)) 
     \reg_do[7]_i_1 
@@ -7925,12 +7973,14 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I4(sl_iport_i[14]),
         .I5(sl_iport_i[15]),
         .O(s_den_o_INST_0_i_1_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \sl_oport_o[0]_INST_0 
        (.I0(s_drdy_i),
         .I1(reg_drdy),
         .O(sl_oport_o[0]));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[10]_INST_0 
@@ -7938,6 +7988,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[9]),
         .I2(reg_drdy),
         .O(sl_oport_o[10]));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[11]_INST_0 
@@ -7945,6 +7996,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[10]),
         .I2(reg_drdy),
         .O(sl_oport_o[11]));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[12]_INST_0 
@@ -7952,6 +8004,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[11]),
         .I2(reg_drdy),
         .O(sl_oport_o[12]));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[13]_INST_0 
@@ -7959,6 +8012,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[12]),
         .I2(reg_drdy),
         .O(sl_oport_o[13]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[14]_INST_0 
@@ -7966,6 +8020,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[13]),
         .I2(reg_drdy),
         .O(sl_oport_o[14]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[15]_INST_0 
@@ -7980,6 +8035,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[15]),
         .I2(reg_drdy),
         .O(sl_oport_o[16]));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[1]_INST_0 
@@ -7987,6 +8043,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[0]),
         .I2(reg_drdy),
         .O(sl_oport_o[1]));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[2]_INST_0 
@@ -7994,6 +8051,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[1]),
         .I2(reg_drdy),
         .O(sl_oport_o[2]));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[3]_INST_0 
@@ -8001,6 +8059,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[2]),
         .I2(reg_drdy),
         .O(sl_oport_o[3]));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[4]_INST_0 
@@ -8008,6 +8067,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[3]),
         .I2(reg_drdy),
         .O(sl_oport_o[4]));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[5]_INST_0 
@@ -8015,6 +8075,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[4]),
         .I2(reg_drdy),
         .O(sl_oport_o[5]));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[6]_INST_0 
@@ -8022,6 +8083,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[5]),
         .I2(reg_drdy),
         .O(sl_oport_o[6]));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[7]_INST_0 
@@ -8029,6 +8091,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[6]),
         .I2(reg_drdy),
         .O(sl_oport_o[7]));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[8]_INST_0 
@@ -8036,6 +8099,7 @@ module vio_4p8g_xsdbs_v1_0_2_xsdbs
         .I1(s_do_i[7]),
         .I2(reg_drdy),
         .O(sl_oport_o[8]));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \sl_oport_o[9]_INST_0 

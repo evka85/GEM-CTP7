@@ -132,8 +132,8 @@ begin
         din     => o2g_req_data,        
         rd_clk  => reg_request_i.axi_reg_clk,
         rd_en   => '1',
-        valid   => reg_response.en,
-        dout    => reg_response.data,
+        valid   => reg_response_o.en,
+        dout    => reg_response_o.data,
         full    => open,
         empty   => open
     );
