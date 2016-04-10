@@ -301,6 +301,14 @@ architecture tamu_ctp7_v7_arch of tamu_ctp7_v7 is
   signal oh_reg_request_arr  : t_reg_request_arr(11 downto 0);
   signal oh_reg_response_arr : t_reg_response_arr(11 downto 0);
 
+  -------------------------- DEBUG ----------------------------------
+  attribute mark_debug : string;
+  attribute mark_debug of oh_reg_request_arr: signal is "true";
+  attribute mark_debug of oh_reg_response_arr: signal is "true";
+--  attribute mark_debug of s_clk_gth_rx_usrclk_arr: signal is "true";
+--  attribute mark_debug of s_clk_gth_tx_usrclk_arr: signal is "true";
+  attribute mark_debug of s_gth_rx_data_arr: signal is "true";
+  attribute mark_debug of s_gth_tx_data_arr: signal is "true";
 
 --============================================================================
 --                                                          Architecture begin
@@ -585,7 +593,7 @@ begin
 
   ------------------------------- GEM ------------------------------
   
-  gen_io_link_3p2g_demo : for i in 0 to 11 generate
+  gen_optohybrids : for i in 0 to 11 generate
 
     optohybrid_single_inst : entity work.optohybrid_single
       port map(

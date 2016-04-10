@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Apr  9 07:00:14 2016
+# Process ID: 13835
+# Current directory: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/impl_1
+# Command line: vivado -log tamu_ctp7_v7.vdi -applog -messageDb vivado.pb -mode batch -source tamu_ctp7_v7.tcl -notrace
+# Log file: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/impl_1/tamu_ctp7_v7.vdi
+# Journal file: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source tamu_ctp7_v7.tcl -notrace

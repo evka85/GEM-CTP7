@@ -42,12 +42,14 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
 start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_property webtalk.parent_dir /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.cache/wt [current_project]
   set_property parent.project_path /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.xpr [current_project]
@@ -57,14 +59,14 @@ set rc [catch {
 } [current_project]
   set_property ip_output_repo /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.cache/ip [current_project]
   add_files -quiet /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/synth_1/tamu_ctp7_v7.dcp
-  add_files -quiet /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/fifo_gtx_rx_synth_1/fifo_gtx_rx.dcp
-  set_property netlist_only true [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/fifo_gtx_rx_synth_1/fifo_gtx_rx.dcp]
-  add_files -quiet /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/fifo_gtx_tx_synth_1/fifo_gtx_tx.dcp
-  set_property netlist_only true [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/fifo_gtx_tx_synth_1/fifo_gtx_tx.dcp]
   add_files -quiet /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/ila_4p8g_synth_1/ila_4p8g.dcp
   set_property netlist_only true [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/ila_4p8g_synth_1/ila_4p8g.dcp]
   add_files -quiet /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/vio_4p8g_synth_1/vio_4p8g.dcp
   set_property netlist_only true [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/vio_4p8g_synth_1/vio_4p8g.dcp]
+  add_files -quiet /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/fifo_gtx_tx_synth_1/fifo_gtx_tx.dcp
+  set_property netlist_only true [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/fifo_gtx_tx_synth_1/fifo_gtx_tx.dcp]
+  add_files -quiet /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/fifo_gtx_rx_synth_1/fifo_gtx_rx.dcp
+  set_property netlist_only true [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/fifo_gtx_rx_synth_1/fifo_gtx_rx.dcp]
   read_xdc -ref v7_bd_axi_chip2chip_0_0 -cells inst /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_axi_chip2chip_0_0/v7_bd_axi_chip2chip_0_0.xdc
   set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_axi_chip2chip_0_0/v7_bd_axi_chip2chip_0_0.xdc]
   read_xdc -prop_thru_buffers -ref v7_bd_clk_wiz_0_0 -cells inst /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_clk_wiz_0_0/v7_bd_clk_wiz_0_0_board.xdc
@@ -77,14 +79,6 @@ set rc [catch {
   set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_proc_sys_reset_0_0/v7_bd_proc_sys_reset_0_0.xdc]
   read_xdc -ref v7_bd_xadc_wiz_0_0 -cells U0 /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_xadc_wiz_0_0/v7_bd_xadc_wiz_0_0.xdc
   set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_xadc_wiz_0_0/v7_bd_xadc_wiz_0_0.xdc]
-  read_xdc -mode out_of_context -ref fifo_gtx_rx -cells U0 /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx_ooc.xdc
-  set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx_ooc.xdc]
-  read_xdc -ref fifo_gtx_rx -cells U0 /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx/fifo_gtx_rx.xdc
-  set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx/fifo_gtx_rx.xdc]
-  read_xdc -mode out_of_context -ref fifo_gtx_tx -cells U0 /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx_ooc.xdc
-  set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx_ooc.xdc]
-  read_xdc -ref fifo_gtx_tx -cells U0 /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx/fifo_gtx_tx.xdc
-  set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx/fifo_gtx_tx.xdc]
   read_xdc -mode out_of_context -ref ila_4p8g /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_4p8g_ooc.xdc
   set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_4p8g_ooc.xdc]
   read_xdc -ref ila_4p8g /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0/constraints/ila.xdc
@@ -93,15 +87,23 @@ set rc [catch {
   set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_4p8g_ooc.xdc]
   read_xdc -ref vio_4p8g /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_4p8g.xdc
   set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_4p8g.xdc]
+  read_xdc -mode out_of_context -ref fifo_gtx_tx -cells U0 /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx_ooc.xdc
+  set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx_ooc.xdc]
+  read_xdc -ref fifo_gtx_tx -cells U0 /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx/fifo_gtx_tx.xdc
+  set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx/fifo_gtx_tx.xdc]
+  read_xdc -mode out_of_context -ref fifo_gtx_rx -cells U0 /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx_ooc.xdc
+  set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx_ooc.xdc]
+  read_xdc -ref fifo_gtx_rx -cells U0 /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx/fifo_gtx_rx.xdc
+  set_property processing_order EARLY [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx/fifo_gtx_rx.xdc]
   read_xdc /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/constrs_1/imports/new/constraints.xdc
   read_xdc -ref v7_bd_axi_chip2chip_0_0 -cells inst /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_axi_chip2chip_0_0/v7_bd_axi_chip2chip_0_0_clocks.xdc
   set_property processing_order LATE [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_axi_chip2chip_0_0/v7_bd_axi_chip2chip_0_0_clocks.xdc]
   read_xdc -ref v7_bd_clk_wiz_0_0 -cells inst /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_clk_wiz_0_0/v7_bd_clk_wiz_0_0_late.xdc
   set_property processing_order LATE [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_clk_wiz_0_0/v7_bd_clk_wiz_0_0_late.xdc]
-  read_xdc -ref fifo_gtx_rx -cells U0 /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx/fifo_gtx_rx_clocks.xdc
-  set_property processing_order LATE [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx/fifo_gtx_rx_clocks.xdc]
   read_xdc -ref fifo_gtx_tx -cells U0 /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx/fifo_gtx_tx_clocks.xdc
   set_property processing_order LATE [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx/fifo_gtx_tx_clocks.xdc]
+  read_xdc -ref fifo_gtx_rx -cells U0 /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx/fifo_gtx_rx_clocks.xdc
+  set_property processing_order LATE [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx/fifo_gtx_rx_clocks.xdc]
   link_design -top tamu_ctp7_v7 -part xc7vx690tffg1927-2
   close_msg_db -file init_design.pb
 } RESULT]

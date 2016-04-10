@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="ila_tx_rx_3p2g_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1460083823">
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/ila_tx_rx_3p2g_synth_1/constrs_in.xml"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/ila_tx_rx_3p2g_synth_1/sources.xml"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/ila_tx_rx_3p2g_synth_1/ila_tx_rx_3p2g_synth_1.psg"/>
-  <File Type="PA-TCL" Name="ila_tx_rx_3p2g.tcl"/>
-  <File Type="RDS-RDS" Name="ila_tx_rx_3p2g.vds"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ila_tx_rx_3p2g_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="ila_tx_rx_3p2g_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ila_tx_rx_3p2g_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="ila_tx_rx_3p2g.dcp"/>
   <File Type="RDS-UTIL-PB" Name="ila_tx_rx_3p2g_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="ila_tx_rx_3p2g_utilization_synth.rpt"/>
   <File Type="RDS-PROPCONSTRS" Name="ila_tx_rx_3p2g_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="ila_tx_rx_3p2g.vds"/>
+  <File Type="PA-TCL" Name="ila_tx_rx_3p2g.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/ila_tx_rx_3p2g_synth_1/ila_tx_rx_3p2g_synth_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/ila_tx_rx_3p2g_synth_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/ila_tx_rx_3p2g_synth_1/constrs_in.xml"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_tx_rx_3p2g">
     <File Path="$PSRCDIR/ila_tx_rx_3p2g/ip/ila_tx_rx_3p2g/ila_tx_rx_3p2g.xci">
       <FileInfo>
@@ -42,7 +42,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

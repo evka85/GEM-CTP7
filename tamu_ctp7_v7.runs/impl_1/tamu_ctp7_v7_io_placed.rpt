@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
-| Date         : Fri Apr  8 18:35:47 2016
-| Host         : evka-macpro running 64-bit Ubuntu 14.04.4 LTS
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Sat Apr  9 18:22:19 2016
+| Host         : evka-pc running 64-bit Ubuntu 14.04.4 LTS
 | Command      : report_io -file tamu_ctp7_v7_io_placed.rpt
 | Design       : tamu_ctp7_v7
 | Device       : xc7vx690t

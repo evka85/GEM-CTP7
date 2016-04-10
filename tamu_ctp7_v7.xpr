@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2015.3 (64-bit)              -->
+<!-- Product Version: Vivado v2015.4 (64-bit)              -->
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
@@ -77,6 +77,12 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/gem/gem_pkg.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/gem/link/link_tx_tracking.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -84,12 +90,6 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/gem/link/link_rx_tracking.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/gem/gem_pkg.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -213,6 +213,10 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="hdl/v7_bd.hwdef"/>
+        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="hw_handoff/v7_bd_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="hw_handoff/v7_bd.hwh"/>
+        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="v7_bd_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="hdl/v7_bd.vhd"/>
         <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_auto_pc_6/v7_bd_auto_pc_6.xci"/>
         <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_auto_pc_5/v7_bd_auto_pc_5.xci"/>
@@ -234,15 +238,19 @@
         <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_axi_bram_ctrl_gth_reg_file_0/v7_bd_axi_bram_ctrl_gth_reg_file_0.xci"/>
         <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_axi_bram_ctrl_drp_0/v7_bd_axi_bram_ctrl_drp_0.xci"/>
         <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="ip/v7_bd_axi_bram_ctrl_0_0/v7_bd_axi_bram_ctrl_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="hdl/v7_bd.hwdef"/>
-        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="hw_handoff/v7_bd_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="hw_handoff/v7_bd.hwh"/>
-        <CompFileExtendedInfo CompFileName="v7_bd.bd" FileRelPathName="v7_bd_ooc.xdc"/>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/register_file.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/register_file.vhd"/>
           <Attr Name="ImportTime" Val="1455647353"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/gth_register_file.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/gth_register_file.vhd"/>
+          <Attr Name="ImportTime" Val="1455639745"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -275,14 +283,6 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/gth_wrapper.vhd"/>
           <Attr Name="ImportTime" Val="1455647353"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/gth_register_file.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/gth_register_file.vhd"/>
-          <Attr Name="ImportTime" Val="1455639745"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -372,24 +372,6 @@
           <Attr Name="ImportTime" Val="1460081934"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/playback_capture_ram/ip/playback_capture_ram/pb_cap_ram.coe">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/fifo_cdc_18b/ip/fifo_cdc_18b/fifo_cdc_18b.xci">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_cdc_18b/fifo_cdc_18b.xci"/>
-          <Attr Name="ImportTime" Val="1455639745"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx.upgrade_log"/>
-      <File Path="$PSRCDIR/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx.upgrade_log"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="tamu_ctp7_v7"/>
@@ -419,62 +401,6 @@
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>
-    <FileSet Name="playback_capture_ram" Type="BlockSrcs" RelSrcDir="$PSRCDIR/playback_capture_ram">
-      <File Path="$PSRCDIR/playback_capture_ram/ip/playback_capture_ram/playback_capture_ram.xci">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/playback_capture_ram/playback_capture_ram.xci"/>
-          <Attr Name="ImportTime" Val="1455639745"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="playback_capture_ram"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="ila_tx_rx_3p2g" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_tx_rx_3p2g">
-      <File Path="$PSRCDIR/ila_tx_rx_3p2g/ip/ila_tx_rx_3p2g/ila_tx_rx_3p2g.xci">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/ila_tx_rx_3p2g/ila_tx_rx_3p2g.xci"/>
-          <Attr Name="ImportTime" Val="1455639745"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="ila_tx_rx_3p2g"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="fifo_gtx_rx" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_gtx_rx">
-      <File Path="$PSRCDIR/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx.xci">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="fifo_gtx_rx"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="fifo_gtx_tx" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_gtx_tx">
-      <File Path="$PSRCDIR/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx.xci">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="fifo_gtx_tx"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="ila_4p8g" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_4p8g">
       <File Path="$PSRCDIR/ila_4p8g/ip/ila_4p8g/ila_4p8g.xci">
         <FileInfo>
@@ -502,6 +428,77 @@
       </File>
       <Config>
         <Option Name="TopModule" Val="vio_4p8g"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="playback_capture_ram" Type="BlockSrcs" RelSrcDir="$PSRCDIR/playback_capture_ram">
+      <File Path="$PSRCDIR/playback_capture_ram/ip/playback_capture_ram/playback_capture_ram.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/playback_capture_ram/playback_capture_ram.xci"/>
+          <Attr Name="ImportTime" Val="1455639745"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="playback_capture_ram"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fifo_cdc_18b" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_cdc_18b">
+      <File Path="$PSRCDIR/fifo_cdc_18b/ip/fifo_cdc_18b/fifo_cdc_18b.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_cdc_18b/fifo_cdc_18b.xci"/>
+          <Attr Name="ImportTime" Val="1455639745"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fifo_cdc_18b"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ila_tx_rx_3p2g" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_tx_rx_3p2g">
+      <File Path="$PSRCDIR/ila_tx_rx_3p2g/ip/ila_tx_rx_3p2g/ila_tx_rx_3p2g.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/ila_tx_rx_3p2g/ila_tx_rx_3p2g.xci"/>
+          <Attr Name="ImportTime" Val="1455639745"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="ila_tx_rx_3p2g"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fifo_gtx_tx" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_gtx_tx">
+      <File Path="$PSRCDIR/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fifo_gtx_tx"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fifo_gtx_rx" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_gtx_rx">
+      <File Path="$PSRCDIR/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fifo_gtx_rx"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -535,26 +532,55 @@
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
+    <Run Id="ila_4p8g_synth_1" Type="Ft3:Synth" SrcSet="ila_4p8g" Part="xc7vx690tffg1927-2" ConstrsSet="ila_4p8g" Description="" Dir="$PRUNDIR/ila_4p8g_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="stage2_strategy" Flow="Vivado Synthesis 2015"/>
+        <Step Id="synth_design">
+          <Option Id="ShregMinSize">5</Option>
+          <Option Id="NoCombineLuts">1</Option>
+          <Option Id="RepFanoutThreshold">400</Option>
+          <Option Id="KeepEquivalentRegisters">1</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="vio_4p8g_synth_1" Type="Ft3:Synth" SrcSet="vio_4p8g" Part="xc7vx690tffg1927-2" ConstrsSet="vio_4p8g" Description="" Dir="$PRUNDIR/vio_4p8g_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="stage2_strategy" Flow="Vivado Synthesis 2015"/>
+        <Step Id="synth_design">
+          <Option Id="ShregMinSize">5</Option>
+          <Option Id="NoCombineLuts">1</Option>
+          <Option Id="RepFanoutThreshold">400</Option>
+          <Option Id="KeepEquivalentRegisters">1</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
     <Run Id="playback_capture_ram_synth_1" Type="Ft3:Synth" SrcSet="playback_capture_ram" Part="xc7vx690tffg1927-2" ConstrsSet="playback_capture_ram" Description="" Dir="$PRUNDIR/playback_capture_ram_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="stage2_strategy" Flow="Vivado Synthesis 2015"/>
         <Step Id="synth_design">
-          <Option Id="NoCombineLuts">1</Option>
           <Option Id="ShregMinSize">5</Option>
-          <Option Id="KeepEquivalentRegisters">1</Option>
+          <Option Id="NoCombineLuts">1</Option>
           <Option Id="RepFanoutThreshold">400</Option>
+          <Option Id="KeepEquivalentRegisters">1</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="fifo_cdc_18b_synth_1" Type="Ft3:Synth" SrcSet="fifo_cdc_18b" Part="xc7vx690tffg1927-2" ConstrsSet="fifo_cdc_18b" Description="" Dir="$PRUNDIR/fifo_cdc_18b_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="stage2_strategy" Flow="Vivado Synthesis 2015"/>
+        <Step Id="synth_design">
+          <Option Id="ShregMinSize">5</Option>
+          <Option Id="NoCombineLuts">1</Option>
+          <Option Id="RepFanoutThreshold">400</Option>
+          <Option Id="KeepEquivalentRegisters">1</Option>
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
     <Run Id="ila_tx_rx_3p2g_synth_1" Type="Ft3:Synth" SrcSet="ila_tx_rx_3p2g" Part="xc7vx690tffg1927-2" ConstrsSet="ila_tx_rx_3p2g" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ila_tx_rx_3p2g_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-    </Run>
-    <Run Id="fifo_gtx_rx_synth_1" Type="Ft3:Synth" SrcSet="fifo_gtx_rx" Part="xc7vx690tffg1927-2" ConstrsSet="fifo_gtx_rx" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/fifo_gtx_rx_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -572,16 +598,7 @@
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
-    <Run Id="ila_4p8g_synth_1" Type="Ft3:Synth" SrcSet="ila_4p8g" Part="xc7vx690tffg1927-2" ConstrsSet="ila_4p8g" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ila_4p8g_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-    </Run>
-    <Run Id="vio_4p8g_synth_1" Type="Ft3:Synth" SrcSet="vio_4p8g" Part="xc7vx690tffg1927-2" ConstrsSet="vio_4p8g" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/vio_4p8g_synth_1" IncludeInArchive="true">
+    <Run Id="fifo_gtx_rx_synth_1" Type="Ft3:Synth" SrcSet="fifo_gtx_rx" Part="xc7vx690tffg1927-2" ConstrsSet="fifo_gtx_rx" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/fifo_gtx_rx_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -605,6 +622,38 @@
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
+    <Run Id="ila_4p8g_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="ila_4p8g" Description="Vivado Implementation Defaults" SynthRun="ila_4p8g_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="stage2_strategy" Flow="Vivado Implementation 2015"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design">
+          <Option Id="Verbose">1</Option>
+        </Step>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design" EnableStepBool="1"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="vio_4p8g_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="vio_4p8g" Description="Vivado Implementation Defaults" SynthRun="vio_4p8g_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="stage2_strategy" Flow="Vivado Implementation 2015"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design">
+          <Option Id="Verbose">1</Option>
+        </Step>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design" EnableStepBool="1"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
     <Run Id="playback_capture_ram_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="playback_capture_ram" Description="Vivado Implementation Defaults" SynthRun="playback_capture_ram_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="stage2_strategy" Flow="Vivado Implementation 2015"/>
@@ -621,21 +670,23 @@
         <Step Id="write_bitstream"/>
       </Strategy>
     </Run>
-    <Run Id="ila_tx_rx_3p2g_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="ila_tx_rx_3p2g" Description="Vivado Implementation Defaults" SynthRun="ila_tx_rx_3p2g_synth_1" IncludeInArchive="true">
+    <Run Id="fifo_cdc_18b_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="fifo_cdc_18b" Description="Vivado Implementation Defaults" SynthRun="fifo_cdc_18b_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+        <StratHandle Name="stage2_strategy" Flow="Vivado Implementation 2015"/>
         <Step Id="init_design"/>
-        <Step Id="opt_design"/>
+        <Step Id="opt_design">
+          <Option Id="Verbose">1</Option>
+        </Step>
         <Step Id="power_opt_design"/>
         <Step Id="place_design"/>
         <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
         <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="post_route_phys_opt_design" EnableStepBool="1"/>
         <Step Id="write_bitstream"/>
       </Strategy>
     </Run>
-    <Run Id="fifo_gtx_rx_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="fifo_gtx_rx" Description="Vivado Implementation Defaults" SynthRun="fifo_gtx_rx_synth_1" IncludeInArchive="true">
+    <Run Id="ila_tx_rx_3p2g_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="ila_tx_rx_3p2g" Description="Vivado Implementation Defaults" SynthRun="ila_tx_rx_3p2g_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
           <Desc>Vivado Implementation Defaults</Desc>
@@ -667,23 +718,7 @@
         <Step Id="write_bitstream"/>
       </Strategy>
     </Run>
-    <Run Id="ila_4p8g_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="ila_4p8g" Description="Vivado Implementation Defaults" SynthRun="ila_4p8g_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
-          <Desc>Vivado Implementation Defaults</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-    </Run>
-    <Run Id="vio_4p8g_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="vio_4p8g" Description="Vivado Implementation Defaults" SynthRun="vio_4p8g_synth_1" IncludeInArchive="true">
+    <Run Id="fifo_gtx_rx_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1927-2" ConstrsSet="fifo_gtx_rx" Description="Vivado Implementation Defaults" SynthRun="fifo_gtx_rx_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
           <Desc>Vivado Implementation Defaults</Desc>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.hw/hw_1/wave/hw_ila_data_5/hw_ila_data_5.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="11">
+	</WVObjectSize>
+	<wvobject fp_name="oh_reg_request_arr[6][data]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">oh_reg_request_arr[6][data][31:0]</obj_property>
+		<obj_property name="ObjectShortName">oh_reg_request_arr[6][data][31:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="oh_reg_request_arr[6][addr]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">oh_reg_request_arr[6][addr][31:0]</obj_property>
+		<obj_property name="ObjectShortName">oh_reg_request_arr[6][addr][31:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="oh_reg_request_arr[0][data]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">oh_reg_request_arr[0][data][31:0]</obj_property>
+		<obj_property name="ObjectShortName">oh_reg_request_arr[0][data][31:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="oh_reg_request_arr[0][addr]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">oh_reg_request_arr[0][addr][31:0]</obj_property>
+		<obj_property name="ObjectShortName">oh_reg_request_arr[0][addr][31:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="oh_reg_request_arr[0][en]" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">oh_reg_request_arr[0][en]</obj_property>
+		<obj_property name="ObjectShortName">oh_reg_request_arr[0][en]</obj_property>
+	</wvobject>
+	<wvobject fp_name="oh_reg_request_arr[0][we]" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">oh_reg_request_arr[0][we]</obj_property>
+		<obj_property name="ObjectShortName">oh_reg_request_arr[0][we]</obj_property>
+	</wvobject>
+	<wvobject fp_name="oh_reg_request_arr[6][axi_reg_clk]" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">oh_reg_request_arr[6][axi_reg_clk]</obj_property>
+		<obj_property name="ObjectShortName">oh_reg_request_arr[6][axi_reg_clk]</obj_property>
+	</wvobject>
+	<wvobject fp_name="oh_reg_request_arr[6][en]" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">oh_reg_request_arr[6][en]</obj_property>
+		<obj_property name="ObjectShortName">oh_reg_request_arr[6][en]</obj_property>
+	</wvobject>
+	<wvobject fp_name="oh_reg_request_arr[6][we]" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">oh_reg_request_arr[6][we]</obj_property>
+		<obj_property name="ObjectShortName">oh_reg_request_arr[6][we]</obj_property>
+	</wvobject>
+	<wvobject fp_name="oh_reg_response_arr[0][en]" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">oh_reg_response_arr[0][en]</obj_property>
+		<obj_property name="ObjectShortName">oh_reg_response_arr[0][en]</obj_property>
+	</wvobject>
+	<wvobject fp_name="oh_reg_response_arr[6][en]" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">oh_reg_response_arr[6][en]</obj_property>
+		<obj_property name="ObjectShortName">oh_reg_response_arr[6][en]</obj_property>
+	</wvobject>
+</wave_config>
+

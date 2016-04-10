@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------
-| Tool Version      : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
-| Date              : Fri Apr  8 18:38:19 2016
-| Host              : evka-macpro running 64-bit Ubuntu 14.04.4 LTS
+| Tool Version      : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date              : Sat Apr  9 18:33:46 2016
+| Host              : evka-pc running 64-bit unknown
 | Command           : report_clock_utilization -file tamu_ctp7_v7_clock_utilization_routed.rpt
 | Design            : tamu_ctp7_v7
 | Device            : 7vx690t-ffg1927
@@ -66,12 +66,12 @@ Table of Contents
 |     3 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clkin1_buf                          | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clkin1                               |     1 |     1 |    no |
 |     4 | i_v7_bd/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/slave_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/fb_bufg_inst | i_v7_bd/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/slave_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clkfbout_bufg |     1 |     1 |    no |
 |     5 | i_v7_bd/clk_wiz_0/inst/clkout1_buf                                                                                                                          | i_v7_bd/clk_wiz_0/inst/clk_out1                                                                                                                              |     1 |     1 |    no |
-|     6 | dbg_hub/inst/N_EXT_BSCAN.u_bufg_icon                                                                                                                        | dbg_hub/inst/idrck                                                                                                                                           |   271 |    64 |    no |
-|     7 | i_ctp7_ttc/i_ctp7_ttc_clocks/i_bufg_clk_40                                                                                                                  | i_ctp7_ttc/i_ctp7_ttc_clocks/s_ttc_clks[clk_40]                                                                                                              |   381 |   102 |    no |
-|     8 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clkout0_buf                         | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0]           |  1152 |   307 |    no |
-|     9 | i_v7_bd/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/slave_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst    | i_v7_bd/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/slave_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/CLK           |  1180 |   409 |    no |
-|    10 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[0].gen_gth_3p2g_txuserclk.gen_gth_3p2g_txuserclk_master.i_bufg_3p2g_tx_outclk                                 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0]                                                                                                      |  1848 |   558 |    no |
-|    11 | i_v7_bd/clk_wiz_0/inst/clkout2_buf                                                                                                                          | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                              | 19841 |  5986 |    no |
+|     6 | dbg_hub/inst/N_EXT_BSCAN.u_bufg_icon                                                                                                                        | dbg_hub/inst/idrck                                                                                                                                           |   277 |    55 |    no |
+|     7 | i_ctp7_ttc/i_ctp7_ttc_clocks/i_bufg_clk_40                                                                                                                  | i_ctp7_ttc/i_ctp7_ttc_clocks/clk_40_i                                                                                                                        |   381 |    99 |    no |
+|     8 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clkout0_buf                         | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0]           |  1152 |   309 |    no |
+|     9 | i_v7_bd/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/slave_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/bufg_inst    | i_v7_bd/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/slave_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/CLK           |  1180 |   395 |    no |
+|    10 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[0].gen_gth_3p2g_txuserclk.gen_gth_3p2g_txuserclk_master.i_bufg_3p2g_tx_outclk                                 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0]                                                                                                      |  2592 |   707 |    no |
+|    11 | i_v7_bd/clk_wiz_0/inst/clkout2_buf                                                                                                                          | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                              | 34593 |  9962 |    no |
 +-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+-------+-------+
 
 
@@ -84,40 +84,40 @@ Table of Contents
 |     2 | i_v7_bd/clk_wiz_0/inst/clkout2_buf_en                              | i_v7_bd/clk_wiz_0/inst/clk_out2_v7_bd_clk_wiz_0_0_en_clk |    8 |     1 |    no |
 |     3 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[12] |   61 |    17 |    no |
 |     4 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[14].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[14] |   61 |    16 |    no |
-|     5 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[15].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[15] |   61 |    17 |    no |
+|     5 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[15].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[15] |   61 |    18 |    no |
 |     6 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[16].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[16] |   61 |    16 |    no |
-|     7 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[17].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[17] |   61 |    17 |    no |
+|     7 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[17].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[17] |   61 |    16 |    no |
 |     8 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[18].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[18] |   61 |    17 |    no |
-|     9 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[19].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[19] |   61 |    17 |    no |
+|     9 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[19].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[19] |   61 |    16 |    no |
 |    10 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[20].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[20] |   61 |    17 |    no |
 |    11 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[21].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[21] |   61 |    17 |    no |
-|    12 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[22].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[22] |   61 |    17 |    no |
-|    13 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[23].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[23] |   61 |    16 |    no |
-|    14 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[24].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[24] |   61 |    18 |    no |
-|    15 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[25].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[25] |   61 |    17 |    no |
+|    12 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[22].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[22] |   61 |    18 |    no |
+|    13 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[23].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[23] |   61 |    17 |    no |
+|    14 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[24].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[24] |   61 |    17 |    no |
+|    15 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[25].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[25] |   61 |    18 |    no |
 |    16 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[26].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[26] |   61 |    18 |    no |
 |    17 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[27].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[27] |   61 |    17 |    no |
-|    18 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[28].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[28] |   61 |    16 |    no |
-|    19 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[29].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[29] |   61 |    16 |    no |
-|    20 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[30].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[30] |   61 |    17 |    no |
-|    21 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[31].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[31] |   61 |    18 |    no |
+|    18 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[28].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[28] |   61 |    17 |    no |
+|    19 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[29].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[29] |   61 |    17 |    no |
+|    20 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[30].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[30] |   61 |    19 |    no |
+|    21 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[31].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[31] |   61 |    16 |    no |
 |    22 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[32].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[32] |   61 |    16 |    no |
 |    23 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[33].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[33] |   61 |    16 |    no |
-|    24 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[34].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[34] |   61 |    16 |    no |
-|    25 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[35].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[35] |   61 |    17 |    no |
-|    26 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[0].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[0]  |  254 |    63 |    no |
-|    27 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[10].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[10] |  254 |    63 |    no |
-|    28 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[11].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[11] |  254 |    62 |    no |
-|    29 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[1].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[1]  |  254 |    63 |    no |
-|    30 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[2].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[2]  |  254 |    62 |    no |
-|    31 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[3].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[3]  |  254 |    66 |    no |
+|    24 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[34].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[34] |   61 |    18 |    no |
+|    25 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[35].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[35] |   61 |    16 |    no |
+|    26 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[0].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[0]  |  254 |    62 |    no |
+|    27 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[10].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[10] |  254 |    66 |    no |
+|    28 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[11].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[11] |  254 |    60 |    no |
+|    29 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[1].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[1]  |  254 |    65 |    no |
+|    30 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[2].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[2]  |  254 |    61 |    no |
+|    31 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[3].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[3]  |  254 |    61 |    no |
 |    32 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[4].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[4]  |  254 |    62 |    no |
-|    33 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[5].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[5]  |  254 |    70 |    no |
-|    34 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[6].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[6]  |  254 |    63 |    no |
-|    35 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[7].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[7]  |  254 |    68 |    no |
-|    36 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[8].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[8]  |  254 |    67 |    no |
-|    37 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[9].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[9]  |  254 |    64 |    no |
-|    38 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[13].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[13] |  506 |   101 |    no |
+|    33 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[5].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[5]  |  254 |    63 |    no |
+|    34 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[7].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[7]  |  254 |    64 |    no |
+|    35 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[8].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[8]  |  254 |    68 |    no |
+|    36 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[9].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[9]  |  254 |    65 |    no |
+|    37 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[13].i_bufh_rx_outclk | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[13] |  506 |   115 |    no |
+|    38 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[6].i_bufh_rx_outclk  | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[6]  |  886 |   246 |    no |
 +-------+--------------------------------------------------------------------+----------------------------------------------------------+------+-------+-------+
 
 
@@ -198,6 +198,17 @@ Table of Contents
 |    41 | i_gth_wrapper/i_gth_clk_bufs/gen_ibufds_F_clk_gte2[3].i_ibufds_F_0                                                                                                               | i_gth_wrapper/i_gth_clk_bufs/refclk_F_0_o[3]                                                                                                                |    8 |     8 |   yes |
 |    42 | i_gth_wrapper/i_gth_clk_bufs/gen_ibufds_F_clk_gte2[1].i_ibufds_F_0                                                                                                               | i_gth_wrapper/i_gth_clk_bufs/refclk_F_0_o[1]                                                                                                                |   12 |    12 |   yes |
 |    43 | i_gth_wrapper/i_gth_clk_bufs/gen_ibufds_F_clk_gte2[2].i_ibufds_F_0                                                                                                               | i_gth_wrapper/i_gth_clk_bufs/refclk_F_0_o[2]                                                                                                                |   12 |    12 |   yes |
+|    44 | i_1                                                                                                                                                                              | oh_reg_request_arr[10][axi_reg_clk]                                                                                                                         |   76 |    25 |    no |
+|    45 | i_0                                                                                                                                                                              | oh_reg_request_arr[11][axi_reg_clk]                                                                                                                         |   76 |    24 |    no |
+|    46 | i_10                                                                                                                                                                             | oh_reg_request_arr[1][axi_reg_clk]                                                                                                                          |   76 |    25 |    no |
+|    47 | i_9                                                                                                                                                                              | oh_reg_request_arr[2][axi_reg_clk]                                                                                                                          |   76 |    24 |    no |
+|    48 | i_8                                                                                                                                                                              | oh_reg_request_arr[3][axi_reg_clk]                                                                                                                          |   76 |    29 |    no |
+|    49 | i_7                                                                                                                                                                              | oh_reg_request_arr[4][axi_reg_clk]                                                                                                                          |   76 |    26 |    no |
+|    50 | i_6                                                                                                                                                                              | oh_reg_request_arr[5][axi_reg_clk]                                                                                                                          |   76 |    24 |    no |
+|    51 | i_4                                                                                                                                                                              | oh_reg_request_arr[7][axi_reg_clk]                                                                                                                          |   76 |    23 |    no |
+|    52 | i_3                                                                                                                                                                              | oh_reg_request_arr[8][axi_reg_clk]                                                                                                                          |   76 |    23 |    no |
+|    53 | i_2                                                                                                                                                                              | oh_reg_request_arr[9][axi_reg_clk]                                                                                                                          |   76 |    23 |    no |
+|    54 | i_5                                                                                                                                                                              | oh_reg_request_arr[6][axi_reg_clk]                                                                                                                          |  713 |   178 |    no |
 +-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------+-------+
 
 
@@ -210,25 +221,25 @@ Table of Contents
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 42400 |    0 |  7400 |    0 |   140 |    0 |    70 |    0 |   140 |
-| X1Y0              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 3063 | 46400 |    0 | 10200 |    4 |   160 |    5 |    80 |    0 |   220 |
+| X1Y0              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 3783 | 46400 |    0 | 10200 |    4 |   160 |    5 |    80 |    0 |   220 |
 | X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 42400 |    0 |  7400 |    0 |   140 |    0 |    70 |    0 |   140 |
-| X1Y1              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 3158 | 44400 |    0 |  9900 |    4 |   150 |    4 |    75 |    0 |   220 |
+| X1Y1              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 8170 | 44400 | 2141 |  9900 |    5 |   150 |    7 |    75 |    0 |   220 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 42400 |    0 |  7400 |    0 |   140 |    0 |    70 |    0 |   140 |
-| X1Y2              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 2994 | 44400 |    0 |  9900 |    4 |   150 |    3 |    75 |    0 |   220 |
+| X1Y2              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 9153 | 44400 | 1698 |  9900 |    5 |   150 |    5 |    75 |    0 |   220 |
 | X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 42400 |    0 |  7400 |    0 |   140 |    0 |    70 |    0 |   140 |
-| X1Y3              |    8 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 3774 | 46400 |  249 | 10200 |    1 |   160 |    1 |    80 |    0 |   220 |
+| X1Y3              |    9 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 7943 | 46400 |  807 | 10200 |    1 |   160 |    3 |    80 |    0 |   220 |
 | X0Y4              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 37600 |    0 |  7400 |    0 |   140 |    0 |    70 |    0 |   140 |
-| X1Y4              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 6167 | 44400 |   95 |  9900 |    0 |   150 |   16 |    75 |    0 |   220 |
-| X0Y5              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |  757 | 37600 |    4 |  7400 |    1 |   140 |    0 |    70 |    0 |   140 |
-| X1Y5              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 4028 | 44400 |  246 |  9900 |    0 |   150 |    0 |    75 |    0 |   220 |
-| X0Y6              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |   15 |    50 |   16 |    50 |  440 | 42400 |   14 |  7400 |    0 |   140 |    0 |    70 |    0 |   140 |
-| X1Y6              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 1453 | 46400 |    0 | 10200 |    0 |   160 |    0 |    80 |    0 |   220 |
+| X1Y4              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 5464 | 44400 |  260 |  9900 |    0 |   150 |   14 |    75 |    0 |   220 |
+| X0Y5              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |  684 | 37600 |   16 |  7400 |    1 |   140 |    0 |    70 |    0 |   140 |
+| X1Y5              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 1993 | 44400 |   81 |  9900 |    0 |   150 |    0 |    75 |    0 |   220 |
+| X0Y6              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |   15 |    50 |   16 |    50 |  512 | 42400 |    2 |  7400 |    0 |   140 |    0 |    70 |    0 |   140 |
+| X1Y6              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 1456 | 46400 |    0 | 10200 |    0 |   160 |    0 |    80 |    0 |   220 |
 | X0Y7              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    1 |    50 |    0 |    50 |    0 | 42400 |    0 |  7400 |    0 |   140 |    0 |    70 |    0 |   140 |
-| X1Y7              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 1446 | 44400 |    0 |  9900 |    0 |   150 |    0 |    75 |    0 |   220 |
+| X1Y7              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 1377 | 44400 |    0 |  9900 |    0 |   150 |    0 |    75 |    0 |   220 |
 | X0Y8              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 42400 |    0 |  7400 |    0 |   140 |    0 |    70 |    0 |   140 |
-| X1Y8              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 1475 | 44400 |    0 |  9900 |    0 |   150 |    0 |    75 |    0 |   220 |
+| X1Y8              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    4 |     5 |    0 |     0 |    0 |    50 |    0 |    50 | 1439 | 44400 |    0 |  9900 |    0 |   150 |    0 |    75 |    0 |   220 |
 | X0Y9              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |   16 | 42400 |    0 |  7400 |    0 |   140 |    0 |    70 |    0 |   140 |
-| X1Y9              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |   41 | 46400 |    0 | 10200 |    0 |   160 |    0 |    80 |    0 |   220 |
+| X1Y9              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |    7 | 46400 |    0 | 10200 |    0 |   160 |    0 |    80 |    0 |   220 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * RAMB36 site can be used as two RAMB18/FIFO18 sites.
 
@@ -243,8 +254,8 @@ Table of Contents
 | BUFH        |     ---     |   no  |         0 |        0 |       2 |         1 |       0 |       0 |  252 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[1] |
 | BUFH        |     ---     |   no  |         0 |        0 |       2 |         1 |       0 |       0 |  252 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[2] |
 | BUFH        |     ---     |   no  |         0 |        0 |       2 |         1 |       0 |       0 |  252 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[3] |
-| BUFG        | BUFHCE_X1Y8 |   no  |         0 |        0 |       8 |         5 |       0 |       0 |  677 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0] |
-| BUFGCTRL    | BUFHCE_X1Y9 |   no  |         0 |        0 |       8 |         9 |       0 |       0 | 1378 |     0 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                         |
+| BUFG        | BUFHCE_X1Y8 |   no  |         0 |        0 |       8 |         5 |       0 |       0 |  836 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0] |
+| BUFGCTRL    | BUFHCE_X1Y9 |   no  |         0 |        0 |       8 |         2 |       0 |       0 | 1642 |     0 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                         |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------------------------+
 
 
@@ -256,10 +267,10 @@ Table of Contents
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------------------------+
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         1 |       0 |       0 |  252 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[4] |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         1 |       0 |       0 |  252 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[5] |
-| BUFH        |      ---     |   no  |         0 |        0 |       2 |         1 |       0 |       0 |  252 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[6] |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         1 |       0 |       0 |  252 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[7] |
-| BUFG        | BUFHCE_X1Y20 |   no  |         0 |        0 |       8 |         4 |       0 |       0 |  626 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0] |
-| BUFGCTRL    | BUFHCE_X1Y21 |   no  |         0 |        0 |       8 |         8 |       0 |       0 | 1524 |     0 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                         |
+| BUFG        | BUFHCE_X1Y20 |   no  |         0 |        0 |       8 |         4 |       0 |       0 |  638 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0] |
+| BUFH        |      ---     |   no  |         0 |        0 |       2 |         3 |       0 |       0 |  829 |    53 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[6] |
+| BUFGCTRL    | BUFHCE_X1Y21 |   no  |         0 |        0 |       8 |         4 |       0 |       0 | 5531 |  2016 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                         |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------------------------+
 
 
@@ -269,12 +280,13 @@ Table of Contents
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------+
 | Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                      Clock Net Name                      |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------+
+| BUFG        | BUFHCE_X1Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  130 |     0 |        0 | dbg_hub/inst/idrck                                       |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         1 |       0 |       0 |  252 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[10] |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         1 |       0 |       0 |  252 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[11] |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         1 |       0 |       0 |  252 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[8]  |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         1 |       0 |       0 |  252 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[9]  |
-| BUFG        | BUFHCE_X1Y32 |   no  |         0 |        0 |       8 |         3 |       0 |       0 |  521 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0]  |
-| BUFGCTRL    | BUFHCE_X1Y33 |   no  |         0 |        0 |       8 |         7 |       0 |       0 | 1465 |     0 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                          |
+| BUFG        | BUFHCE_X1Y33 |   no  |         0 |        0 |       8 |         5 |       0 |       0 |  884 |    45 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0]  |
+| BUFGCTRL    | BUFHCE_X1Y26 |   no  |         0 |        0 |       8 |         3 |       0 |       0 | 6534 |  1626 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                          |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------+
 
 
@@ -288,10 +300,11 @@ Table of Contents
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[12]                                                                                           |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[14]                                                                                           |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[15]                                                                                           |
-| BUFG        | BUFHCE_X1Y38 |   no  |         0 |        0 |       8 |         0 |       0 |       0 |  192 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0] |
-| BUFG        | BUFHCE_X1Y44 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  247 |    24 |        0 | dbg_hub/inst/idrck                                                                                                                                 |
+| BUFG        | BUFHCE_X1Y44 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  123 |    24 |        0 | dbg_hub/inst/idrck                                                                                                                                 |
+| BUFG        | BUFHCE_X1Y38 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  163 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0]                                                                                            |
+| BUFG        | BUFHCE_X1Y39 |   no  |         0 |        0 |       8 |         0 |       0 |       0 |  188 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0] |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         2 |       0 |       0 |  455 |    48 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[13]                                                                                           |
-| BUFGCTRL    | BUFHCE_X1Y39 |   no  |         0 |        0 |       8 |         2 |       0 |       0 | 2699 |   177 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
+| BUFGCTRL    | BUFHCE_X1Y40 |   no  |         0 |        0 |       8 |         6 |       0 |       0 | 6794 |   735 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -316,9 +329,9 @@ Table of Contents
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[17]                                                                                           |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[18]                                                                                           |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[19]                                                                                           |
-| BUFG        | BUFHCE_X1Y56 |   no  |         0 |        0 |       8 |         0 |       0 |       0 |  176 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0] |
-| BUFG        | BUFHCE_X1Y50 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  378 |     1 |        0 | i_ctp7_ttc/i_ctp7_ttc_clocks/s_ttc_clks[clk_40]                                                                                                    |
-| BUFGCTRL    | BUFHCE_X1Y57 |   no  |         0 |        0 |       8 |        32 |       0 |       0 | 5373 |    94 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
+| BUFG        | BUFHCE_X1Y56 |   no  |         0 |        0 |       8 |         0 |       0 |       0 |  192 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0] |
+| BUFG        | BUFHCE_X1Y50 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  378 |     1 |        0 | i_ctp7_ttc/i_ctp7_ttc_clocks/clk_40_i                                                                                                              |
+| BUFGCTRL    | BUFHCE_X1Y57 |   no  |         0 |        0 |       8 |        28 |       0 |       0 | 4654 |   259 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -328,8 +341,8 @@ Table of Contents
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 | Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                                                                   Clock Net Name                                                                   |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| BUFGCTRL    | BUFHCE_X0Y68 |   no  |         0 |        0 |       0 |         1 |       0 |       0 | 255 |     4 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
-| BUFG        | BUFHCE_X0Y69 |   no  |         0 |        0 |       0 |         1 |       0 |       0 | 502 |     0 |        0 | i_v7_bd/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/slave_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/CLK |
+| BUFGCTRL    | BUFHCE_X0Y68 |   no  |         0 |        0 |       0 |         1 |       0 |       0 | 183 |    16 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
+| BUFG        | BUFHCE_X0Y69 |   no  |         0 |        0 |       0 |         1 |       0 |       0 | 501 |     0 |        0 | i_v7_bd/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/slave_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/CLK |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -343,9 +356,9 @@ Table of Contents
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[21]                                                                                           |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[22]                                                                                           |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[23]                                                                                           |
-| BUFG        | BUFHCE_X1Y62 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  162 |    32 |        0 | i_v7_bd/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/slave_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/CLK |
-| BUFG        | BUFHCE_X1Y68 |   no  |         0 |        0 |       8 |         0 |       0 |       0 |  200 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0] |
-| BUFGCTRL    | BUFHCE_X1Y69 |   no  |         0 |        0 |       8 |         0 |       0 |       0 | 3426 |   214 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
+| BUFG        | BUFHCE_X1Y62 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  163 |    32 |        0 | i_v7_bd/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/slave_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/CLK |
+| BUFG        | BUFHCE_X1Y68 |   no  |         0 |        0 |       8 |         0 |       0 |       0 |  184 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0] |
+| BUFGCTRL    | BUFHCE_X1Y69 |   no  |         0 |        0 |       8 |         0 |       0 |       0 | 1406 |    49 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -356,7 +369,7 @@ Table of Contents
 | Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                                                                        Clock Net Name                                                                        |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | BUFG        | BUFHCE_X0Y72 |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | i_v7_bd/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/slave_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/clkfbout_bufg |
-| BUFGCTRL    | BUFHCE_X0Y80 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   5 |    12 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                              |
+| BUFGCTRL    | BUFHCE_X0Y80 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  77 |     0 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                              |
 | BUFG        | BUFHCE_X0Y83 |   no  |         0 |        0 |       0 |         0 |      15 |      16 | 435 |     2 |        0 | i_v7_bd/axi_chip2chip_0/inst/slave_fpga_gen.axi_chip2chip_slave_phy_inst/slave_sio_phy.axi_chip2chip_sio_input_inst/axi_chip2chip_clk_gen_inst/CLK           |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -367,39 +380,39 @@ Table of Contents
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 | Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                                                                   Clock Net Name                                                                   |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| BUFG        | BUFHCE_X1Y74 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    1 |     0 |        0 | i_ctp7_ttc/i_ctp7_ttc_clocks/s_ttc_clks[clk_40]                                                                                                    |
+| BUFG        | BUFHCE_X1Y74 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    1 |     0 |        0 | i_ctp7_ttc/i_ctp7_ttc_clocks/clk_40_i                                                                                                              |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[24]                                                                                           |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[25]                                                                                           |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[26]                                                                                           |
 | BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[27]                                                                                           |
-| BUFG        | BUFHCE_X1Y80 |   no  |         0 |        0 |       8 |         0 |       0 |       0 |  184 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0] |
-| BUFGCTRL    | BUFHCE_X1Y81 |   no  |         0 |        0 |       8 |         0 |       0 |       0 | 1028 |     0 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
+| BUFG        | BUFHCE_X1Y80 |   no  |         0 |        0 |       8 |         0 |       0 |       0 |  188 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0] |
+| BUFGCTRL    | BUFHCE_X1Y81 |   no  |         0 |        0 |       8 |         0 |       0 |       0 | 1027 |     0 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 18. Net wise resources used in clock region X0Y7
 ------------------------------------------------
 
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------+
-| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                  Clock Net Name                 |
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------+
-| BUFG        | BUFHCE_X0Y95 |   no  |         0 |        0 |       0 |         0 |       1 |       0 |   0 |     0 |        0 | i_ctp7_ttc/i_ctp7_ttc_clocks/s_ttc_clks[clk_40] |
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |             Clock Net Name            |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------+
+| BUFG        | BUFHCE_X0Y95 |   no  |         0 |        0 |       0 |         0 |       1 |       0 |   0 |     0 |        0 | i_ctp7_ttc/i_ctp7_ttc_clocks/clk_40_i |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------+
 
 
 19. Net wise resources used in clock region X1Y7
 ------------------------------------------------
 
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                                                                   Clock Net Name                                                                   |
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[28]                                                                                           |
-| BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[29]                                                                                           |
-| BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[30]                                                                                           |
-| BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[31]                                                                                           |
-| BUFG        | BUFHCE_X1Y92 |   no  |         0 |        0 |       8 |         0 |       0 |       0 |  188 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0] |
-| BUFGCTRL    | BUFHCE_X1Y93 |   no  |         0 |        0 |       8 |         0 |       0 |       0 | 1018 |     0 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                                                                   Clock Net Name                                                                   |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+| BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |  60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[28]                                                                                           |
+| BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |  60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[29]                                                                                           |
+| BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |  60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[30]                                                                                           |
+| BUFH        |      ---     |   no  |         0 |        0 |       2 |         0 |       0 |       0 |  60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[31]                                                                                           |
+| BUFG        | BUFHCE_X1Y92 |   no  |         0 |        0 |       8 |         0 |       0 |       0 | 188 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0] |
+| BUFGCTRL    | BUFHCE_X1Y93 |   no  |         0 |        0 |       8 |         0 |       0 |       0 | 949 |     0 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 20. Net wise resources used in clock region X1Y8
@@ -413,7 +426,7 @@ Table of Contents
 | BUFH        |      ---      |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[34]                                                                                           |
 | BUFH        |      ---      |   no  |         0 |        0 |       2 |         0 |       0 |       0 |   60 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[35]                                                                                           |
 | BUFG        | BUFHCE_X1Y104 |   no  |         0 |        0 |       8 |         0 |       0 |       0 |  188 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0] |
-| BUFGCTRL    | BUFHCE_X1Y105 |   no  |         0 |        0 |       8 |         0 |       0 |       0 | 1047 |     0 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
+| BUFGCTRL    | BUFHCE_X1Y105 |   no  |         0 |        0 |       8 |         0 |       0 |       0 | 1011 |     0 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                                    |
 +-------------+---------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -435,7 +448,7 @@ Table of Contents
 | Source Type | BUFHCE Site   | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                                                         Clock Net Name                                                         |
 +-------------+---------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------------------------------------------------------------------------------------+
 | BUFG        | BUFHCE_X1Y108 |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clkin1 |
-| BUFGCTRL    | BUFHCE_X1Y116 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  41 |     0 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                |
+| BUFGCTRL    | BUFHCE_X1Y116 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   7 |     0 |        0 | i_v7_bd/clk_wiz_0/inst/clk_out2                                                                                                |
 +-------------+---------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -443,8 +456,8 @@ Table of Contents
 # Location of BUFG Primitives 
 set_property LOC BUFGCTRL_X0Y17 [get_cells dbg_hub/inst/N_EXT_BSCAN.u_bufg_icon_update]
 set_property LOC BUFGCTRL_X0Y16 [get_cells dbg_hub/inst/N_EXT_BSCAN.u_bufg_icon]
-set_property LOC BUFGCTRL_X0Y2 [get_cells i_ctp7_ttc/i_ctp7_ttc_clocks/i_bufg_clk_fb]
 set_property LOC BUFGCTRL_X0Y3 [get_cells i_ctp7_ttc/i_ctp7_ttc_clocks/i_bufg_clk_40]
+set_property LOC BUFGCTRL_X0Y2 [get_cells i_ctp7_ttc/i_ctp7_ttc_clocks/i_bufg_clk_fb]
 set_property LOC BUFGCTRL_X0Y1 [get_cells i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[0].gen_gth_3p2g_txuserclk.gen_gth_3p2g_txuserclk_master.i_bufg_3p2g_tx_outclk]
 set_property LOC BUFGCTRL_X0Y27 [get_cells i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clkout0_buf]
 set_property LOC BUFGCTRL_X0Y0 [get_cells i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clkin1_buf]
@@ -527,14 +540,14 @@ resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/UPDATE_temp}] -add {CLOCKREGION_X
 #startgroup
 create_pblock {CLKAG_dbg_hub/inst/idrck}
 add_cells_to_pblock [get_pblocks  {CLKAG_dbg_hub/inst/idrck}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dbg_hub/inst/idrck"}]]]
-resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/idrck}] -add {CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/idrck}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup
 
-# Clock net "i_ctp7_ttc/i_ctp7_ttc_clocks/s_ttc_clks[clk_40]" driven by instance "i_ctp7_ttc/i_ctp7_ttc_clocks/i_bufg_clk_40" located at site "BUFGCTRL_X0Y3"
+# Clock net "i_ctp7_ttc/i_ctp7_ttc_clocks/clk_40_i" driven by instance "i_ctp7_ttc/i_ctp7_ttc_clocks/i_bufg_clk_40" located at site "BUFGCTRL_X0Y3"
 #startgroup
-create_pblock {CLKAG_i_ctp7_ttc/i_ctp7_ttc_clocks/s_ttc_clks[clk_40]}
-add_cells_to_pblock [get_pblocks  {CLKAG_i_ctp7_ttc/i_ctp7_ttc_clocks/s_ttc_clks[clk_40]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="i_ctp7_ttc/i_ctp7_ttc_clocks/s_ttc_clks[clk_40]"}]]]
-resize_pblock [get_pblocks {CLKAG_i_ctp7_ttc/i_ctp7_ttc_clocks/s_ttc_clks[clk_40]}] -add {CLOCKREGION_X0Y7:CLOCKREGION_X0Y7 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+create_pblock {CLKAG_i_ctp7_ttc/i_ctp7_ttc_clocks/clk_40_i}
+add_cells_to_pblock [get_pblocks  {CLKAG_i_ctp7_ttc/i_ctp7_ttc_clocks/clk_40_i}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="i_ctp7_ttc/i_ctp7_ttc_clocks/clk_40_i"}]]]
+resize_pblock [get_pblocks {CLKAG_i_ctp7_ttc/i_ctp7_ttc_clocks/clk_40_i}] -add {CLOCKREGION_X0Y7:CLOCKREGION_X0Y7 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
 #endgroup
 
 # Clock net "i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk_arr_o[0]" driven by instance "i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[0].i_bufh_rx_outclk" located at site "BUFHCE_X1Y0"
@@ -793,7 +806,7 @@ resize_pblock [get_pblocks {CLKAG_i_gth_wrapper/i_gth_clk_bufs/clk_gth_rx_usrclk
 #startgroup
 create_pblock {CLKAG_i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0]}
 add_cells_to_pblock [get_pblocks  {CLKAG_i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0]"}]]]
-resize_pblock [get_pblocks {CLKAG_i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+resize_pblock [get_pblocks {CLKAG_i_gth_wrapper/i_gth_clk_bufs/clk_gth_tx_usrclk_arr_o[0]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup
 
 # Clock net "i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clk_gth_tx_usrclk_arr_o[0]" driven by instance "i_gth_wrapper/i_gth_clk_bufs/gen_bufh_outclks[12].gen_gth_4p8g_txuserclk.gen_gth_4p8g_txuserclk_master.txoutclk_mmcm0_i/clkout0_buf" located at site "BUFGCTRL_X0Y27"
@@ -864,4 +877,81 @@ resize_pblock [get_pblocks {CLKAG_i_v7_bd/clk_wiz_0/inst/clk_out2}] -add {CLOCKR
 create_pblock {CLKAG_i_v7_bd/clk_wiz_0/inst/clk_out2_v7_bd_clk_wiz_0_0_en_clk}
 add_cells_to_pblock [get_pblocks  {CLKAG_i_v7_bd/clk_wiz_0/inst/clk_out2_v7_bd_clk_wiz_0_0_en_clk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="i_v7_bd/clk_wiz_0/inst/clk_out2_v7_bd_clk_wiz_0_0_en_clk"}]]]
 resize_pblock [get_pblocks {CLKAG_i_v7_bd/clk_wiz_0/inst/clk_out2_v7_bd_clk_wiz_0_0_en_clk}] -add {CLOCKREGION_X0Y9:CLOCKREGION_X0Y9}
+#endgroup
+
+# Clock net "oh_reg_request_arr[10][axi_reg_clk]" driven by instance "i_1" located at site "SLICE_X204Y126"
+#startgroup
+create_pblock {CLKAG_oh_reg_request_arr[10][axi_reg_clk]}
+add_cells_to_pblock [get_pblocks  {CLKAG_oh_reg_request_arr[10][axi_reg_clk]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="oh_reg_request_arr[10][axi_reg_clk]"}]]]
+resize_pblock [get_pblocks {CLKAG_oh_reg_request_arr[10][axi_reg_clk]}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "oh_reg_request_arr[11][axi_reg_clk]" driven by instance "i_0" located at site "SLICE_X208Y146"
+#startgroup
+create_pblock {CLKAG_oh_reg_request_arr[11][axi_reg_clk]}
+add_cells_to_pblock [get_pblocks  {CLKAG_oh_reg_request_arr[11][axi_reg_clk]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="oh_reg_request_arr[11][axi_reg_clk]"}]]]
+resize_pblock [get_pblocks {CLKAG_oh_reg_request_arr[11][axi_reg_clk]}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "oh_reg_request_arr[1][axi_reg_clk]" driven by instance "i_10" located at site "SLICE_X197Y33"
+#startgroup
+create_pblock {CLKAG_oh_reg_request_arr[1][axi_reg_clk]}
+add_cells_to_pblock [get_pblocks  {CLKAG_oh_reg_request_arr[1][axi_reg_clk]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="oh_reg_request_arr[1][axi_reg_clk]"}]]]
+resize_pblock [get_pblocks {CLKAG_oh_reg_request_arr[1][axi_reg_clk]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "oh_reg_request_arr[2][axi_reg_clk]" driven by instance "i_9" located at site "SLICE_X196Y33"
+#startgroup
+create_pblock {CLKAG_oh_reg_request_arr[2][axi_reg_clk]}
+add_cells_to_pblock [get_pblocks  {CLKAG_oh_reg_request_arr[2][axi_reg_clk]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="oh_reg_request_arr[2][axi_reg_clk]"}]]]
+resize_pblock [get_pblocks {CLKAG_oh_reg_request_arr[2][axi_reg_clk]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "oh_reg_request_arr[3][axi_reg_clk]" driven by instance "i_8" located at site "SLICE_X194Y49"
+#startgroup
+create_pblock {CLKAG_oh_reg_request_arr[3][axi_reg_clk]}
+add_cells_to_pblock [get_pblocks  {CLKAG_oh_reg_request_arr[3][axi_reg_clk]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="oh_reg_request_arr[3][axi_reg_clk]"}]]]
+resize_pblock [get_pblocks {CLKAG_oh_reg_request_arr[3][axi_reg_clk]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "oh_reg_request_arr[4][axi_reg_clk]" driven by instance "i_7" located at site "SLICE_X187Y45"
+#startgroup
+create_pblock {CLKAG_oh_reg_request_arr[4][axi_reg_clk]}
+add_cells_to_pblock [get_pblocks  {CLKAG_oh_reg_request_arr[4][axi_reg_clk]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="oh_reg_request_arr[4][axi_reg_clk]"}]]]
+resize_pblock [get_pblocks {CLKAG_oh_reg_request_arr[4][axi_reg_clk]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "oh_reg_request_arr[5][axi_reg_clk]" driven by instance "i_6" located at site "SLICE_X191Y51"
+#startgroup
+create_pblock {CLKAG_oh_reg_request_arr[5][axi_reg_clk]}
+add_cells_to_pblock [get_pblocks  {CLKAG_oh_reg_request_arr[5][axi_reg_clk]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="oh_reg_request_arr[5][axi_reg_clk]"}]]]
+resize_pblock [get_pblocks {CLKAG_oh_reg_request_arr[5][axi_reg_clk]}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "oh_reg_request_arr[6][axi_reg_clk]" driven by instance "i_5" located at site "SLICE_X157Y96"
+#startgroup
+create_pblock {CLKAG_oh_reg_request_arr[6][axi_reg_clk]}
+add_cells_to_pblock [get_pblocks  {CLKAG_oh_reg_request_arr[6][axi_reg_clk]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="oh_reg_request_arr[6][axi_reg_clk]"}]]]
+resize_pblock [get_pblocks {CLKAG_oh_reg_request_arr[6][axi_reg_clk]}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "oh_reg_request_arr[7][axi_reg_clk]" driven by instance "i_4" located at site "SLICE_X195Y63"
+#startgroup
+create_pblock {CLKAG_oh_reg_request_arr[7][axi_reg_clk]}
+add_cells_to_pblock [get_pblocks  {CLKAG_oh_reg_request_arr[7][axi_reg_clk]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="oh_reg_request_arr[7][axi_reg_clk]"}]]]
+resize_pblock [get_pblocks {CLKAG_oh_reg_request_arr[7][axi_reg_clk]}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "oh_reg_request_arr[8][axi_reg_clk]" driven by instance "i_3" located at site "SLICE_X193Y63"
+#startgroup
+create_pblock {CLKAG_oh_reg_request_arr[8][axi_reg_clk]}
+add_cells_to_pblock [get_pblocks  {CLKAG_oh_reg_request_arr[8][axi_reg_clk]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="oh_reg_request_arr[8][axi_reg_clk]"}]]]
+resize_pblock [get_pblocks {CLKAG_oh_reg_request_arr[8][axi_reg_clk]}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "oh_reg_request_arr[9][axi_reg_clk]" driven by instance "i_2" located at site "SLICE_X193Y121"
+#startgroup
+create_pblock {CLKAG_oh_reg_request_arr[9][axi_reg_clk]}
+add_cells_to_pblock [get_pblocks  {CLKAG_oh_reg_request_arr[9][axi_reg_clk]}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="oh_reg_request_arr[9][axi_reg_clk]"}]]]
+resize_pblock [get_pblocks {CLKAG_oh_reg_request_arr[9][axi_reg_clk]}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup
