@@ -1,6 +1,12 @@
+2015.4:
+ * Version 13.0 (Rev. 1)
+ * Fixed safety circuit related warnings in Behavioral model
+ * Revision change in one or more subcores
+
 2015.3:
  * Version 13.0
- * Asynchronous reset support is removed
+ * Additional safety circuit option provided for asynchronous reset configurations.
+ * Delivering only VHDL behavioral model.
  * Added asymmetric port width support for 7-series Common Clock Block RAM FIFO
  * IP revision number added to HDL module, library, and include file names, to support designs with both locked and upgraded IP instances
 

@@ -13,13 +13,15 @@ set_property webtalk.parent_dir /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.cache/
 set_property parent.project_path /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_repo_paths /home/evka/code/ip_repo/myip_1.0 [current_project]
+set_property ip_repo_paths {
+  /home/evka/code/tamu_ctp7_v7/ip/registers_1.0
+  /home/evka/code/ip_repo/myip_1.0
+} [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]
 read_ip /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/playback_capture_ram.xci
-set_property used_in_implementation false [get_files -all /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/playback_capture_ram.dcp]
 set_property is_locked true [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/playback_capture_ram.xci]
 
-synth_design -top playback_capture_ram -part xc7vx690tffg1927-2 -fanout_limit 400 -keep_equivalent_registers -no_lc -shreg_min_size 5 -mode out_of_context
+synth_design -top playback_capture_ram -part xc7vx690tffg1927-2 -mode out_of_context
 rename_ref -prefix_all playback_capture_ram_
 write_checkpoint -noxdef playback_capture_ram.dcp
 catch { report_utilization -file playback_capture_ram_utilization_synth.rpt -pb playback_capture_ram_utilization_synth.pb }

@@ -1,32 +1,140 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <wave_config>
-	<wave_state>
-	</wave_state>
-	<db_ref_list>
-		<db_ref path="/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1" type="auto">
-			<top_modules>
-				<top_module name="top">
-				</top_module>
-			</top_modules>
-		</db_ref>
-	</db_ref_list>
-	<WVObjectSize size="4">
-	</WVObjectSize>
-	<wvobject fp_name="i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_playback_data" type="array" db_ref_id="1">
-		<obj_property name="ElementShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_playback_data[15:0]</obj_property>
-		<obj_property name="ObjectShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_playback_data[15:0]</obj_property>
-	</wvobject>
-	<wvobject fp_name="i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_playback_charisk" type="array" db_ref_id="1">
-		<obj_property name="ElementShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_playback_charisk[1:0]</obj_property>
-		<obj_property name="ObjectShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_playback_charisk[1:0]</obj_property>
-	</wvobject>
-	<wvobject fp_name="i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_rx_data" type="array" db_ref_id="1">
-		<obj_property name="ElementShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_rx_data[15:0]</obj_property>
-		<obj_property name="ObjectShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_rx_data[15:0]</obj_property>
-	</wvobject>
-	<wvobject fp_name="i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_rx_charisk" type="array" db_ref_id="1">
-		<obj_property name="ElementShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_rx_charisk[1:0]</obj_property>
-		<obj_property name="ObjectShortName">i_io_link_3p2g_demo_ctrl/gen_io_link_3p2g_demo[6].i_io_link_3p2g_demo/s_rx_charisk[1:0]</obj_property>
-	</wvobject>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="36891fs"></ZoomEndTime>
+      <Cursor1Time time="9000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="27" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" type="array" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_ARADDR">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_ARADDR[26:0]</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_ARADDR[26:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_ARESETN">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_ARESETN</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_ARPROT">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_ARPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_ARPROT[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_ARVALID">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_ARVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_AWADDR">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_AWADDR[26:0]</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_AWADDR[26:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_AWPROT">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_AWPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_AWPROT[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_AWVALID">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_AWVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_BREADY">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_BREADY</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_BREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_RREADY">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_RREADY</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_RREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_WDATA">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_WSTRB">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_WSTRB[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_WVALID">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/S_AXI_WVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_araddr">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_araddr[26:0]</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_araddr[26:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_arready">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_arready</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_arready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_awaddr">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_awaddr[26:0]</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_awaddr[26:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_awready">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_awready</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_awready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_bresp">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_bresp[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_bvalid">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_rdata">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_rdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_rresp">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_rresp[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_rvalid">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_wready">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_wready</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/axi_wready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/slv_reg_rd_data_1">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/slv_reg_rd_data_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/slv_reg_rd_data_1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/slv_reg_rden">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/slv_reg_rden</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/slv_reg_rden</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/slv_reg_wr_data">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/slv_reg_wr_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/slv_reg_wr_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/slv_reg_wren">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/slv_reg_wren</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/slv_reg_wren</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/write_fifo_empty_1">
+      <obj_property name="ElementShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/write_fifo_empty_1</obj_property>
+      <obj_property name="ObjectShortName">i_v7_bd/registers_0/U0/registers_v1_0_AXI_inst/write_fifo_empty_1</obj_property>
+   </wvobject>
 </wave_config>
-

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1460217831">
+<GenRun Id="impl_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1460402752">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RDI-RDI" Name="tamu_ctp7_v7.vdi"/>
   <File Type="BG-DRC" Name="tamu_ctp7_v7.drc"/>
@@ -374,6 +374,28 @@
         <Attr Name="ImportTime" Val="1460081934"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/playback_capture_ram/ip/playback_capture_ram/pb_cap_ram.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/fifo_cdc_18b/ip/fifo_cdc_18b/fifo_cdc_18b.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_gtx_rx/fifo_gtx_rx.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx.upgrade_log"/>
+    <File Path="$PSRCDIR/ila_4p8g/ip/ila_4p8g/ila_4p8g.upgrade_log"/>
+    <File Path="$PSRCDIR/playback_capture_ram/ip/playback_capture_ram/playback_capture_ram.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/v7_bd/ip/v7_bd_axi_bram_ctrl_0_0/v7_bd_axi_bram_ctrl_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/v7_bd/ip/v7_bd_axi_bram_ctrl_drp_0/v7_bd_axi_bram_ctrl_drp_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/v7_bd/ip/v7_bd_axi_bram_ctrl_gth_reg_file_0/v7_bd_axi_bram_ctrl_gth_reg_file_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/v7_bd/ip/v7_bd_axi_bram_ctrl_reg_file_0/v7_bd_axi_bram_ctrl_reg_file_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/v7_bd/ip/v7_bd_axi_bram_ctrl_rx_ram_0/v7_bd_axi_bram_ctrl_rx_ram_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/v7_bd/ip/v7_bd_axi_bram_ctrl_tx_ram_0/v7_bd_axi_bram_ctrl_tx_ram_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/v7_bd/ip/v7_bd_axi_chip2chip_0_0/v7_bd_axi_chip2chip_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/v7_bd/ip/v7_bd_axi_interconnect_0_0/v7_bd_axi_interconnect_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/v7_bd/ip/v7_bd_blk_mem_gen_0_0/v7_bd_blk_mem_gen_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/v7_bd/ip/v7_bd_clk_wiz_0_0/v7_bd_clk_wiz_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/vio_4p8g/ip/vio_4p8g/vio_4p8g.upgrade_log"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="tamu_ctp7_v7"/>
@@ -406,8 +428,8 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="fifo_gtx_rx"/>
-  <BlockFileSet Type="BlockSrcs" Name="fifo_gtx_tx"/>
   <BlockFileSet Type="BlockSrcs" Name="vio_4p8g"/>
   <BlockFileSet Type="BlockSrcs" Name="ila_4p8g"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_gtx_tx"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_gtx_rx"/>
 </GenRun>

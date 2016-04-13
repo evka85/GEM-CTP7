@@ -1,3 +1,7 @@
+2015.4:
+ * Version 8.3 (Rev. 1)
+ * Updated the IP to support the device package changes
+
 2015.3:
  * Version 8.3
  * IP revision number added to HDL module, library, and include file names, to support designs with both locked and upgraded IP instances

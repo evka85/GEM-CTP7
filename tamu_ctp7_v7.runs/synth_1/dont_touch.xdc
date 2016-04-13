@@ -30,9 +30,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_axi_chip2
 # IP: bd/v7_bd/ip/v7_bd_axi_interconnect_0_0/v7_bd_axi_interconnect_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_axi_interconnect_0_0 || ORIG_REF_NAME==v7_bd_axi_interconnect_0_0}]
 
-# IP: bd/v7_bd/ip/v7_bd_xbar_0/v7_bd_xbar_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_xbar_0 || ORIG_REF_NAME==v7_bd_xbar_0}]
-
 # IP: bd/v7_bd/ip/v7_bd_blk_mem_gen_0_0/v7_bd_blk_mem_gen_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_blk_mem_gen_0_0 || ORIG_REF_NAME==v7_bd_blk_mem_gen_0_0}]
 
@@ -45,26 +42,23 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_proc_sys_
 # IP: bd/v7_bd/ip/v7_bd_xadc_wiz_0_0/v7_bd_xadc_wiz_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_xadc_wiz_0_0 || ORIG_REF_NAME==v7_bd_xadc_wiz_0_0}]
 
+# IP: bd/v7_bd/ip/v7_bd_xbar_0/v7_bd_xbar_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_xbar_0 || ORIG_REF_NAME==v7_bd_xbar_0}]
+
+# IP: bd/v7_bd/ip/v7_bd_registers_0_0/v7_bd_registers_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_registers_0_0 || ORIG_REF_NAME==v7_bd_registers_0_0}]
+
+# IP: bd/v7_bd/ip/v7_bd_registers_0_0/src/ila_axi_regs/ila_axi_regs.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ila_axi_regs || ORIG_REF_NAME==ila_axi_regs}]
+
+# IP: bd/v7_bd/ip/v7_bd_registers_0_0/src/vio_regs/vio_regs.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==vio_regs || ORIG_REF_NAME==vio_regs}]
+
+# IP: bd/v7_bd/ip/v7_bd_registers_0_0/src/fifo_axi_write_cmds/fifo_axi_write_cmds.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_axi_write_cmds || ORIG_REF_NAME==fifo_axi_write_cmds}]
+
 # IP: bd/v7_bd/ip/v7_bd_auto_pc_0/v7_bd_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_auto_pc_0 || ORIG_REF_NAME==v7_bd_auto_pc_0}]
-
-# IP: bd/v7_bd/ip/v7_bd_auto_pc_1/v7_bd_auto_pc_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_auto_pc_1 || ORIG_REF_NAME==v7_bd_auto_pc_1}]
-
-# IP: bd/v7_bd/ip/v7_bd_auto_pc_2/v7_bd_auto_pc_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_auto_pc_2 || ORIG_REF_NAME==v7_bd_auto_pc_2}]
-
-# IP: bd/v7_bd/ip/v7_bd_auto_pc_3/v7_bd_auto_pc_3.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_auto_pc_3 || ORIG_REF_NAME==v7_bd_auto_pc_3}]
-
-# IP: bd/v7_bd/ip/v7_bd_auto_pc_4/v7_bd_auto_pc_4.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_auto_pc_4 || ORIG_REF_NAME==v7_bd_auto_pc_4}]
-
-# IP: bd/v7_bd/ip/v7_bd_auto_pc_5/v7_bd_auto_pc_5.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_auto_pc_5 || ORIG_REF_NAME==v7_bd_auto_pc_5}]
-
-# IP: bd/v7_bd/ip/v7_bd_auto_pc_6/v7_bd_auto_pc_6.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_auto_pc_6 || ORIG_REF_NAME==v7_bd_auto_pc_6}]
 
 # XDC: bd/v7_bd/ip/v7_bd_axi_bram_ctrl_0_0/v7_bd_axi_bram_ctrl_0_0_ooc.xdc
 
@@ -85,8 +79,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==v7_bd_axi_chip2chip_0_0 || ORIG_REF_NAME==v7_bd_axi_chip2chip_0_0}] {/inst }]/inst ]]
 
 # XDC: bd/v7_bd/ip/v7_bd_axi_chip2chip_0_0/v7_bd_axi_chip2chip_0_0_ooc.xdc
-
-# XDC: bd/v7_bd/ip/v7_bd_xbar_0/v7_bd_xbar_0_ooc.xdc
 
 # XDC: bd/v7_bd/ip/v7_bd_blk_mem_gen_0_0/v7_bd_blk_mem_gen_0_0_ooc.xdc
 
@@ -114,18 +106,26 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/v7_bd/ip/v7_bd_xadc_wiz_0_0/v7_bd_xadc_wiz_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==v7_bd_xadc_wiz_0_0 || ORIG_REF_NAME==v7_bd_xadc_wiz_0_0}] {/U0 }]/U0 ]]
 
+# XDC: bd/v7_bd/ip/v7_bd_xbar_0/v7_bd_xbar_0_ooc.xdc
+
+# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/ila_axi_regs/ila_v6_0/constraints/ila.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ila_axi_regs || ORIG_REF_NAME==ila_axi_regs}]
+
+# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/ila_axi_regs/ila_axi_regs_ooc.xdc
+
+# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/vio_regs/vio_regs.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==vio_regs || ORIG_REF_NAME==vio_regs}]
+
+# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/vio_regs/vio_regs_ooc.xdc
+
+# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/fifo_axi_write_cmds/fifo_axi_write_cmds/fifo_axi_write_cmds_clocks.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_axi_write_cmds || ORIG_REF_NAME==fifo_axi_write_cmds}] {/U0 }]/U0 ]]
+
+# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/fifo_axi_write_cmds/fifo_axi_write_cmds/fifo_axi_write_cmds.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_axi_write_cmds || ORIG_REF_NAME==fifo_axi_write_cmds}] {/U0 }]/U0 ]]
+
+# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/fifo_axi_write_cmds/fifo_axi_write_cmds_ooc.xdc
+
 # XDC: bd/v7_bd/ip/v7_bd_auto_pc_0/v7_bd_auto_pc_0_ooc.xdc
-
-# XDC: bd/v7_bd/ip/v7_bd_auto_pc_1/v7_bd_auto_pc_1_ooc.xdc
-
-# XDC: bd/v7_bd/ip/v7_bd_auto_pc_2/v7_bd_auto_pc_2_ooc.xdc
-
-# XDC: bd/v7_bd/ip/v7_bd_auto_pc_3/v7_bd_auto_pc_3_ooc.xdc
-
-# XDC: bd/v7_bd/ip/v7_bd_auto_pc_4/v7_bd_auto_pc_4_ooc.xdc
-
-# XDC: bd/v7_bd/ip/v7_bd_auto_pc_5/v7_bd_auto_pc_5_ooc.xdc
-
-# XDC: bd/v7_bd/ip/v7_bd_auto_pc_6/v7_bd_auto_pc_6_ooc.xdc
 
 # XDC: bd/v7_bd/v7_bd_ooc.xdc

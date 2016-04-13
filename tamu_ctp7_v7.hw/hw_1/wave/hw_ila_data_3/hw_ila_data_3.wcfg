@@ -10,35 +10,55 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="10651fs"></ZoomEndTime>
+      <ZoomEndTime time="3854fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="6" />
-   <wvobject db_ref_id="1" type="array" fp_name="oh_reg_request_arr[6][addr]">
-      <obj_property name="ElementShortName">oh_reg_request_arr[6][addr][31:0]</obj_property>
-      <obj_property name="ObjectShortName">oh_reg_request_arr[6][addr][31:0]</obj_property>
-      <obj_property name="Radix">default</obj_property>
+   <WVObjectSize size="10" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" type="logic" fp_name="oh_reg_request_arr[7][en]">
+      <obj_property name="ElementShortName">oh_reg_request_arr[7][en]</obj_property>
+      <obj_property name="ObjectShortName">oh_reg_request_arr[7][en]</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="oh_reg_request_arr[6][data]">
-      <obj_property name="ElementShortName">oh_reg_request_arr[6][data][31:0]</obj_property>
-      <obj_property name="ObjectShortName">oh_reg_request_arr[6][data][31:0]</obj_property>
-      <obj_property name="Radix">default</obj_property>
+   <wvobject db_ref_id="1" type="logic" fp_name="oh_reg_response_arr[7][en]">
+      <obj_property name="ElementShortName">oh_reg_response_arr[7][en]</obj_property>
+      <obj_property name="ObjectShortName">oh_reg_response_arr[7][en]</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="logic" fp_name="oh_reg_request_arr[6][en]">
-      <obj_property name="ElementShortName">oh_reg_request_arr[6][en]</obj_property>
-      <obj_property name="ObjectShortName">oh_reg_request_arr[6][en]</obj_property>
+   <wvobject db_ref_id="1" type="logic" fp_name="s_gth_rx_data_arr[6][rxbyteisaligned]">
+      <obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxbyteisaligned]</obj_property>
+      <obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxbyteisaligned]</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="logic" fp_name="oh_reg_request_arr[6][we]">
-      <obj_property name="ElementShortName">oh_reg_request_arr[6][we]</obj_property>
-      <obj_property name="ObjectShortName">oh_reg_request_arr[6][we]</obj_property>
+   <wvobject db_ref_id="1" type="logic" fp_name="s_gth_rx_data_arr[6][rxbyterealign]">
+      <obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxbyterealign]</obj_property>
+      <obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxbyterealign]</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="oh_reg_response_arr[6][data]">
-      <obj_property name="ElementShortName">oh_reg_response_arr[6][data][31:0]</obj_property>
-      <obj_property name="ObjectShortName">oh_reg_response_arr[6][data][31:0]</obj_property>
-      <obj_property name="Radix">default</obj_property>
+   <wvobject db_ref_id="1" type="array" fp_name="s_gth_rx_data_arr[6][rxchariscomma]">
+      <obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxchariscomma][3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxchariscomma][3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="logic" fp_name="oh_reg_response_arr[6][en]">
-      <obj_property name="ElementShortName">oh_reg_response_arr[6][en]</obj_property>
-      <obj_property name="ObjectShortName">oh_reg_response_arr[6][en]</obj_property>
+   <wvobject db_ref_id="1" type="array" fp_name="s_gth_rx_data_arr[6][rxcharisk]">
+      <obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxcharisk][3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxcharisk][3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="s_gth_rx_data_arr[6][rxcommadet]">
+      <obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxcommadet]</obj_property>
+      <obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxcommadet]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="s_gth_rx_data_arr[6][rxdata]">
+      <obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxdata][31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxdata][31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="s_gth_rx_data_arr[6][rxdisperr]">
+      <obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxdisperr][3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxdisperr][3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="s_gth_rx_data_arr[6][rxnotintable]">
+      <obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxnotintable][3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxnotintable][3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
 </wave_config>

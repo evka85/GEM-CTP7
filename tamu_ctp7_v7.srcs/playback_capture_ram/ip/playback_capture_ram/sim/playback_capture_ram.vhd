@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:blk_mem_gen:8.3
--- IP Revision: 0
+-- IP Revision: 1
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY blk_mem_gen_v8_3_0;
-USE blk_mem_gen_v8_3_0.blk_mem_gen_v8_3_0;
+LIBRARY blk_mem_gen_v8_3_1;
+USE blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1;
 
 ENTITY playback_capture_ram IS
   PORT (
@@ -78,7 +78,7 @@ ARCHITECTURE playback_capture_ram_arch OF playback_capture_ram IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF playback_capture_ram_arch: ARCHITECTURE IS "yes";
 
-  COMPONENT blk_mem_gen_v8_3_0 IS
+  COMPONENT blk_mem_gen_v8_3_1 IS
     GENERIC (
       C_FAMILY : STRING;
       C_XDEVICEFAMILY : STRING;
@@ -219,7 +219,7 @@ ARCHITECTURE playback_capture_ram_arch OF playback_capture_ram IS
       s_axi_dbiterr : OUT STD_LOGIC;
       s_axi_rdaddrecc : OUT STD_LOGIC_VECTOR(9 DOWNTO 0)
     );
-  END COMPONENT blk_mem_gen_v8_3_0;
+  END COMPONENT blk_mem_gen_v8_3_1;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF clka: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK";
   ATTRIBUTE X_INTERFACE_INFO OF rsta: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTA RST";
@@ -235,7 +235,7 @@ ARCHITECTURE playback_capture_ram_arch OF playback_capture_ram IS
   ATTRIBUTE X_INTERFACE_INFO OF dinb: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTB DIN";
   ATTRIBUTE X_INTERFACE_INFO OF doutb: SIGNAL IS "xilinx.com:interface:bram:1.0 BRAM_PORTB DOUT";
 BEGIN
-  U0 : blk_mem_gen_v8_3_0
+  U0 : blk_mem_gen_v8_3_1
     GENERIC MAP (
       C_FAMILY => "virtex7",
       C_XDEVICEFAMILY => "virtex7",

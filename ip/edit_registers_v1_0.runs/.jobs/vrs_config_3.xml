@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="vio_regs_synth_1" LaunchDir="/home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/vio_regs_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

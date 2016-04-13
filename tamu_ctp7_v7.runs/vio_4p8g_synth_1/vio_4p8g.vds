@@ -1,9 +1,9 @@
 #-----------------------------------------------------------
-# Vivado v2015.3 (64-bit)
-# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
-# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Fri Apr  8 16:07:34 2016
-# Process ID: 3707
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Apr 11 20:43:23 2016
+# Process ID: 1781
 # Current directory: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/vio_4p8g_synth_1
 # Command line: vivado -log vio_4p8g.vds -mode batch -messageDb vivado.pb -notrace -source vio_4p8g.tcl
 # Log file: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/vio_4p8g_synth_1/vio_4p8g.vds
@@ -11,8 +11,10 @@
 #-----------------------------------------------------------
 source vio_4p8g.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/evka/code/ip_repo/myip_1.0'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.3/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/evka/code/tamu_ctp7_v7/ip/registers_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/evka/code/ip_repo/myip_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
 WARNING: [IP_Flow 19-3664] IP 'vio_4p8g' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_4p8g.dcp'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'vio_4p8g' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_4p8g_stub.v'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'vio_4p8g' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_4p8g_stub.vhdl'. Please regenerate to continue.
@@ -23,7 +25,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1100.883 ; gain = 230.223 ; free physical = 9896 ; free virtual = 19678
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1066.520 ; gain = 218.301 ; free physical = 2954 ; free virtual = 8271
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'vio_4p8g' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/synth/vio_4p8g.vhd:61]
 	Parameter C_XLNX_HW_PROBE_INFO bound to: DEFAULT - type: string 
@@ -813,8 +815,8 @@ INFO: [Synth 8-638] synthesizing module 'vio_4p8g' [/home/evka/code/tamu_ctp7_v7
 	Parameter C_PROBE_OUT253_INIT_VAL bound to: 1'b0 
 	Parameter C_PROBE_OUT254_INIT_VAL bound to: 1'b0 
 	Parameter C_PROBE_OUT255_INIT_VAL bound to: 1'b0 
-INFO: [Synth 8-3491] module 'vio_v3_0_9_vio' declared at '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:1649' bound to instance 'inst' of component 'vio_v3_0_9_vio' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/synth/vio_4p8g.vhd:1382]
-INFO: [Synth 8-638] synthesizing module 'vio_v3_0_9_vio' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:1649]
+INFO: [Synth 8-3491] module 'vio_v3_0_10_vio' declared at '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:1649' bound to instance 'inst' of component 'vio_v3_0_10_vio' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/synth/vio_4p8g.vhd:1382]
+INFO: [Synth 8-638] synthesizing module 'vio_v3_0_10_vio' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:1649]
 	Parameter C_XLNX_HW_PROBE_INFO bound to: DEFAULT - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_CORE_TYPE bound to: 2 - type: integer 
@@ -2126,8 +2128,8 @@ INFO: [Synth 8-638] synthesizing module 'vio_v3_0_9_vio' [/home/evka/code/tamu_c
 	Parameter LC_LOW_BIT_POS_PROBE_OUT255 bound to: 16'b0000000011111111 
 	Parameter LC_PROBE_OUT_LOW_BIT_POS_STRING bound to: 4096'b0000000011111111000000001111111000000000111111010000000011111100000000001111101100000000111110100000000011111001000000001111100000000000111101110000000011110110000000001111010100000000111101000000000011110011000000001111001000000000111100010000000011110000000000001110111100000000111011100000000011101101000000001110110000000000111010110000000011101010000000001110100100000000111010000000000011100111000000001110011000000000111001010000000011100100000000001110001100000000111000100000000011100001000000001110000000000000110111110000000011011110000000001101110100000000110111000000000011011011000000001101101000000000110110010000000011011000000000001101011100000000110101100000000011010101000000001101010000000000110100110000000011010010000000001101000100000000110100000000000011001111000000001100111000000000110011010000000011001100000000001100101100000000110010100000000011001001000000001100100000000000110001110000000011000110000000001100010100000000110001000000000011000011000000001100001000000000110000010000000011000000000000001011111100000000101111100000000010111101000000001011110000000000101110110000000010111010000000001011100100000000101110000000000010110111000000001011011000000000101101010000000010110100000000001011001100000000101100100000000010110001000000001011000000000000101011110000000010101110000000001010110100000000101011000000000010101011000000001010101000000000101010010000000010101000000000001010011100000000101001100000000010100101000000001010010000000000101000110000000010100010000000001010000100000000101000000000000010011111000000001001111000000000100111010000000010011100000000001001101100000000100110100000000010011001000000001001100000000000100101110000000010010110000000001001010100000000100101000000000010010011000000001001001000000000100100010000000010010000000000001000111100000000100011100000000010001101000000001000110000000000100010110000000010001010000000001000100100000000100010000000000010000111000000001000011000000000100001010000000010000100000000001000001100000000100000100000000010000001000000001000000000000000011111110000000001111110000000000111110100000000011111000000000001111011000000000111101000000000011110010000000001111000000000000111011100000000011101100000000001110101000000000111010000000000011100110000000001110010000000000111000100000000011100000000000001101111000000000110111000000000011011010000000001101100000000000110101100000000011010100000000001101001000000000110100000000000011001110000000001100110000000000110010100000000011001000000000001100011000000000110001000000000011000010000000001100000000000000101111100000000010111100000000001011101000000000101110000000000010110110000000001011010000000000101100100000000010110000000000001010111000000000101011000000000010101010000000001010100000000000101001100000000010100100000000001010001000000000101000000000000010011110000000001001110000000000100110100000000010011000000000001001011000000000100101000000000010010010000000001001000000000000100011100000000010001100000000001000101000000000100010000000000010000110000000001000010000000000100000100000000010000000000000000111111000000000011111000000000001111010000000000111100000000000011101100000000001110100000000000111001000000000011100000000000001101110000000000110110000000000011010100000000001101000000000000110011000000000011001000000000001100010000000000110000000000000010111100000000001011100000000000101101000000000010110000000000001010110000000000101010000000000010100100000000001010000000000000100111000000000010011000000000001001010000000000100100000000000010001100000000001000100000000000100001000000000010000000000000000111110000000000011110000000000001110100000000000111000000000000011011000000000001101000000000000110010000000000011000000000000001011100000000000101100000000000010101000000000001010000000000000100110000000000010010000000000001000100000000000100000000000000001111000000000000111000000000000011010000000000001100000000000000101100000000000010100000000000001001000000000000100000000000000001110000000000000110000000000000010100000000000001000000000000000011000000000000001000000000000000010000000000000000 
 	Parameter LC_PROBE_OUT_INIT_VAL_STRING bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:2972]
-INFO: [Synth 8-638] synthesizing module 'vio_v3_0_9_probe_in_one' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:280]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:2972]
+INFO: [Synth 8-638] synthesizing module 'vio_v3_0_10_probe_in_one' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:280]
 	Parameter C_EN_SYNCHRONIZATION bound to: 1 - type: integer 
 	Parameter C_EN_PROBE_IN_ACTIVITY bound to: 1 - type: integer 
 	Parameter C_PROBE_WIDTH bound to: 32 - type: integer 
@@ -2139,11 +2141,11 @@ INFO: [Synth 8-638] synthesizing module 'vio_v3_0_9_probe_in_one' [/home/evka/co
 	Parameter LC_NUM_MEM bound to: 1 - type: integer 
 	Parameter LC_NUM_LSB_ADDR_BITS bound to: 8 - type: integer 
 	Parameter LC_NUM_MSB_ADDR_BITS bound to: 1 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:324]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:325]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:326]
-INFO: [Synth 8-256] done synthesizing module 'vio_v3_0_9_probe_in_one' (1#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:280]
-INFO: [Synth 8-638] synthesizing module 'vio_v3_0_9_probe_out_all' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:1456]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:324]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:325]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:326]
+INFO: [Synth 8-256] done synthesizing module 'vio_v3_0_10_probe_in_one' (1#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:280]
+INFO: [Synth 8-638] synthesizing module 'vio_v3_0_10_probe_out_all' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:1456]
 	Parameter C_BUS_DATA_WIDTH bound to: 16 - type: integer 
 	Parameter C_BUS_ADDR_WIDTH bound to: 17 - type: integer 
 	Parameter C_NUM_PROBE_OUT bound to: 1 - type: integer 
@@ -2153,16 +2155,16 @@ INFO: [Synth 8-638] synthesizing module 'vio_v3_0_9_probe_out_all' [/home/evka/c
 	Parameter C_PROBE_OUT_LOW_BIT_POS_STRING bound to: 4096'b0000000011111111000000001111111000000000111111010000000011111100000000001111101100000000111110100000000011111001000000001111100000000000111101110000000011110110000000001111010100000000111101000000000011110011000000001111001000000000111100010000000011110000000000001110111100000000111011100000000011101101000000001110110000000000111010110000000011101010000000001110100100000000111010000000000011100111000000001110011000000000111001010000000011100100000000001110001100000000111000100000000011100001000000001110000000000000110111110000000011011110000000001101110100000000110111000000000011011011000000001101101000000000110110010000000011011000000000001101011100000000110101100000000011010101000000001101010000000000110100110000000011010010000000001101000100000000110100000000000011001111000000001100111000000000110011010000000011001100000000001100101100000000110010100000000011001001000000001100100000000000110001110000000011000110000000001100010100000000110001000000000011000011000000001100001000000000110000010000000011000000000000001011111100000000101111100000000010111101000000001011110000000000101110110000000010111010000000001011100100000000101110000000000010110111000000001011011000000000101101010000000010110100000000001011001100000000101100100000000010110001000000001011000000000000101011110000000010101110000000001010110100000000101011000000000010101011000000001010101000000000101010010000000010101000000000001010011100000000101001100000000010100101000000001010010000000000101000110000000010100010000000001010000100000000101000000000000010011111000000001001111000000000100111010000000010011100000000001001101100000000100110100000000010011001000000001001100000000000100101110000000010010110000000001001010100000000100101000000000010010011000000001001001000000000100100010000000010010000000000001000111100000000100011100000000010001101000000001000110000000000100010110000000010001010000000001000100100000000100010000000000010000111000000001000011000000000100001010000000010000100000000001000001100000000100000100000000010000001000000001000000000000000011111110000000001111110000000000111110100000000011111000000000001111011000000000111101000000000011110010000000001111000000000000111011100000000011101100000000001110101000000000111010000000000011100110000000001110010000000000111000100000000011100000000000001101111000000000110111000000000011011010000000001101100000000000110101100000000011010100000000001101001000000000110100000000000011001110000000001100110000000000110010100000000011001000000000001100011000000000110001000000000011000010000000001100000000000000101111100000000010111100000000001011101000000000101110000000000010110110000000001011010000000000101100100000000010110000000000001010111000000000101011000000000010101010000000001010100000000000101001100000000010100100000000001010001000000000101000000000000010011110000000001001110000000000100110100000000010011000000000001001011000000000100101000000000010010010000000001001000000000000100011100000000010001100000000001000101000000000100010000000000010000110000000001000010000000000100000100000000010000000000000000111111000000000011111000000000001111010000000000111100000000000011101100000000001110100000000000111001000000000011100000000000001101110000000000110110000000000011010100000000001101000000000000110011000000000011001000000000001100010000000000110000000000000010111100000000001011100000000000101101000000000010110000000000001010110000000000101010000000000010100100000000001010000000000000100111000000000010011000000000001001010000000000100100000000000010001100000000001000100000000000100001000000000010000000000000000111110000000000011110000000000001110100000000000111000000000000011011000000000001101000000000000110010000000000011000000000000001011100000000000101100000000000010101000000000001010000000000000100110000000000010010000000000001000100000000000100000000000000001111000000000000111000000000000011010000000000001100000000000000101100000000000010100000000000001001000000000000100000000000000001110000000000000110000000000000010100000000000001000000000000000011000000000000001000000000000000010000000000000000 
 	Parameter C_PROBE_OUT_INIT_VAL_STRING bound to: 1'b0 
 	Parameter LC_NUM_ADDR_BITS_PROBE_OUT bound to: 1 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:1506]
-INFO: [Synth 8-638] synthesizing module 'vio_v3_0_9_probe_out_one' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:1135]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:1506]
+INFO: [Synth 8-638] synthesizing module 'vio_v3_0_10_probe_out_one' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:1135]
 	Parameter C_PROBE_WIDTH bound to: 1 - type: integer 
 	Parameter C_INIT_VAL bound to: 1'b0 
 	Parameter C_BUS_DATA_WIDTH bound to: 16 - type: integer 
 	Parameter LC_NUM_16_BIT_REG bound to: 1 - type: integer 
 	Parameter LC_NUM_ADDR_BITS bound to: 1 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:1190]
-INFO: [Synth 8-256] done synthesizing module 'vio_v3_0_9_probe_out_one' (2#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:1135]
-INFO: [Synth 8-256] done synthesizing module 'vio_v3_0_9_probe_out_all' (3#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:1456]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:1190]
+INFO: [Synth 8-256] done synthesizing module 'vio_v3_0_10_probe_out_one' (2#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:1135]
+INFO: [Synth 8-256] done synthesizing module 'vio_v3_0_10_probe_out_all' (3#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:1456]
 INFO: [Synth 8-638] synthesizing module 'xsdbs_v1_0_2_xsdbs' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/xsdbs_v1_0_2/hdl/xsdbs_v1_0_vl_rfs.v:709]
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_MAJOR_VERSION bound to: 2013 - type: integer 
@@ -2179,7 +2181,7 @@ INFO: [Synth 8-638] synthesizing module 'xsdbs_v1_0_2_xsdbs' [/home/evka/code/ta
 	Parameter C_CORE_INFO1 bound to: 0 - type: integer 
 	Parameter C_CORE_INFO2 bound to: 0 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'xsdbs_v1_0_2_xsdbs' (4#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/xsdbs_v1_0_2/hdl/xsdbs_v1_0_vl_rfs.v:709]
-INFO: [Synth 8-638] synthesizing module 'vio_v3_0_9_decoder' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:68]
+INFO: [Synth 8-638] synthesizing module 'vio_v3_0_10_decoder' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:68]
 	Parameter C_NUM_PROBE_IN bound to: 1 - type: integer 
 	Parameter C_EN_PROBE_IN_ACTIVITY bound to: 1 - type: integer 
 	Parameter C_NUM_PROBE_OUT bound to: 1 - type: integer 
@@ -2198,15 +2200,15 @@ INFO: [Synth 8-638] synthesizing module 'vio_v3_0_9_decoder' [/home/evka/code/ta
 	Parameter LC_INT_CNT_RST_BIT_ADDR bound to: 2 - type: integer 
 	Parameter LC_CLEAR_BIT_ADDR bound to: 1 - type: integer 
 	Parameter LC_COMMITT_BIT_ADDR bound to: 0 - type: integer 
-INFO: [Synth 8-226] default block is never used [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:248]
-INFO: [Synth 8-3936] Found unconnected internal register 'rd_en_reg' and it is trimmed from '8' to '7' bits. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:184]
-INFO: [Synth 8-3936] Found unconnected internal register 'wr_en_reg' and it is trimmed from '8' to '5' bits. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:183]
-INFO: [Synth 8-256] done synthesizing module 'vio_v3_0_9_decoder' (5#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:68]
-INFO: [Synth 8-256] done synthesizing module 'vio_v3_0_9_vio' (6#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_9/hdl/vio_v3_0_syn_rfs.v:1649]
+INFO: [Synth 8-226] default block is never used [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:248]
+INFO: [Synth 8-3936] Found unconnected internal register 'rd_en_reg' and it is trimmed from '8' to '7' bits. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:184]
+INFO: [Synth 8-3936] Found unconnected internal register 'wr_en_reg' and it is trimmed from '8' to '5' bits. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:183]
+INFO: [Synth 8-256] done synthesizing module 'vio_v3_0_10_decoder' (5#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:68]
+INFO: [Synth 8-256] done synthesizing module 'vio_v3_0_10_vio' (6#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_v3_0_10/hdl/vio_v3_0_syn_rfs.v:1649]
 WARNING: [Synth 8-3848] Net sl_iport0 in module/entity vio_4p8g does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/synth/vio_4p8g.vhd:1379]
 INFO: [Synth 8-256] done synthesizing module 'vio_4p8g' (7#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/synth/vio_4p8g.vhd:61]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1196.559 ; gain = 325.898 ; free physical = 9718 ; free virtual = 19499
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1162.195 ; gain = 313.977 ; free physical = 2560 ; free virtual = 7878
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2253,7 +2255,7 @@ WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0 [/hom
 WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/synth/vio_4p8g.vhd:1382]
 WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/synth/vio_4p8g.vhd:1382]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1196.559 ; gain = 325.898 ; free physical = 9714 ; free virtual = 19496
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1162.195 ; gain = 313.977 ; free physical = 2552 ; free virtual = 7869
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7vx690tffg1927-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -2269,27 +2271,35 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1596.309 ; gain = 0.000 ; free physical = 8996 ; free virtual = 18869
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1561.945 ; gain = 0.000 ; free physical = 1955 ; free virtual = 7277
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3779 
+INFO: Helper process launched with PID 1849 
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8865 ; free virtual = 18747
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1894 ; free virtual = 7216
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx690tffg1927-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8865 ; free virtual = 18747
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1894 ; free virtual = 7216
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8846 ; free virtual = 18732
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1892 ; free virtual = 7213
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "wr_probe_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wr_en_int0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wr_en_int0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wr_en_int0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wr_en_int0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wr_en_int0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_en_int0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_en_int0" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8792 ; free virtual = 18701
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1851 ; free virtual = 7172
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2315,7 +2325,7 @@ Detailed RTL Component Info :
 	   8 Input     16 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 2     
 	  25 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -2323,7 +2333,7 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module vio_v3_0_9_probe_in_one 
+Module vio_v3_0_10_probe_in_one 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      4 Bit       Adders := 1     
@@ -2332,18 +2342,20 @@ Detailed RTL Component Info :
 	               16 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
-Module vio_v3_0_9_probe_out_one 
+Module vio_v3_0_10_probe_out_one 
 Detailed RTL Component Info : 
 +---Registers : 
 	               16 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module vio_v3_0_9_probe_out_all 
+Module vio_v3_0_10_probe_out_all 
 Detailed RTL Component Info : 
 +---Registers : 
 	               16 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
 Module xsdbs_v1_0_2_xsdbs 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -2354,7 +2366,7 @@ Detailed RTL Component Info :
 	   2 Input     16 Bit        Muxes := 1     
 	  25 Input      3 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
-Module vio_v3_0_9_decoder 
+Module vio_v3_0_10_decoder 
 Detailed RTL Component Info : 
 +---Registers : 
 	               16 Bit    Registers := 2     
@@ -2364,7 +2376,8 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 9     
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 1     
-Module vio_v3_0_9_vio 
+	   2 Input      1 Bit        Muxes := 7     
+Module vio_v3_0_10_vio 
 Detailed RTL Component Info : 
 +---Registers : 
 	               16 Bit    Registers := 1     
@@ -2380,14 +2393,20 @@ BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8791 ; free virtual = 18700
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1847 ; free virtual = 7168
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "PROBE_OUT_ALL_INST/wr_probe_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DECODER_INST/wr_en_int0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DECODER_INST/wr_en_int0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DECODER_INST/wr_en_int0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DECODER_INST/wr_en_int0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DECODER_INST/wr_en_int0" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8773 ; free virtual = 18701
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1846 ; free virtual = 7168
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8773 ; free virtual = 18701
+Finished Parallel Reinference  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1846 ; free virtual = 7168
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -2398,9 +2417,9 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8749 ; free virtual = 18677
+Finished Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1822 ; free virtual = 7144
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8749 ; free virtual = 18677
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1822 ; free virtual = 7144
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -2414,61 +2433,61 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8632 ; free virtual = 18598
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1489 ; free virtual = 6811
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8632 ; free virtual = 18598
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1488 ; free virtual = 6811
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8632 ; free virtual = 18598
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8632 ; free virtual = 18598
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[15] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[14] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[13] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[12] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[11] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[10] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[9] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[8] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[7] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[6] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[5] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[4] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[3] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[2] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[1] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[15] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[14] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[13] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[12] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[11] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[10] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[9] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[8] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[7] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[6] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[5] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[4] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[3] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[2] ) is unused and will be removed from module vio_v3_0_9_vio.
-INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[1] ) is unused and will be removed from module vio_v3_0_9_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[15] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[14] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[13] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[12] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[11] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[10] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[9] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[8] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[7] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[6] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[5] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[4] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[3] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[2] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/data_int_reg[1] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[15] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[14] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[13] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[12] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[11] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[10] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[9] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[8] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[7] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[6] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[5] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[4] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[3] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[2] ) is unused and will be removed from module vio_v3_0_10_vio.
+INFO: [Synth 8-3332] Sequential element (\PROBE_OUT_ALL_INST/Probe_out_reg_int_reg[1] ) is unused and will be removed from module vio_v3_0_10_vio.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8616 ; free virtual = 18582
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1455 ; free virtual = 6777
 ---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1455 ; free virtual = 6777
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1455 ; free virtual = 6777
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -2522,7 +2541,7 @@ WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8615 ; free virtual = 18581
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1431 ; free virtual = 6753
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2535,7 +2554,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8615 ; free virtual = 18581
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1429 ; free virtual = 6752
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2547,25 +2566,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8615 ; free virtual = 18581
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1429 ; free virtual = 6751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8615 ; free virtual = 18581
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1429 ; free virtual = 6751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8615 ; free virtual = 18581
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1429 ; free virtual = 6751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8615 ; free virtual = 18581
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1429 ; free virtual = 6751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2582,8 +2601,8 @@ Report Cell Usage:
 |      |Cell |Count |
 +------+-----+------+
 |1     |LUT1 |     2|
-|2     |LUT2 |     8|
-|3     |LUT3 |    21|
+|2     |LUT2 |     6|
+|3     |LUT3 |    20|
 |4     |LUT4 |    75|
 |5     |LUT5 |    24|
 |6     |LUT6 |    46|
@@ -2592,23 +2611,23 @@ Report Cell Usage:
 +------+-----+------+
 
 Report Instance Areas: 
-+------+---------------------------------------+-------------------------+------+
-|      |Instance                               |Module                   |Cells |
-+------+---------------------------------------+-------------------------+------+
-|1     |top                                    |                         |   462|
-|2     |  inst                                 |vio_v3_0_9_vio           |   462|
-|3     |    U_XSDB_SLAVE                       |xsdbs_v1_0_2_xsdbs       |    70|
-|4     |    DECODER_INST                       |vio_v3_0_9_decoder       |    79|
-|5     |    PROBE_IN_INST                      |vio_v3_0_9_probe_in_one  |   287|
-|6     |    PROBE_OUT_ALL_INST                 |vio_v3_0_9_probe_out_all |    10|
-|7     |      \G_PROBE_OUT[0].PROBE_OUT0_INST  |vio_v3_0_9_probe_out_one |     3|
-+------+---------------------------------------+-------------------------+------+
++------+---------------------------------------+--------------------------+------+
+|      |Instance                               |Module                    |Cells |
++------+---------------------------------------+--------------------------+------+
+|1     |top                                    |                          |   459|
+|2     |  inst                                 |vio_v3_0_10_vio           |   459|
+|3     |    U_XSDB_SLAVE                       |xsdbs_v1_0_2_xsdbs        |    70|
+|4     |    DECODER_INST                       |vio_v3_0_10_decoder       |    75|
+|5     |    PROBE_IN_INST                      |vio_v3_0_10_probe_in_one  |   286|
+|6     |    PROBE_OUT_ALL_INST                 |vio_v3_0_10_probe_out_all |    12|
+|7     |      \G_PROBE_OUT[0].PROBE_OUT0_INST  |vio_v3_0_10_probe_out_one |     3|
++------+---------------------------------------+--------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8615 ; free virtual = 18581
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1429 ; free virtual = 6751
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1596.309 ; gain = 173.941 ; free physical = 8615 ; free virtual = 18581
-Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 725.648 ; free physical = 8615 ; free virtual = 18581
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1561.945 ; gain = 167.941 ; free physical = 1428 ; free virtual = 6751
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1561.945 ; gain = 713.727 ; free physical = 1428 ; free virtual = 6751
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/vio_4p8g/ip/vio_4p8g/vio_4p8g_ooc.xdc]
@@ -2620,9 +2639,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-66 Infos, 80 Warnings, 0 Critical Warnings and 0 Errors encountered.
+80 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1596.309 ; gain = 624.160 ; free physical = 8569 ; free virtual = 18534
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1561.945 ; gain = 614.125 ; free physical = 1359 ; free virtual = 6681
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1628.328 ; gain = 0.000 ; free physical = 8569 ; free virtual = 18533
-INFO: [Common 17-206] Exiting Vivado at Fri Apr  8 16:08:24 2016...
+report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1593.965 ; gain = 0.000 ; free physical = 1342 ; free virtual = 6665
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 11 20:44:23 2016...

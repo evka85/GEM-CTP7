@@ -1,0 +1,5 @@
+verilog xil_defaultlib "../../../../registers_1.0/src/ila_axi_regs/sim/ila_axi_regs.v" --include "../../../../registers_1.0/src/ila_axi_regs/ila_v6_0_1/hdl/verilog" --include "../../../../registers_1.0/src/ila_axi_regs/ltlib_v1_0_0/hdl/verilog" --include "../../../../registers_1.0/src/ila_axi_regs/xsdbm_v1_1_1/hdl/verilog" --include "../../../../registers_1.0/src/ila_axi_regs/xsdbs_v1_0_2/hdl/verilog"
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,354 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Apr 13 06:12:40 2016
+# Process ID: 13710
+# Current directory: /home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/synth_1
+# Command line: vivado -log registers_v1_0.vds -mode batch -messageDb vivado.pb -notrace -source registers_v1_0.tcl
+# Log file: /home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/synth_1/registers_v1_0.vds
+# Journal file: /home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source registers_v1_0.tcl -notrace
+Command: synth_design -top registers_v1_0 -part xc7vx690tffg1927-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.977 ; gain = 167.766 ; free physical = 11047 ; free virtual = 13455
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port probe1 is neither a static name nor a globally static expression [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0_AXI.vhd:334]
+WARNING: [Synth 8-1565] actual for formal port probe8 is neither a static name nor a globally static expression [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0_AXI.vhd:341]
+WARNING: [Synth 8-1565] actual for formal port probe12 is neither a static name nor a globally static expression [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0_AXI.vhd:345]
+WARNING: [Synth 8-1565] actual for formal port probe17 is neither a static name nor a globally static expression [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0_AXI.vhd:350]
+INFO: [Synth 8-638] synthesizing module 'registers_v1_0' [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0.vhd:63]
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 27 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 27 - type: integer 
+INFO: [Synth 8-3491] module 'registers_v1_0_AXI' declared at '/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0_AXI.vhd:8' bound to instance 'registers_v1_0_AXI_inst' of component 'registers_v1_0_AXI' [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'registers_v1_0_AXI' [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0_AXI.vhd:98]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 27 - type: integer 
+INFO: [Synth 8-3491] module 'ila_axi_regs' declared at '/home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/synth_1/.Xil/Vivado-13710-evka-pc/realtime/ila_axi_regs_stub.v:7' bound to instance 'ila_axi_regs_inst' of component 'ila_axi_regs' [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0_AXI.vhd:330]
+INFO: [Synth 8-638] synthesizing module 'ila_axi_regs' [/home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/synth_1/.Xil/Vivado-13710-evka-pc/realtime/ila_axi_regs_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'ila_axi_regs' (1#1) [/home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/synth_1/.Xil/Vivado-13710-evka-pc/realtime/ila_axi_regs_stub.v:7]
+WARNING: [Synth 8-3848] Net ipb_mosi_o[0][ipb_addr] in module/entity registers_v1_0_AXI does not have driver. [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0_AXI.vhd:30]
+WARNING: [Synth 8-3848] Net ipb_mosi_o[0][ipb_wdata] in module/entity registers_v1_0_AXI does not have driver. [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0_AXI.vhd:30]
+WARNING: [Synth 8-3848] Net ipb_mosi_o[0][ipb_strobe] in module/entity registers_v1_0_AXI does not have driver. [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0_AXI.vhd:30]
+WARNING: [Synth 8-3848] Net ipb_mosi_o[0][ipb_write] in module/entity registers_v1_0_AXI does not have driver. [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0_AXI.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'registers_v1_0_AXI' (2#1) [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0_AXI.vhd:98]
+INFO: [Synth 8-256] done synthesizing module 'registers_v1_0' (3#1) [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0.vhd:63]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1053.359 ; gain = 205.148 ; free physical = 11010 ; free virtual = 13418
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1053.359 ; gain = 205.148 ; free physical = 11008 ; free virtual = 13417
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx690tffg1927-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/synth_1/.Xil/Vivado-13710-evka-pc/dcp/ila_axi_regs_in_context.xdc] for cell 'registers_v1_0_AXI_inst/ila_axi_regs_inst'
+Finished Parsing XDC File [/home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/synth_1/.Xil/Vivado-13710-evka-pc/dcp/ila_axi_regs_in_context.xdc] for cell 'registers_v1_0_AXI_inst/ila_axi_regs_inst'
+Parsing XDC File [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/src/constrs/registers.xdc]
+Finished Parsing XDC File [/home/evka/code/tamu_ctp7_v7/ip/registers_1.0/src/constrs/registers.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1538.680 ; gain = 0.000 ; free physical = 10678 ; free virtual = 13073
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13724 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10683 ; free virtual = 13078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1927-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10683 ; free virtual = 13078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10683 ; free virtual = 13078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ipb_state_reg' in module 'registers_v1_0_AXI'
+INFO: [Synth 8-5544] ROM "axi_bresp" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "axi_bvalid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ipb_timer" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ipb_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                    read |                              001 |                              010
+       wait_for_read_ack |                              010 |                              100
+      axi_read_handshake |                              011 |                              101
+                   write |                              100 |                              001
+      wait_for_write_ack |                              101 |                              011
+     axi_write_handshake |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ipb_state_reg' using encoding 'sequential' in module 'registers_v1_0_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10675 ; free virtual = 13069
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               27 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   7 Input     32 Bit        Muxes := 3     
+	   2 Input     27 Bit        Muxes := 4     
+	   7 Input     27 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   7 Input     24 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   7 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module registers_v1_0_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               27 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   7 Input     32 Bit        Muxes := 3     
+	   2 Input     27 Bit        Muxes := 4     
+	   7 Input     27 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   7 Input     24 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   7 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10674 ; free virtual = 13069
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10676 ; free virtual = 13070
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10676 ; free virtual = 13070
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10651 ; free virtual = 13046
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10651 ; free virtual = 13046
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10602 ; free virtual = 13005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10586 ; free virtual = 12989
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10575 ; free virtual = 12978
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10575 ; free virtual = 12978
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10575 ; free virtual = 12978
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10575 ; free virtual = 12978
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10575 ; free virtual = 12978
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10575 ; free virtual = 12978
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10575 ; free virtual = 12978
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10575 ; free virtual = 12978
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10575 ; free virtual = 12978
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_axi_regs  |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |ila_axi_regs |     1|
+|2     |BUFG         |     1|
+|3     |CARRY4       |     6|
+|4     |LUT1         |    24|
+|5     |LUT2         |     3|
+|6     |LUT3         |     3|
+|7     |LUT4         |    29|
+|8     |LUT5         |    54|
+|9     |LUT6         |   117|
+|10    |FDRE         |   188|
+|11    |IBUF         |   137|
+|12    |OBUF         |   108|
++------+-------------+------+
+
+Report Instance Areas: 
++------+--------------------------+-------------------+------+
+|      |Instance                  |Module             |Cells |
++------+--------------------------+-------------------+------+
+|1     |top                       |                   |   670|
+|2     |  registers_v1_0_AXI_inst |registers_v1_0_AXI |   424|
++------+--------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10575 ; free virtual = 12978
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1538.680 ; gain = 87.379 ; free physical = 10575 ; free virtual = 12978
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1538.680 ; gain = 690.469 ; free physical = 10575 ; free virtual = 12978
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 143 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1538.680 ; gain = 619.133 ; free physical = 10572 ; free virtual = 12976
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1538.680 ; gain = 0.000 ; free physical = 10563 ; free virtual = 12974
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 13 06:13:19 2016...

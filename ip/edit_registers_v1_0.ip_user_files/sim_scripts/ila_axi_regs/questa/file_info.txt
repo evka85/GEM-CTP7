@@ -1,0 +1,3 @@
+Language File-Name       IP            Library         File-Path                                                    
+Verilog, ila_axi_regs.v, ila_axi_regs, xil_defaultlib, ../../../../registers_1.0/src/ila_axi_regs/sim/ila_axi_regs.v
+Verilog, glbl.v,         *,            xil_defaultlib, glbl.v                                                       

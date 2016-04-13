@@ -1,0 +1,4 @@
+vhdl blk_mem_gen_v8_3_1 "../../../ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" 
+vhdl xil_defaultlib "../../../../tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/sim/playback_capture_ram.vhd" 
+
+nosort

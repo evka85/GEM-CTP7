@@ -1,8 +1,8 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
---Date        : Fri Apr  8 16:01:48 2016
---Host        : evka-macpro running 64-bit Ubuntu 14.04.4 LTS
+--Tool Version: Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+--Date        : Mon Apr 11 21:25:23 2016
+--Host        : evka-pc running 64-bit Ubuntu 14.04.4 LTS
 --Command     : generate_target v7_bd_wrapper.bd
 --Design      : v7_bd_wrapper
 --Purpose     : IP block netlist

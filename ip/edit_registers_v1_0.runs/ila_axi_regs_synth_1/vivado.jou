@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Apr 13 03:13:29 2016
+# Process ID: 6206
+# Current directory: /home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/ila_axi_regs_synth_1
+# Command line: vivado -log ila_axi_regs.vds -mode batch -messageDb vivado.pb -notrace -source ila_axi_regs.tcl
+# Log file: /home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/ila_axi_regs_synth_1/ila_axi_regs.vds
+# Journal file: /home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/ila_axi_regs_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ila_axi_regs.tcl -notrace

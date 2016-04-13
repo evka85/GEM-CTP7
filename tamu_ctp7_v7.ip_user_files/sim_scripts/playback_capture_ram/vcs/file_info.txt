@@ -1,0 +1,3 @@
+Language File-Name                 IP                    Library             File-Path                                                                                              
+VHDL,    blk_mem_gen_v8_3.vhd,     playback_capture_ram, blk_mem_gen_v8_3_1, ../../../ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd                                   
+VHDL,    playback_capture_ram.vhd, playback_capture_ram, xil_defaultlib,     ../../../../tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/sim/playback_capture_ram.vhd

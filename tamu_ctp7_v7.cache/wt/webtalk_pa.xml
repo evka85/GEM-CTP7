@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sat Apr  9 18:03:51 2016">
+<application name="pa" timeStamp="Wed Apr 13 05:50:27 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="4c0a1fca1a3f415fb2f559d4cb59e221" type="ProjectID"/>
-<property name="ProjectIteration" value="25" type="ProjectIteration"/>
+<property name="ProjectIteration" value="29" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -20,6 +20,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ManageCompositeTargets" value="0" type="JavaHandler"/>
 <property name="RunImplementation" value="0" type="JavaHandler"/>
 <property name="RunSynthesis" value="0" type="JavaHandler"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="10" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="8" type="TclMode"/>
 </item>
 </section>
 </application>

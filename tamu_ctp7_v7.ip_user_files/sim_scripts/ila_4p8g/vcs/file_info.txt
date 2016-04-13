@@ -1,0 +1,2 @@
+Language File-Name     IP        Library         File-Path                                                          
+VHDL,    ila_4p8g.vhd, ila_4p8g, xil_defaultlib, ../../../../tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/sim/ila_4p8g.vhd

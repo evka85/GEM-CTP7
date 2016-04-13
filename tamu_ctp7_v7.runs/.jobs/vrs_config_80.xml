@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="fifo_cdc_18b_synth_1" LaunchDir="/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/fifo_cdc_18b_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_gtx_rx_synth_1" LaunchDir="/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/fifo_gtx_rx_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_gtx_tx_synth_1" LaunchDir="/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/fifo_gtx_tx_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ila_4p8g_synth_1" LaunchDir="/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/ila_4p8g_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="playback_capture_ram_synth_1" LaunchDir="/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/playback_capture_ram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vio_4p8g_synth_1" LaunchDir="/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/vio_4p8g_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

@@ -1,9 +1,9 @@
 #-----------------------------------------------------------
-# Vivado v2015.3 (64-bit)
-# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
-# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Fri Apr  8 16:07:34 2016
-# Process ID: 3708
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Apr 11 20:43:23 2016
+# Process ID: 1774
 # Current directory: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/ila_4p8g_synth_1
 # Command line: vivado -log ila_4p8g.vds -mode batch -messageDb vivado.pb -notrace -source ila_4p8g.tcl
 # Log file: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/ila_4p8g_synth_1/ila_4p8g.vds
@@ -11,8 +11,10 @@
 #-----------------------------------------------------------
 source ila_4p8g.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/evka/code/ip_repo/myip_1.0'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.3/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/evka/code/tamu_ctp7_v7/ip/registers_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/evka/code/ip_repo/myip_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
 WARNING: [IP_Flow 19-3664] IP 'ila_4p8g' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_4p8g.dcp'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'ila_4p8g' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_4p8g_stub.v'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'ila_4p8g' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_4p8g_stub.vhdl'. Please regenerate to continue.
@@ -23,7 +25,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1132.746 ; gain = 262.090 ; free physical = 9853 ; free virtual = 19636
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1099.383 ; gain = 251.168 ; free physical = 2868 ; free virtual = 8185
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'ila_4p8g' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:66]
 	Parameter C_XLNX_HW_PROBE_INFO bound to: NUM_OF_PROBES=5,DATA_DEPTH=1024,PROBE0_WIDTH=32,PROBE0_MU_CNT=1,PROBE0_TYPE=0,PROBE1_WIDTH=4,PROBE1_MU_CNT=1,PROBE1_TYPE=0,PROBE2_WIDTH=4,PROBE2_MU_CNT=1,PROBE2_TYPE=0,PROBE3_WIDTH=4,PROBE3_MU_CNT=1,PROBE3_TYPE=0,PROBE4_WIDTH=4,PROBE4_MU_CNT=1,PROBE4_TYPE=0,PROBE5_WIDTH=1,PROBE5_MU_CNT=1,PROBE5_TYPE=0,PROBE6_WIDTH=1,PROBE6_MU_CNT=1,PROBE6_TYPE=0,PROBE7_WIDTH=1,PROBE7_MU_CNT=1,PROBE7_TYPE=0,PROBE8_WIDTH=1,PROBE8_MU_CNT=1,PROBE8_TYPE=0,PROBE9_WIDTH=1,PROBE9_MU_CNT=1,PROBE9_TYPE=0,PROBE10_WIDTH=1,PROBE10_MU_CNT=1,PROBE10_TYPE=0,PROBE11_WIDTH=1,PROBE11_MU_CNT=1,PROBE11_TYPE=0,PROBE12_WIDTH=1,PROBE12_MU_CNT=1,PROBE12_TYPE=0,PROBE13_WIDTH=1,PROBE13_MU_CNT=1,PROBE13_TYPE=0,PROBE14_WIDTH=1,PROBE14_MU_CNT=1,PROBE14_TYPE=0,PROBE15_WIDTH=1,PROBE15_MU_CNT=1,PROBE15_TYPE=0,PROBE16_WIDTH=1,PROBE16_MU_CNT=1,PROBE16_TYPE=0,PROBE17_WIDTH=1,PROBE17_MU_CNT=1,PROBE17_TYPE=0,PROBE18_WIDTH=1,PROBE18_MU_CNT=1,PROBE18_TYPE=0,PROBE19_WIDTH=1,PROBE19_MU_CNT=1,PROBE19_TYPE=0,PROBE20_WIDTH=1,PROBE20_MU_CNT=1,PROBE20_TYPE=0,PROBE21_WIDTH=1,PROBE21_MU_CNT=1,PROBE21_TYPE=0,PROBE22_WIDTH=1,PROBE22_MU_CNT=1,PROBE22_TYPE=0,PROBE23_WIDTH=1,PROBE23_MU_CNT=1,PROBE23_TYPE=0,PROBE24_WIDTH=1,PROBE24_MU_CNT=1,PROBE24_TYPE=0,PROBE25_WIDTH=1,PROBE25_MU_CNT=1,PROBE25_TYPE=0,PROBE26_WIDTH=1,PROBE26_MU_CNT=1,PROBE26_TYPE=0,PROBE27_WIDTH=1,PROBE27_MU_CNT=1,PROBE27_TYPE=0,PROBE28_WIDTH=1,PROBE28_MU_CNT=1,PROBE28_TYPE=0,PROBE29_WIDTH=1,PROBE29_MU_CNT=1,PROBE29_TYPE=0,PROBE30_WIDTH=1,PROBE30_MU_CNT=1,PROBE30_TYPE=0,PROBE31_WIDTH=1,PROBE31_MU_CNT=1,PROBE31_TYPE=0,PROBE32_WIDTH=1,PROBE32_MU_CNT=1,PROBE32_TYPE=0,PROBE33_WIDTH=1,PROBE33_MU_CNT=1,PROBE33_TYPE=0,PROBE34_WIDTH=1,PROBE34_MU_CNT=1,PROBE34_TYPE=0,PROBE35_WIDTH=1,PROBE35_MU_CNT=1,PROBE35_TYPE=0,PROBE36_WIDTH=1,PROBE36_MU_CNT=1,PROBE36_TYPE=0,PROBE37_WIDTH=1,PROBE37_MU_CNT=1,PROBE37_TYPE=0,PROBE38_WIDTH=1,PROBE38_MU_CNT=1,PROBE38_TYPE=0,PROBE39_WIDTH=1,PROBE39_MU_CNT=1,PROBE39_TYPE=0,PROBE40_WIDTH=1,PROBE40_MU_CNT=1,PROBE40_TYPE=0,PROBE41_WIDTH=1,PROBE41_MU_CNT=1,PROBE41_TYPE=0,PROBE42_WIDTH=1,PROBE42_MU_CNT=1,PROBE42_TYPE=0,PROBE43_WIDTH=1,PROBE43_MU_CNT=1,PROBE43_TYPE=0,PROBE44_WIDTH=1,PROBE44_MU_CNT=1,PROBE44_TYPE=0,PROBE45_WIDTH=1,PROBE45_MU_CNT=1,PROBE45_TYPE=0,PROBE46_WIDTH=1,PROBE46_MU_CNT=1,PROBE46_TYPE=0,PROBE47_WIDTH=1,PROBE47_MU_CNT=1,PROBE47_TYPE=0,PROBE48_WIDTH=1,PROBE48_MU_CNT=1,PROBE48_TYPE=0,PROBE49_WIDTH=1,PROBE49_MU_CNT=1,PROBE49_TYPE=0,PROBE50_WIDTH=1,PROBE50_MU_CNT=1,PROBE50_TYPE=0,PROBE51_WIDTH=1,PROBE51_MU_CNT=1,PROBE51_TYPE=0,PROBE52_WIDTH=1,PROBE52_MU_CNT=1,PROBE52_TYPE=0,PROBE53_WIDTH=1,PROBE53_MU_CNT=1,PROBE53_TYPE=0,PROBE54_WIDTH=1,PROBE54_MU_CNT=1,PROBE54_TYPE=0,PROBE55_WIDTH=1,PROBE55_MU_CNT=1,PROBE55_TYPE=0,PROBE56_WIDTH=1,PROBE56_MU_CNT=1,PROBE56_TYPE=0,PROBE57_WIDTH=1,PROBE57_MU_CNT=1,PROBE57_TYPE=0,PROBE58_WIDTH=1,PROBE58_MU_CNT=1,PROBE58_TYPE=0,PROBE59_WIDTH=1,PROBE59_MU_CNT=1,PROBE59_TYPE=0,PROBE60_WIDTH=1,PROBE60_MU_CNT=1,PROBE60_TYPE=0,PROBE61_WIDTH=1,PROBE61_MU_CNT=1,PROBE61_TYPE=0,PROBE62_WIDTH=1,PROBE62_MU_CNT=1,PROBE62_TYPE=0,PROBE63_WIDTH=1,PROBE63_MU_CNT=1,PROBE63_TYPE=0,PROBE64_WIDTH=1,PROBE64_MU_CNT=1,PROBE64_TYPE=0,PROBE65_WIDTH=1,PROBE65_MU_CNT=1,PROBE65_TYPE=0,PROBE66_WIDTH=1,PROBE66_MU_CNT=1,PROBE66_TYPE=0,PROBE67_WIDTH=1,PROBE67_MU_CNT=1,PROBE67_TYPE=0,PROBE68_WIDTH=1,PROBE68_MU_CNT=1,PROBE68_TYPE=0,PROBE69_WIDTH=1,PROBE69_MU_CNT=1,PROBE69_TYPE=0,PROBE70_WIDTH=1,PROBE70_MU_CNT=1,PROBE70_TYPE=0,PROBE71_WIDTH=1,PROBE71_MU_CNT=1,PROBE71_TYPE=0,PROBE72_WIDTH=1,PROBE72_MU_CNT=1,PROBE72_TYPE=0,PROBE73_WIDTH=1,PROBE73_MU_CNT=1,PROBE73_TYPE=0,PROBE74_WIDTH=1,PROBE74_MU_CNT=1,PROBE74_TYPE=0,PROBE75_WIDTH=1,PROBE75_MU_CNT=1,PROBE75_TYPE=0,PROBE76_WIDTH=1,PROBE76_MU_CNT=1,PROBE76_TYPE=0,PROBE77_WIDTH=1,PROBE77_MU_CNT=1,PROBE77_TYPE=0,PROBE78_WIDTH=1,PROBE78_MU_CNT=1,PROBE78_TYPE=0,PROBE79_WIDTH=1,PROBE79_MU_CNT=1,PROBE79_TYPE=0,PROBE80_WIDTH=1,PROBE80_MU_CNT=1,PROBE80_TYPE=0,PROBE81_WIDTH=1,PROBE81_MU_CNT=1,PROBE81_TYPE=0,PROBE82_WIDTH=1,PROBE82_MU_CNT=1,PROBE82_TYPE=0,PROBE83_WIDTH=1,PROBE83_MU_CNT=1,PROBE83_TYPE=0,PROBE84_WIDTH=1,PROBE84_MU_CNT=1,PROBE84_TYPE=0,PROBE85_WIDTH=1,PROBE85_MU_CNT=1,PROBE85_TYPE=0,PROBE86_WIDTH=1,PROBE86_MU_CNT=1,PROBE86_TYPE=0,PROBE87_WIDTH=1,PROBE87_MU_CNT=1,PROBE87_TYPE=0,PROBE88_WIDTH=1,PROBE88_MU_CNT=1,PROBE88_TYPE=0,PROBE89_WIDTH=1,PROBE89_MU_CNT=1,PROBE89_TYPE=0,PROBE90_WIDTH=1,PROBE90_MU_CNT=1,PROBE90_TYPE=0,PROBE91_WIDTH=1,PROBE91_MU_CNT=1,PROBE91_TYPE=0,PROBE92_WIDTH=1,PROBE92_MU_CNT=1,PROBE92_TYPE=0,PROBE93_WIDTH=1,PROBE93_MU_CNT=1,PROBE93_TYPE=0,PROBE94_WIDTH=1,PROBE94_MU_CNT=1,PROBE94_TYPE=0,PROBE95_WIDTH=1,PROBE95_MU_CNT=1,PROBE95_TYPE=0,PROBE96_WIDTH=1,PROBE96_MU_CNT=1,PROBE96_TYPE=0,PROBE97_WIDTH=1,PROBE97_MU_CNT=1,PROBE97_TYPE=0,PROBE98_WIDTH=1,PROBE98_MU_CNT=1,PROBE98_TYPE=0,PROBE99_WIDTH=1,PROBE99_MU_CNT=1,PROBE99_TYPE=0,PROBE100_WIDTH=1,PROBE100_MU_CNT=1,PROBE100_TYPE=0,PROBE101_WIDTH=1,PROBE101_MU_CNT=1,PROBE101_TYPE=0,PROBE102_WIDTH=1,PROBE102_MU_CNT=1,PROBE102_TYPE=0,PROBE103_WIDTH=1,PROBE103_MU_CNT=1,PROBE103_TYPE=0,PROBE104_WIDTH=1,PROBE104_MU_CNT=1,PROBE104_TYPE=0,PROBE105_WIDTH=1,PROBE105_MU_CNT=1,PROBE105_TYPE=0,PROBE106_WIDTH=1,PROBE106_MU_CNT=1,PROBE106_TYPE=0,PROBE107_WIDTH=1,PROBE107_MU_CNT=1,PROBE107_TYPE=0,PROBE108_WIDTH=1,PROBE108_MU_CNT=1,PROBE108_TYPE=0,PROBE109_WIDTH=1,PROBE109_MU_CNT=1,PROBE109_TYPE=0,PROBE110_WIDTH=1,PROBE110_MU_CNT=1,PROBE110_TYPE=0,PROBE111_WIDTH=1,PROBE111_MU_CNT=1,PROBE111_TYPE=0,PROBE112_WIDTH=1,PROBE112_MU_CNT=1,PROBE112_TYPE=0,PROBE113_WIDTH=1,PROBE113_MU_CNT=1,PROBE113_TYPE=0,PROBE114_WIDTH=1,PROBE114_MU_CNT=1,PROBE114_TYPE=0,PROBE115_WIDTH=1,PROBE115_MU_CNT=1,PROBE115_TYPE=0,PROBE116_WIDTH=1,PROBE116_MU_CNT=1,PROBE116_TYPE=0,PROBE117_WIDTH=1,PROBE117_MU_CNT=1,PROBE117_TYPE=0,PROBE118_WIDTH=1,PROBE118_MU_CNT=1,PROBE118_TYPE=0,PROBE119_WIDTH=1,PROBE119_MU_CNT=1,PROBE119_TYPE=0,PROBE120_WIDTH=1,PROBE120_MU_CNT=1,PROBE120_TYPE=0,PROBE121_WIDTH=1,PROBE121_MU_CNT=1,PROBE121_TYPE=0,PROBE122_WIDTH=1,PROBE122_MU_CNT=1,PROBE122_TYPE=0,PROBE123_WIDTH=1,PROBE123_MU_CNT=1,PROBE123_TYPE=0,PROBE124_WIDTH=1,PROBE124_MU_CNT=1,PROBE124_TYPE=0,PROBE125_WIDTH=1,PROBE125_MU_CNT=1,PROBE125_TYPE=0,PROBE126_WIDTH=1,PROBE126_MU_CNT=1,PROBE126_TYPE=0,PROBE127_WIDTH=1,PROBE127_MU_CNT=1,PROBE127_TYPE=0,PROBE128_WIDTH=1,PROBE128_MU_CNT=1,PROBE128_TYPE=0,PROBE129_WIDTH=1,PROBE129_MU_CNT=1,PROBE129_TYPE=0,PROBE130_WIDTH=1,PROBE130_MU_CNT=1,PROBE130_TYPE=0,PROBE131_WIDTH=1,PROBE131_MU_CNT=1,PROBE131_TYPE=0,PROBE132_WIDTH=1,PROBE132_MU_CNT=1,PROBE132_TYPE=0,PROBE133_WIDTH=1,PROBE133_MU_CNT=1,PROBE133_TYPE=0,PROBE134_WIDTH=1,PROBE134_MU_CNT=1,PROBE134_TYPE=0,PROBE135_WIDTH=1,PROBE135_MU_CNT=1,PROBE135_TYPE=0,PROBE136_WIDTH=1,PROBE136_MU_CNT=1,PROBE136_TYPE=0,PROBE137_WIDTH=1,PROBE137_MU_CNT=1,PROBE137_TYPE=0,PROBE138_WIDTH=1,PROBE138_MU_CNT=1,PROBE138_TYPE=0,PROBE139_WIDTH=1,PROBE139_MU_CNT=1,PROBE139_TYPE=0,PROBE140_WIDTH=1,PROBE140_MU_CNT=1,PROBE140_TYPE=0,PROBE141_WIDTH=1,PROBE141_MU_CNT=1,PROBE141_TYPE=0,PROBE142_WIDTH=1,PROBE142_MU_CNT=1,PROBE142_TYPE=0,PROBE143_WIDTH=1,PROBE143_MU_CNT=1,PROBE143_TYPE=0,PROBE144_WIDTH=1,PROBE144_MU_CNT=1,PROBE144_TYPE=0,PROBE145_WIDTH=1,PROBE145_MU_CNT=1,PROBE145_TYPE=0,PROBE146_WIDTH=1,PROBE146_MU_CNT=1,PROBE146_TYPE=0,PROBE147_WIDTH=1,PROBE147_MU_CNT=1,PROBE147_TYPE=0,PROBE148_WIDTH=1,PROBE148_MU_CNT=1,PROBE148_TYPE=0,PROBE149_WIDTH=1,PROBE149_MU_CNT=1,PROBE149_TYPE=0,PROBE150_WIDTH=1,PROBE150_MU_CNT=1,PROBE150_TYPE=0,PROBE151_WIDTH=1,PROBE151_MU_CNT=1,PROBE151_TYPE=0,PROBE152_WIDTH=1,PROBE152_MU_CNT=1,PROBE152_TYPE=0,PROBE153_WIDTH=1,PROBE153_MU_CNT=1,PROBE153_TYPE=0,PROBE154_WIDTH=1,PROBE154_MU_CNT=1,PROBE154_TYPE=0,PROBE155_WIDTH=1,PROBE155_MU_CNT=1,PROBE155_TYPE=0,PROBE156_WIDTH=1,PROBE156_MU_CNT=1,PROBE156_TYPE=0,PROBE157_WIDTH=1,PROBE157_MU_CNT=1,PROBE157_TYPE=0,PROBE158_WIDTH=1,PROBE158_MU_CNT=1,PROBE158_TYPE=0,PROBE159_WIDTH=1,PROBE159_MU_CNT=1,PROBE159_TYPE=0,PROBE160_WIDTH=1,PROBE160_MU_CNT=1,PROBE160_TYPE=0,PROBE161_WIDTH=1,PROBE161_MU_CNT=1,PROBE161_TYPE=0,PROBE162_WIDTH=1,PROBE162_MU_CNT=1,PROBE162_TYPE=0,PROBE163_WIDTH=1,PROBE163_MU_CNT=1,PROBE163_TYPE=0,PROBE164_WIDTH=1,PROBE164_MU_CNT=1,PROBE164_TYPE=0,PROBE165_WIDTH=1,PROBE165_MU_CN... (message truncated)
@@ -37,7 +39,7 @@ INFO: [Synth 8-638] synthesizing module 'ila_4p8g' [/home/evka/code/tamu_ctp7_v7
 	Parameter C_NUM_OF_PROBES bound to: 5 - type: integer 
 	Parameter C_DATA_DEPTH bound to: 1024 - type: integer 
 	Parameter C_MAJOR_VERSION bound to: 2015 - type: integer 
-	Parameter C_MINOR_VERSION bound to: 3 - type: integer 
+	Parameter C_MINOR_VERSION bound to: 4 - type: integer 
 	Parameter C_BUILD_REVISION bound to: 0 - type: integer 
 	Parameter C_CORE_MAJOR_VER bound to: 6 - type: integer 
 	Parameter C_CORE_MINOR_VER bound to: 0 - type: integer 
@@ -3125,8 +3127,8 @@ INFO: [Synth 8-638] synthesizing module 'ila_4p8g' [/home/evka/code/tamu_ctp7_v7
 	Parameter C_PROBE1021_TYPE bound to: 1 - type: integer 
 	Parameter C_PROBE1022_TYPE bound to: 1 - type: integer 
 	Parameter C_PROBE1023_TYPE bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'ila_v6_0_0_ila' declared at '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:5444' bound to instance 'U0' of component 'ila_v6_0_0_ila' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:5444]
+INFO: [Synth 8-3491] module 'ila_v6_0_1_ila' declared at '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:5444' bound to instance 'U0' of component 'ila_v6_0_1_ila' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-638] synthesizing module 'ila_v6_0_1_ila' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:5444]
 	Parameter C_XLNX_HW_PROBE_INFO bound to: NUM_OF_PROBES=5,DATA_DEPTH=1024,PROBE0_WIDTH=32,PROBE0_MU_CNT=1,PROBE0_TYPE=0,PROBE1_WIDTH=4,PROBE1_MU_CNT=1,PROBE1_TYPE=0,PROBE2_WIDTH=4,PROBE2_MU_CNT=1,PROBE2_TYPE=0,PROBE3_WIDTH=4,PROBE3_MU_CNT=1,PROBE3_TYPE=0,PROBE4_WIDTH=4,PROBE4_MU_CNT=1,PROBE4_TYPE=0,PROBE5_WIDTH=1,PROBE5_MU_CNT=1,PROBE5_TYPE=0,PROBE6_WIDTH=1,PROBE6_MU_CNT=1,PROBE6_TYPE=0,PROBE7_WIDTH=1,PROBE7_MU_CNT=1,PROBE7_TYPE=0,PROBE8_WIDTH=1,PROBE8_MU_CNT=1,PROBE8_TYPE=0,PROBE9_WIDTH=1,PROBE9_MU_CNT=1,PROBE9_TYPE=0,PROBE10_WIDTH=1,PROBE10_MU_CNT=1,PROBE10_TYPE=0,PROBE11_WIDTH=1,PROBE11_MU_CNT=1,PROBE11_TYPE=0,PROBE12_WIDTH=1,PROBE12_MU_CNT=1,PROBE12_TYPE=0,PROBE13_WIDTH=1,PROBE13_MU_CNT=1,PROBE13_TYPE=0,PROBE14_WIDTH=1,PROBE14_MU_CNT=1,PROBE14_TYPE=0,PROBE15_WIDTH=1,PROBE15_MU_CNT=1,PROBE15_TYPE=0,PROBE16_WIDTH=1,PROBE16_MU_CNT=1,PROBE16_TYPE=0,PROBE17_WIDTH=1,PROBE17_MU_CNT=1,PROBE17_TYPE=0,PROBE18_WIDTH=1,PROBE18_MU_CNT=1,PROBE18_TYPE=0,PROBE19_WIDTH=1,PROBE19_MU_CNT=1,PROBE19_TYPE=0,PROBE20_WIDTH=1,PROBE20_MU_CNT=1,PROBE20_TYPE=0,PROBE21_WIDTH=1,PROBE21_MU_CNT=1,PROBE21_TYPE=0,PROBE22_WIDTH=1,PROBE22_MU_CNT=1,PROBE22_TYPE=0,PROBE23_WIDTH=1,PROBE23_MU_CNT=1,PROBE23_TYPE=0,PROBE24_WIDTH=1,PROBE24_MU_CNT=1,PROBE24_TYPE=0,PROBE25_WIDTH=1,PROBE25_MU_CNT=1,PROBE25_TYPE=0,PROBE26_WIDTH=1,PROBE26_MU_CNT=1,PROBE26_TYPE=0,PROBE27_WIDTH=1,PROBE27_MU_CNT=1,PROBE27_TYPE=0,PROBE28_WIDTH=1,PROBE28_MU_CNT=1,PROBE28_TYPE=0,PROBE29_WIDTH=1,PROBE29_MU_CNT=1,PROBE29_TYPE=0,PROBE30_WIDTH=1,PROBE30_MU_CNT=1,PROBE30_TYPE=0,PROBE31_WIDTH=1,PROBE31_MU_CNT=1,PROBE31_TYPE=0,PROBE32_WIDTH=1,PROBE32_MU_CNT=1,PROBE32_TYPE=0,PROBE33_WIDTH=1,PROBE33_MU_CNT=1,PROBE33_TYPE=0,PROBE34_WIDTH=1,PROBE34_MU_CNT=1,PROBE34_TYPE=0,PROBE35_WIDTH=1,PROBE35_MU_CNT=1,PROBE35_TYPE=0,PROBE36_WIDTH=1,PROBE36_MU_CNT=1,PROBE36_TYPE=0,PROBE37_WIDTH=1,PROBE37_MU_CNT=1,PROBE37_TYPE=0,PROBE38_WIDTH=1,PROBE38_MU_CNT=1,PROBE38_TYPE=0,PROBE39_WIDTH=1,PROBE39_MU_CNT=1,PROBE39_TYPE=0,PROBE40_WIDTH=1,PROBE40_MU_CNT=1,PROBE40_TYPE=0,PROBE41_WIDTH=1,PROBE41_MU_CNT=1,PROBE41_TYPE=0,PROBE42_WIDTH=1,PROBE42_MU_CNT=1,PROBE42_TYPE=0,PROBE43_WIDTH=1,PROBE43_MU_CNT=1,PROBE43_TYPE=0,PROBE44_WIDTH=1,PROBE44_MU_CNT=1,PROBE44_TYPE=0,PROBE45_WIDTH=1,PROBE45_MU_CNT=1,PROBE45_TYPE=0,PROBE46_WIDTH=1,PROBE46_MU_CNT=1,PROBE46_TYPE=0,PROBE47_WIDTH=1,PROBE47_MU_CNT=1,PROBE47_TYPE=0,PROBE48_WIDTH=1,PROBE48_MU_CNT=1,PROBE48_TYPE=0,PROBE49_WIDTH=1,PROBE49_MU_CNT=1,PROBE49_TYPE=0,PROBE50_WIDTH=1,PROBE50_MU_CNT=1,PROBE50_TYPE=0,PROBE51_WIDTH=1,PROBE51_MU_CNT=1,PROBE51_TYPE=0,PROBE52_WIDTH=1,PROBE52_MU_CNT=1,PROBE52_TYPE=0,PROBE53_WIDTH=1,PROBE53_MU_CNT=1,PROBE53_TYPE=0,PROBE54_WIDTH=1,PROBE54_MU_CNT=1,PROBE54_TYPE=0,PROBE55_WIDTH=1,PROBE55_MU_CNT=1,PROBE55_TYPE=0,PROBE56_WIDTH=1,PROBE56_MU_CNT=1,PROBE56_TYPE=0,PROBE57_WIDTH=1,PROBE57_MU_CNT=1,PROBE57_TYPE=0,PROBE58_WIDTH=1,PROBE58_MU_CNT=1,PROBE58_TYPE=0,PROBE59_WIDTH=1,PROBE59_MU_CNT=1,PROBE59_TYPE=0,PROBE60_WIDTH=1,PROBE60_MU_CNT=1,PROBE60_TYPE=0,PROBE61_WIDTH=1,PROBE61_MU_CNT=1,PROBE61_TYPE=0,PROBE62_WIDTH=1,PROBE62_MU_CNT=1,PROBE62_TYPE=0,PROBE63_WIDTH=1,PROBE63_MU_CNT=1,PROBE63_TYPE=0,PROBE64_WIDTH=1,PROBE64_MU_CNT=1,PROBE64_TYPE=0,PROBE65_WIDTH=1,PROBE65_MU_CNT=1,PROBE65_TYPE=0,PROBE66_WIDTH=1,PROBE66_MU_CNT=1,PROBE66_TYPE=0,PROBE67_WIDTH=1,PROBE67_MU_CNT=1,PROBE67_TYPE=0,PROBE68_WIDTH=1,PROBE68_MU_CNT=1,PROBE68_TYPE=0,PROBE69_WIDTH=1,PROBE69_MU_CNT=1,PROBE69_TYPE=0,PROBE70_WIDTH=1,PROBE70_MU_CNT=1,PROBE70_TYPE=0,PROBE71_WIDTH=1,PROBE71_MU_CNT=1,PROBE71_TYPE=0,PROBE72_WIDTH=1,PROBE72_MU_CNT=1,PROBE72_TYPE=0,PROBE73_WIDTH=1,PROBE73_MU_CNT=1,PROBE73_TYPE=0,PROBE74_WIDTH=1,PROBE74_MU_CNT=1,PROBE74_TYPE=0,PROBE75_WIDTH=1,PROBE75_MU_CNT=1,PROBE75_TYPE=0,PROBE76_WIDTH=1,PROBE76_MU_CNT=1,PROBE76_TYPE=0,PROBE77_WIDTH=1,PROBE77_MU_CNT=1,PROBE77_TYPE=0,PROBE78_WIDTH=1,PROBE78_MU_CNT=1,PROBE78_TYPE=0,PROBE79_WIDTH=1,PROBE79_MU_CNT=1,PROBE79_TYPE=0,PROBE80_WIDTH=1,PROBE80_MU_CNT=1,PROBE80_TYPE=0,PROBE81_WIDTH=1,PROBE81_MU_CNT=1,PROBE81_TYPE=0,PROBE82_WIDTH=1,PROBE82_MU_CNT=1,PROBE82_TYPE=0,PROBE83_WIDTH=1,PROBE83_MU_CNT=1,PROBE83_TYPE=0,PROBE84_WIDTH=1,PROBE84_MU_CNT=1,PROBE84_TYPE=0,PROBE85_WIDTH=1,PROBE85_MU_CNT=1,PROBE85_TYPE=0,PROBE86_WIDTH=1,PROBE86_MU_CNT=1,PROBE86_TYPE=0,PROBE87_WIDTH=1,PROBE87_MU_CNT=1,PROBE87_TYPE=0,PROBE88_WIDTH=1,PROBE88_MU_CNT=1,PROBE88_TYPE=0,PROBE89_WIDTH=1,PROBE89_MU_CNT=1,PROBE89_TYPE=0,PROBE90_WIDTH=1,PROBE90_MU_CNT=1,PROBE90_TYPE=0,PROBE91_WIDTH=1,PROBE91_MU_CNT=1,PROBE91_TYPE=0,PROBE92_WIDTH=1,PROBE92_MU_CNT=1,PROBE92_TYPE=0,PROBE93_WIDTH=1,PROBE93_MU_CNT=1,PROBE93_TYPE=0,PROBE94_WIDTH=1,PROBE94_MU_CNT=1,PROBE94_TYPE=0,PROBE95_WIDTH=1,PROBE95_MU_CNT=1,PROBE95_TYPE=0,PROBE96_WIDTH=1,PROBE96_MU_CNT=1,PROBE96_TYPE=0,PROBE97_WIDTH=1,PROBE97_MU_CNT=1,PROBE97_TYPE=0,PROBE98_WIDTH=1,PROBE98_MU_CNT=1,PROBE98_TYPE=0,PROBE99_WIDTH=1,PROBE99_MU_CNT=1,PROBE99_TYPE=0,PROBE100_WIDTH=1,PROBE100_MU_CNT=1,PROBE100_TYPE=0,PROBE101_WIDTH=1,PROBE101_MU_CNT=1,PROBE101_TYPE=0,PROBE102_WIDTH=1,PROBE102_MU_CNT=1,PROBE102_TYPE=0,PROBE103_WIDTH=1,PROBE103_MU_CNT=1,PROBE103_TYPE=0,PROBE104_WIDTH=1,PROBE104_MU_CNT=1,PROBE104_TYPE=0,PROBE105_WIDTH=1,PROBE105_MU_CNT=1,PROBE105_TYPE=0,PROBE106_WIDTH=1,PROBE106_MU_CNT=1,PROBE106_TYPE=0,PROBE107_WIDTH=1,PROBE107_MU_CNT=1,PROBE107_TYPE=0,PROBE108_WIDTH=1,PROBE108_MU_CNT=1,PROBE108_TYPE=0,PROBE109_WIDTH=1,PROBE109_MU_CNT=1,PROBE109_TYPE=0,PROBE110_WIDTH=1,PROBE110_MU_CNT=1,PROBE110_TYPE=0,PROBE111_WIDTH=1,PROBE111_MU_CNT=1,PROBE111_TYPE=0,PROBE112_WIDTH=1,PROBE112_MU_CNT=1,PROBE112_TYPE=0,PROBE113_WIDTH=1,PROBE113_MU_CNT=1,PROBE113_TYPE=0,PROBE114_WIDTH=1,PROBE114_MU_CNT=1,PROBE114_TYPE=0,PROBE115_WIDTH=1,PROBE115_MU_CNT=1,PROBE115_TYPE=0,PROBE116_WIDTH=1,PROBE116_MU_CNT=1,PROBE116_TYPE=0,PROBE117_WIDTH=1,PROBE117_MU_CNT=1,PROBE117_TYPE=0,PROBE118_WIDTH=1,PROBE118_MU_CNT=1,PROBE118_TYPE=0,PROBE119_WIDTH=1,PROBE119_MU_CNT=1,PROBE119_TYPE=0,PROBE120_WIDTH=1,PROBE120_MU_CNT=1,PROBE120_TYPE=0,PROBE121_WIDTH=1,PROBE121_MU_CNT=1,PROBE121_TYPE=0,PROBE122_WIDTH=1,PROBE122_MU_CNT=1,PROBE122_TYPE=0,PROBE123_WIDTH=1,PROBE123_MU_CNT=1,PROBE123_TYPE=0,PROBE124_WIDTH=1,PROBE124_MU_CNT=1,PROBE124_TYPE=0,PROBE125_WIDTH=1,PROBE125_MU_CNT=1,PROBE125_TYPE=0,PROBE126_WIDTH=1,PROBE126_MU_CNT=1,PROBE126_TYPE=0,PROBE127_WIDTH=1,PROBE127_MU_CNT=1,PROBE127_TYPE=0,PROBE128_WIDTH=1,PROBE128_MU_CNT=1,PROBE128_TYPE=0,PROBE129_WIDTH=1,PROBE129_MU_CNT=1,PROBE129_TYPE=0,PROBE130_WIDTH=1,PROBE130_MU_CNT=1,PROBE130_TYPE=0,PROBE131_WIDTH=1,PROBE131_MU_CNT=1,PROBE131_TYPE=0,PROBE132_WIDTH=1,PROBE132_MU_CNT=1,PROBE132_TYPE=0,PROBE133_WIDTH=1,PROBE133_MU_CNT=1,PROBE133_TYPE=0,PROBE134_WIDTH=1,PROBE134_MU_CNT=1,PROBE134_TYPE=0,PROBE135_WIDTH=1,PROBE135_MU_CNT=1,PROBE135_TYPE=0,PROBE136_WIDTH=1,PROBE136_MU_CNT=1,PROBE136_TYPE=0,PROBE137_WIDTH=1,PROBE137_MU_CNT=1,PROBE137_TYPE=0,PROBE138_WIDTH=1,PROBE138_MU_CNT=1,PROBE138_TYPE=0,PROBE139_WIDTH=1,PROBE139_MU_CNT=1,PROBE139_TYPE=0,PROBE140_WIDTH=1,PROBE140_MU_CNT=1,PROBE140_TYPE=0,PROBE141_WIDTH=1,PROBE141_MU_CNT=1,PROBE141_TYPE=0,PROBE142_WIDTH=1,PROBE142_MU_CNT=1,PROBE142_TYPE=0,PROBE143_WIDTH=1,PROBE143_MU_CNT=1,PROBE143_TYPE=0,PROBE144_WIDTH=1,PROBE144_MU_CNT=1,PROBE144_TYPE=0,PROBE145_WIDTH=1,PROBE145_MU_CNT=1,PROBE145_TYPE=0,PROBE146_WIDTH=1,PROBE146_MU_CNT=1,PROBE146_TYPE=0,PROBE147_WIDTH=1,PROBE147_MU_CNT=1,PROBE147_TYPE=0,PROBE148_WIDTH=1,PROBE148_MU_CNT=1,PROBE148_TYPE=0,PROBE149_WIDTH=1,PROBE149_MU_CNT=1,PROBE149_TYPE=0,PROBE150_WIDTH=1,PROBE150_MU_CNT=1,PROBE150_TYPE=0,PROBE151_WIDTH=1,PROBE151_MU_CNT=1,PROBE151_TYPE=0,PROBE152_WIDTH=1,PROBE152_MU_CNT=1,PROBE152_TYPE=0,PROBE153_WIDTH=1,PROBE153_MU_CNT=1,PROBE153_TYPE=0,PROBE154_WIDTH=1,PROBE154_MU_CNT=1,PROBE154_TYPE=0,PROBE155_WIDTH=1,PROBE155_MU_CNT=1,PROBE155_TYPE=0,PROBE156_WIDTH=1,PROBE156_MU_CNT=1,PROBE156_TYPE=0,PROBE157_WIDTH=1,PROBE157_MU_CNT=1,PROBE157_TYPE=0,PROBE158_WIDTH=1,PROBE158_MU_CNT=1,PROBE158_TYPE=0,PROBE159_WIDTH=1,PROBE159_MU_CNT=1,PROBE159_TYPE=0,PROBE160_WIDTH=1,PROBE160_MU_CNT=1,PROBE160_TYPE=0,PROBE161_WIDTH=1,PROBE161_MU_CNT=1,PROBE161_TYPE=0,PROBE162_WIDTH=1,PROBE162_MU_CNT=1,PROBE162_TYPE=0,PROBE163_WIDTH=1,PROBE163_MU_CNT=1,PROBE163_TYPE=0,PROBE164_WIDTH=1,PROBE164_MU_CNT=1,PROBE164_TYPE=0,PROBE165_WIDTH=1,PROBE165_MU_CN... (message truncated)
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_CORE_TYPE bound to: 1 - type: integer 
@@ -3138,7 +3140,7 @@ INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila' [/home/evka/code/tamu_c
 	Parameter C_NUM_OF_PROBES bound to: 5 - type: integer 
 	Parameter C_DATA_DEPTH bound to: 1024 - type: integer 
 	Parameter C_MAJOR_VERSION bound to: 2015 - type: integer 
-	Parameter C_MINOR_VERSION bound to: 3 - type: integer 
+	Parameter C_MINOR_VERSION bound to: 4 - type: integer 
 	Parameter C_BUILD_REVISION bound to: 0 - type: integer 
 	Parameter C_CORE_MAJOR_VER bound to: 6 - type: integer 
 	Parameter C_CORE_MINOR_VER bound to: 0 - type: integer 
@@ -3151,6 +3153,15 @@ INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila' [/home/evka/code/tamu_c
 	Parameter C_TRIGOUT_EN bound to: 0 - type: integer 
 	Parameter C_TRIGIN_EN bound to: 0 - type: integer 
 	Parameter C_SLOT_0_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_SLOT_0_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_SLOT_0_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_SLOT_0_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_SLOT_0_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_SLOT_0_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_SLOT_0_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_SLOT_0_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_SLOT_0_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_SLOT_0_AXI_WUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_NUM_MONITOR_SLOTS bound to: 1 - type: integer 
 	Parameter C_ENABLE_ILA_AXI_MON bound to: 0 - type: integer 
 	Parameter C_PROBE0_WIDTH bound to: 32 - type: integer 
@@ -9324,11 +9335,11 @@ INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila' [/home/evka/code/tamu_c
 	Parameter LC_TRIG_WIDTH bound to: 48 - type: integer 
 	Parameter LC_DATA_WIDTH bound to: 48 - type: integer 
 	Parameter LC_COMPUTED_DATA_WIDTH bound to: 48 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:5689]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:5690]
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:5748]
-INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:5748]
-INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_core' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1139]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:5689]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:5690]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:5748]
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:5748]
+INFO: [Synth 8-638] synthesizing module 'ila_v6_0_1_ila_core' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1139]
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_ADV_TRIGGER bound to: 0 - type: integer 
 	Parameter C_EN_DDR_ILA bound to: 0 - type: integer 
@@ -9354,7 +9365,7 @@ INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_core' [/home/evka/code/t
 	Parameter C_CORE_INFO1 bound to: 0 - type: integer 
 	Parameter C_CORE_INFO2 bound to: 0 - type: integer 
 	Parameter C_MAJOR_VERSION bound to: 2015 - type: integer 
-	Parameter C_MINOR_VERSION bound to: 3 - type: integer 
+	Parameter C_MINOR_VERSION bound to: 4 - type: integer 
 	Parameter C_BUILD_REVISION bound to: 0 - type: integer 
 	Parameter C_CORE_TYPE bound to: 1 - type: integer 
 	Parameter C_CORE_MAJOR_VER bound to: 6 - type: integer 
@@ -9369,8 +9380,8 @@ INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_core' [/home/evka/code/t
 	Parameter C_TRIGIN_EN bound to: 0 - type: integer 
 	Parameter LC_MATCH_UNITS_CNT bound to: 5 - type: integer 
 	Parameter LC_RAM_WIDTH bound to: 49 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1438]
-INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_register' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1854]
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1438]
+INFO: [Synth 8-638] synthesizing module 'ila_v6_0_1_ila_register' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1854]
 	Parameter DATA_WIDTH_SS_P bound to: 48 - type: integer 
 	Parameter DATA_DEPTH_SS_P bound to: 1024 - type: integer 
 	Parameter MU_CNT_SS_P bound to: 5 - type: integer 
@@ -9393,7 +9404,7 @@ INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_register' [/home/evka/co
 	Parameter C_MATCH_TPID_VEC bound to: 80'b00000000000001000000000000000011000000000000001000000000000000010000000000000000 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_MAJOR_VERSION bound to: 2015 - type: integer 
-	Parameter C_MINOR_VERSION bound to: 3 - type: integer 
+	Parameter C_MINOR_VERSION bound to: 4 - type: integer 
 	Parameter C_BUILD_REVISION bound to: 0 - type: integer 
 	Parameter C_CORE_MAJOR_VER bound to: 6 - type: integer 
 	Parameter C_CORE_MINOR_VER bound to: 0 - type: integer 
@@ -9410,7 +9421,7 @@ INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_register' [/home/evka/co
 	Parameter LC_LSB_AWIDTH bound to: 13 - type: integer 
 	Parameter LC_D_ZERO bound to: 16'b0000000000000000 
 	Parameter WORD_COUNT bound to: 64 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:2165]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:2165]
 INFO: [Synth 8-638] synthesizing module 'xsdbs_v1_0_2_reg' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/xsdbs_v1_0_2/hdl/xsdbs_v1_0_vl_rfs.v:323]
 	Parameter C_ADDR_W bound to: 13 - type: integer 
 	Parameter C_DATA_W bound to: 16 - type: integer 
@@ -9589,7 +9600,7 @@ INFO: [Synth 8-256] done synthesizing module 'xsdbs_v1_0_2_reg_p2s__parameterize
 INFO: [Synth 8-638] synthesizing module 'xsdbs_v1_0_2_xsdbs' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/xsdbs_v1_0_2/hdl/xsdbs_v1_0_vl_rfs.v:709]
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_MAJOR_VERSION bound to: 2015 - type: integer 
-	Parameter C_MINOR_VERSION bound to: 3 - type: integer 
+	Parameter C_MINOR_VERSION bound to: 4 - type: integer 
 	Parameter C_BUILD_REVISION bound to: 0 - type: integer 
 	Parameter C_CORE_TYPE bound to: 1 - type: integer 
 	Parameter C_CORE_MAJOR_VER bound to: 6 - type: integer 
@@ -9968,8 +9979,8 @@ INFO: [Synth 8-638] synthesizing module 'xsdbs_v1_0_2_reg_stream__parameterized0
 	Parameter C_EN_STAT bound to: 1 - type: integer 
 	Parameter C_EN_CTL bound to: 0 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'xsdbs_v1_0_2_reg_stream__parameterized0' (6#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/xsdbs_v1_0_2/hdl/xsdbs_v1_0_vl_rfs.v:509]
-INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_0_ila_register' (7#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1854]
-INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_trigger' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:5180]
+INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_1_ila_register' (7#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1854]
+INFO: [Synth 8-638] synthesizing module 'ila_v6_0_1_ila_trigger' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:5180]
 	Parameter C_TRIG_EN_NUM_MATCH_UNITS bound to: 5 - type: integer 
 	Parameter C_NUM_MATCH_UNITS bound to: 5 - type: integer 
 	Parameter C_NUM_MATCH_UNITS1 bound to: 5 - type: integer 
@@ -10010,18 +10021,18 @@ INFO: [Synth 8-638] synthesizing module 'ltlib_v1_0_0_all_typeA' [/home/evka/cod
 INFO: [Synth 8-638] synthesizing module 'ltlib_v1_0_0_all_typeA_slice' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:314]
 	Parameter C_USE_OUTPUT_REG bound to: 1 - type: integer 
 	Parameter C_IS_TERMINATION_SLICE bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'CFGLUT5' [/opt/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:998]
+INFO: [Synth 8-638] synthesizing module 'CFGLUT5' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:998]
 	Parameter INIT bound to: 32'b00000000000000000000000000000000 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-256] done synthesizing module 'CFGLUT5' (8#1) [/opt/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:998]
-INFO: [Synth 8-638] synthesizing module 'CARRY4' [/opt/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:961]
-INFO: [Synth 8-256] done synthesizing module 'CARRY4' (9#1) [/opt/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-256] done synthesizing module 'CFGLUT5' (8#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:998]
+INFO: [Synth 8-638] synthesizing module 'CARRY4' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-256] done synthesizing module 'CARRY4' (9#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:961]
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_all_typeA_slice' (10#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:314]
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_all_typeA' (11#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:91]
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_allx_typeA' (12#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:463]
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:2002]
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_match' (13#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1944]
-INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_trig_match' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:4298]
+INFO: [Synth 8-638] synthesizing module 'ila_v6_0_1_ila_trig_match' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:4298]
 	Parameter C_NUM_MATCH_UNITS bound to: 5 - type: integer 
 	Parameter C_EN_DDR_ILA bound to: 0 - type: integer 
 	Parameter C_NUM_MUS bound to: 5 - type: integer 
@@ -10126,9 +10137,9 @@ INFO: [Synth 8-638] synthesizing module 'ltlib_v1_0_0_allx_typeA__parameterized4
 	Parameter START_DLY_IDX bound to: 0 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_allx_typeA__parameterized4' (13#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:463]
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_match__parameterized4' (13#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1944]
-INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_0_ila_trig_match' (14#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:4298]
-INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_0_ila_trigger' (15#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:5180]
-INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_reset_ctrl' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:3628]
+INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_1_ila_trig_match' (14#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:4298]
+INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_1_ila_trigger' (15#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:5180]
+INFO: [Synth 8-638] synthesizing module 'ila_v6_0_1_ila_reset_ctrl' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:3628]
 	Parameter C_RESET_WIDTH bound to: 6 - type: integer 
 	Parameter C_SAME_CLK bound to: 1'b0 
 INFO: [Synth 8-638] synthesizing module 'ltlib_v1_0_0_async_edge_xfer' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:916]
@@ -10141,54 +10152,54 @@ INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_async_edge_xfer' (16#
 INFO: [Synth 8-638] synthesizing module 'ltlib_v1_0_0_rising_edge_detection' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:2139]
 	Parameter C_PULSE_LENGTH bound to: 2 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_rising_edge_detection' (17#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:2139]
-INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_0_ila_reset_ctrl' (18#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:3628]
-INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_cap_ctrl_legacy' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:423]
+INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_1_ila_reset_ctrl' (18#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:3628]
+INFO: [Synth 8-638] synthesizing module 'ila_v6_0_1_ila_cap_ctrl_legacy' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:423]
 	Parameter C_CORE_TYPE bound to: 2 - type: integer 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_TSEQ_TYPE bound to: 0 - type: integer 
 	Parameter C_DATA_DEPTH bound to: 1024 - type: integer 
 	Parameter C_MATCH_UNIT_TYPE bound to: 0 - type: integer 
 	Parameter log2_C_DATA_DEPTH bound to: 10 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:469]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:469]
 INFO: [Synth 8-638] synthesizing module 'ltlib_v1_0_0_cfglut7' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1327]
 	Parameter C_SRL16_TYPE bound to: 2 - type: integer 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_USE_OUTPUT_REG bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'SRLC32E' [/opt/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:43477]
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:43432]
 	Parameter INIT bound to: 32'b00000000000000000000000000000000 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (19#1) [/opt/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:43477]
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (19#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:43432]
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_cfglut7' (20#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1327]
-INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_cap_addrgen' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'ila_v6_0_1_ila_cap_addrgen' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:85]
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_CORE_TYPE bound to: 2 - type: integer 
 	Parameter C_DATA_DEPTH bound to: 1024 - type: integer 
 	Parameter C_MATCH_UNIT_TYPE bound to: 0 - type: integer 
 	Parameter log2_C_DATA_DEPTH bound to: 10 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:126]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:126]
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:136]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:136]
-INFO: [Synth 8-638] synthesizing module 'SRL16E' [/opt/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:43327]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:126]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:126]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:136]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:136]
+INFO: [Synth 8-638] synthesizing module 'SRL16E' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:43282]
 	Parameter INIT bound to: 16'b0000000000000000 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-256] done synthesizing module 'SRL16E' (21#1) [/opt/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:43327]
+INFO: [Synth 8-256] done synthesizing module 'SRL16E' (21#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:43282]
 INFO: [Synth 8-638] synthesizing module 'ltlib_v1_0_0_cfglut6' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1234]
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_SRL16_TYPE bound to: 2 - type: integer 
 	Parameter C_USE_OUTPUT_REG bound to: 0 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_cfglut6' (22#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1234]
-INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_cap_sample_counter' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:693]
+INFO: [Synth 8-638] synthesizing module 'ila_v6_0_1_ila_cap_sample_counter' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:693]
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_DATA_WIDTH bound to: 10 - type: integer 
 	Parameter C_MATCH_UNIT_TYPE bound to: 0 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'ltlib_v1_0_0_cfglut4' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1099]
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_SRL16_TYPE bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'SRLC16E' [/opt/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:43416]
+INFO: [Synth 8-638] synthesizing module 'SRLC16E' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:43371]
 	Parameter INIT bound to: 16'b0000000000000000 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-256] done synthesizing module 'SRLC16E' (23#1) [/opt/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:43416]
+INFO: [Synth 8-256] done synthesizing module 'SRLC16E' (23#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:43371]
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_cfglut4' (24#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1099]
 INFO: [Synth 8-638] synthesizing module 'ltlib_v1_0_0_cfglut5' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1156]
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
@@ -10226,26 +10237,26 @@ INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_all_typeA_slice__para
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_all_typeA__parameterized1' (25#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:91]
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_allx_typeA_nodelay' (26#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:690]
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_match_nodelay' (27#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:2043]
-INFO: [Synth 8-638] synthesizing module 'FDRE' [/opt/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:3952]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3965]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-256] done synthesizing module 'FDRE' (28#1) [/opt/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:3952]
-INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_0_ila_cap_sample_counter' (29#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:693]
-INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_cap_window_counter' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:884]
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (28#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3965]
+INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_1_ila_cap_sample_counter' (29#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:693]
+INFO: [Synth 8-638] synthesizing module 'ila_v6_0_1_ila_cap_window_counter' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:884]
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_DATA_WIDTH bound to: 10 - type: integer 
 	Parameter C_MATCH_UNIT_TYPE bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_0_ila_cap_window_counter' (30#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:884]
-INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_0_ila_cap_addrgen' (31#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_1_ila_cap_window_counter' (30#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:884]
+INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_1_ila_cap_addrgen' (31#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:85]
 INFO: [Synth 8-638] synthesizing module 'ltlib_v1_0_0_cfglut6__parameterized0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1234]
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_SRL16_TYPE bound to: 2 - type: integer 
 	Parameter C_USE_OUTPUT_REG bound to: 1 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_cfglut6__parameterized0' (31#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1234]
-INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_0_ila_cap_ctrl_legacy' (32#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:423]
-INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_trace_memory' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:3783]
+INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_1_ila_cap_ctrl_legacy' (32#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:423]
+INFO: [Synth 8-638] synthesizing module 'ila_v6_0_1_ila_trace_memory' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:3783]
 	Parameter C_RAM_WIDTH bound to: 49 - type: integer 
 	Parameter C_RAM_DEPTH bound to: 1024 - type: integer 
 	Parameter C_RAM_STYLE bound to: SUBCORE - type: string 
@@ -10254,7 +10265,7 @@ INFO: [Synth 8-638] synthesizing module 'ila_v6_0_0_ila_trace_memory' [/home/evk
 	Parameter LC_BLK_MAX_WIDTH bound to: 512 - type: integer 
 	Parameter LC_BLK_MEM_CNT bound to: 1 - type: integer 
 	Parameter LC_GND bound to: 49'b0000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd:277]
 	Parameter C_FAMILY bound to: virtex7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: (null) - type: string 
@@ -10328,7 +10339,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/evka/code/ta
 	Parameter C_COUNT_36K_BRAM bound to: (null) - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: (null) - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: (null) - type: string 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_synth' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
 	Parameter C_FAMILY bound to: virtex7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: (null) - type: string 
@@ -10397,7 +10408,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/evka/c
 	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
@@ -10468,27 +10479,27 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/evka/code/tamu_
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -10525,13 +10536,13 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/evka/code/t
 	Parameter C_USE_ECC bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
 	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_input_block' (33#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193270]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193274]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193278]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193282]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193296]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_input_block' (33#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193270]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193274]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193278]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193282]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193296]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
@@ -10605,7 +10616,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/evka/c
 	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
@@ -10663,9 +10674,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/evka/cod
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 10 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183567]
-INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183568]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
+INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183564]
+INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183565]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: (null) - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
@@ -10722,7 +10733,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper' [/home/evka/c
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 10 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 10 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:15575]
+INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:15575]
 	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 1 - type: integer 
 	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -10822,12 +10833,10 @@ INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_
 	Parameter WRITE_MODE_B bound to: READ_FIRST - type: string 
 	Parameter WRITE_WIDTH_A bound to: 18 - type: integer 
 	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
-INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB18E1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:15635]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper' (34#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
-WARNING: [Synth 8-3848] Net RSTA_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182740]
-WARNING: [Synth 8-3848] Net RSTB_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182741]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width' (35#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB18E1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:15635]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper' (34#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width' (35#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
@@ -10885,9 +10894,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0'
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 10 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183567]
-INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183568]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper__parameterized0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
+INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183564]
+INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183565]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper__parameterized0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: (null) - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
@@ -10944,7 +10953,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper__parameterized
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 10 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 10 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:16289]
+INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:16289]
 	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 1 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
@@ -11120,15 +11129,13 @@ INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_
 	Parameter WRITE_MODE_B bound to: READ_FIRST - type: string 
 	Parameter WRITE_WIDTH_A bound to: 36 - type: integer 
 	Parameter WRITE_WIDTH_B bound to: 36 - type: integer 
-INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:16370]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper__parameterized0' (35#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
-WARNING: [Synth 8-3848] Net RSTA_BUSY in module/entity blk_mem_gen_prim_width__parameterized0 does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182740]
-WARNING: [Synth 8-3848] Net RSTB_BUSY in module/entity blk_mem_gen_prim_width__parameterized0 does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182741]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width__parameterized0' (35#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:185950]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:186103]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr' (36#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
+INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:16370]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper__parameterized0' (35#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width__parameterized0' (35#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:185950]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:186103]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr' (36#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_WRITE_WIDTH_A bound to: 49 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 49 - type: integer 
@@ -11139,12 +11146,12 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/evka/code/
 	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
 	Parameter C_USE_ECC bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block' (37#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top' (38#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0_synth' (39#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0' (40#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
-WARNING: [Synth 8-350] instance 'trace_block_memory' of module 'blk_mem_gen_v8_3_0' requires 63 connections, but only 59 given [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:4147]
-INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_0_ila_trace_memory' (41#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:3783]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block' (37#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top' (38#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1_synth' (39#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1' (40#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd:277]
+WARNING: [Synth 8-350] instance 'trace_block_memory' of module 'blk_mem_gen_v8_3_1' requires 63 connections, but only 59 given [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:4147]
+INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_1_ila_trace_memory' (41#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:3783]
 INFO: [Synth 8-638] synthesizing module 'ltlib_v1_0_0_generic_memrd' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1612]
 	Parameter C_INPUT_WIDTH bound to: 49 - type: integer 
 	Parameter C_OUTPUT_WIDTH bound to: 16 - type: integer 
@@ -11166,14 +11173,14 @@ INFO: [Synth 8-638] synthesizing module 'ltlib_v1_0_0_generic_mux' [/home/evka/c
 	Parameter C_NUM_BUSES bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_generic_mux' (42#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1892]
 INFO: [Synth 8-256] done synthesizing module 'ltlib_v1_0_0_generic_memrd' (43#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ltlib_v1_0_0/hdl/ltlib_v1_0_vl_rfs.v:1612]
-WARNING: [Synth 8-3848] Net cnt_config_cs_serial_input in module/entity ila_v6_0_0_ila_core does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1220]
-INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_0_ila_core' (44#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1139]
-WARNING: [Synth 8-3848] Net dummy_orig in module/entity ila_v6_0_0_ila does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:5690]
-INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_0_ila' (45#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:5444]
-WARNING: [Synth 8-3848] Net sl_iport0 in module/entity ila_4p8g does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4214]
+WARNING: [Synth 8-3848] Net cnt_config_cs_serial_input in module/entity ila_v6_0_1_ila_core does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1220]
+INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_1_ila_core' (44#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1139]
+WARNING: [Synth 8-3848] Net dummy_orig in module/entity ila_v6_0_1_ila does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:5690]
+INFO: [Synth 8-256] done synthesizing module 'ila_v6_0_1_ila' (45#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:5444]
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity ila_4p8g does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4215]
 INFO: [Synth 8-256] done synthesizing module 'ila_4p8g' (46#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:66]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:39 ; elapsed = 00:01:40 . Memory (MB): peak = 1402.195 ; gain = 531.539 ; free physical = 10334 ; free virtual = 20275
+Finished RTL Elaboration : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1368.832 ; gain = 520.617 ; free physical = 2667 ; free virtual = 7992
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -11182,85 +11189,85 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[34] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[8] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[34] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[8] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-WARNING: [Synth 8-3295] tying undriven pin \SUBCORE_RAM_BLK_MEM_1.trace_block_memory :deepsleep to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:4147]
-WARNING: [Synth 8-3295] tying undriven pin \SUBCORE_RAM_BLK_MEM_1.trace_block_memory :shutdown to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:4147]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[31] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[30] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[29] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[28] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[27] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[25] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[24] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[23] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[22] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[21] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[20] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[19] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[18] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[16] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[15] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[14] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[13] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[12] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[11] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[10] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CNT_CONFIG_CS_SERIAL_I[3] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CNT_CONFIG_CS_SERIAL_I[2] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CNT_CONFIG_CS_SERIAL_I[1] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CNT_CONFIG_CS_SERIAL_I[0] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:1330]
-INFO: [Synth 8-3295] tying undriven pin ila_core_inst:DUMMY_I to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_0/hdl/ila_v6_0_syn_rfs.v:5871]
-INFO: [Synth 8-3295] tying undriven pin U0:clk_nobuf to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[36] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[34] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[33] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[32] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[31] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[30] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[29] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[28] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[27] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[25] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[24] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[23] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[22] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[21] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[20] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[19] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[18] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[16] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[15] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[14] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[13] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[12] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[11] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[10] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[9] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[8] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[7] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[6] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[5] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[4] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[3] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[2] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[1] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
-INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[0] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4217]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[34] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[8] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[34] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[8] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+WARNING: [Synth 8-3295] tying undriven pin \SUBCORE_RAM_BLK_MEM_1.trace_block_memory :deepsleep to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:4147]
+WARNING: [Synth 8-3295] tying undriven pin \SUBCORE_RAM_BLK_MEM_1.trace_block_memory :shutdown to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:4147]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[31] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[30] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[29] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[28] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[27] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[25] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[24] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[23] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[22] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[21] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[20] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[19] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[18] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[16] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[15] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[14] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[13] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[12] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[11] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CAPTURE_CNT_SL_I[10] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CNT_CONFIG_CS_SERIAL_I[3] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CNT_CONFIG_CS_SERIAL_I[2] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CNT_CONFIG_CS_SERIAL_I[1] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin u_ila_regs:CNT_CONFIG_CS_SERIAL_I[0] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:1330]
+INFO: [Synth 8-3295] tying undriven pin ila_core_inst:DUMMY_I to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0_1/hdl/ila_v6_0_syn_rfs.v:5871]
+INFO: [Synth 8-3295] tying undriven pin U0:clk_nobuf to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[36] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[34] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[33] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[32] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[31] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[30] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[29] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[28] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[27] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[25] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[24] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[23] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[22] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[21] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[20] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[19] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[18] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[16] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[15] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[14] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[13] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[12] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[11] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[10] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[9] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[8] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[7] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[6] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[5] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[4] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[3] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[2] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[1] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
+INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[0] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/synth/ila_4p8g.vhd:4218]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:40 ; elapsed = 00:01:40 . Memory (MB): peak = 1402.195 ; gain = 531.539 ; free physical = 10334 ; free virtual = 20275
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1368.832 ; gain = 520.617 ; free physical = 2664 ; free virtual = 7990
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 95 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -11280,24 +11287,24 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 60 instances
   CFGLUT5 => SRLC32E: 9 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1659.953 ; gain = 0.000 ; free physical = 10153 ; free virtual = 20108
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1627.590 ; gain = 1.000 ; free physical = 2478 ; free virtual = 7804
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4039 
+INFO: Helper process launched with PID 2144 
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:54 ; elapsed = 00:01:54 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10147 ; free virtual = 20102
+Finished Constraint Validation : Time (s): cpu = 00:01:47 ; elapsed = 00:01:49 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 2466 ; free virtual = 7792
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx690tffg1927-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:54 ; elapsed = 00:01:54 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10147 ; free virtual = 20102
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:47 ; elapsed = 00:01:49 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 2466 ; free virtual = 7792
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:54 ; elapsed = 00:01:55 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10147 ; free virtual = 20102
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 2467 ; free virtual = 7792
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized5'
 INFO: [Synth 8-5544] ROM "shift_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -11326,7 +11333,7 @@ INFO: [Synth 8-5546] ROM "read_addr" won't be mapped to RAM because it is too sp
 INFO: [Synth 8-5587] ROM size for "curr_read_block" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5546] ROM "read_en" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:56 ; elapsed = 00:01:56 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10143 ; free virtual = 20098
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:49 ; elapsed = 00:01:51 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 2450 ; free virtual = 7775
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -11377,7 +11384,7 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 7     
 	   8 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 45    
+	   2 Input      1 Bit        Muxes := 47    
 	   3 Input      1 Bit        Muxes := 7     
 	   7 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
@@ -11501,6 +11508,12 @@ Module xsdbs_v1_0_2_reg_stream
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module xsdbs_v1_0_2_reg_stream__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
 Module xsdbs_v1_0_2_reg_p2s 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -11609,7 +11622,7 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 3     
 	   3 Input      1 Bit        Muxes := 1     
-Module ila_v6_0_0_ila_register 
+Module ila_v6_0_1_ila_register 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      7 Bit       Adders := 2     
@@ -11680,7 +11693,7 @@ Module ltlib_v1_0_0_match
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
-Module ila_v6_0_0_ila_trigger 
+Module ila_v6_0_1_ila_trigger 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 3     
@@ -11697,7 +11710,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      2 Bit        Muxes := 2     
-Module ila_v6_0_0_ila_reset_ctrl 
+Module ila_v6_0_1_ila_reset_ctrl 
 Detailed RTL Component Info : 
 +---Registers : 
 	                6 Bit    Registers := 1     
@@ -11716,19 +11729,19 @@ Module ltlib_v1_0_0_allx_typeA_nodelay
 Detailed RTL Component Info : 
 +---Registers : 
 	               10 Bit    Registers := 1     
-Module ila_v6_0_0_ila_cap_sample_counter 
+Module ila_v6_0_1_ila_cap_sample_counter 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     10 Bit       Adders := 1     
 +---Registers : 
 	               10 Bit    Registers := 1     
-Module ila_v6_0_0_ila_cap_window_counter 
+Module ila_v6_0_1_ila_cap_window_counter 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     10 Bit       Adders := 1     
 +---Registers : 
 	               10 Bit    Registers := 1     
-Module ila_v6_0_0_ila_cap_addrgen 
+Module ila_v6_0_1_ila_cap_addrgen 
 Detailed RTL Component Info : 
 +---Registers : 
 	               16 Bit    Registers := 1     
@@ -11742,7 +11755,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module ila_v6_0_0_ila_cap_ctrl_legacy 
+Module ila_v6_0_1_ila_cap_ctrl_legacy 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 3     
@@ -11772,7 +11785,7 @@ Detailed RTL Component Info :
 	   8 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 5     
-Module ila_v6_0_0_ila_core 
+Module ila_v6_0_1_ila_core 
 Detailed RTL Component Info : 
 +---Registers : 
 	               48 Bit    Registers := 9     
@@ -11780,7 +11793,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     48 Bit        Muxes := 1     
-Module ila_v6_0_0_ila 
+Module ila_v6_0_1_ila 
 Detailed RTL Component Info : 
 +---Registers : 
 	               48 Bit    Registers := 2     
@@ -11796,7 +11809,7 @@ BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:56 ; elapsed = 00:01:56 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10142 ; free virtual = 20098
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:49 ; elapsed = 00:01:51 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 2449 ; free virtual = 7775
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -11840,37 +11853,37 @@ INFO: [Synth 8-5587] ROM size for "ila_core_inst/xsdb_memory_read_inst/curr_read
 INFO: [Synth 8-5546] ROM "ila_core_inst/xsdb_memory_read_inst/read_en" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ila_core_inst/xsdb_memory_read_inst/read_addr" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:01:58 ; elapsed = 00:01:58 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10162 ; free virtual = 20100
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:01:53 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 2433 ; free virtual = 7759
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:01:58 ; elapsed = 00:01:58 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10162 ; free virtual = 20100
+Finished Parallel Reinference  : Time (s): cpu = 00:01:51 ; elapsed = 00:01:53 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 2433 ; free virtual = 7759
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/reg_stream_ffd/I_EN_CTL_EQ1.temp_en_reg ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[16] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[15] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[14] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[13] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[12] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[11] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[10] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[9] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[8] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[7] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[6] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[5] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[4] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[3] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[2] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[1] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[0] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_WE_O_reg ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_EN_RB_O_reg ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/xsdb_memory_read_inst/multiple_read_latency.read_enable_out_reg[0] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/xsdb_memory_read_inst/multiple_enable_latency.enable_out_reg[0] ) is unused and will be removed from module ila_v6_0_0_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/reg_stream_ffd/I_EN_CTL_EQ1.temp_en_reg ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[16] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[15] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[14] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[13] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[12] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[11] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[10] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[9] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[8] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[7] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[6] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[5] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[4] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[3] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[2] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[1] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_ADDR_O_reg[0] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_WE_O_reg ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/FSM_BRAM_EN_RB_O_reg ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/xsdb_memory_read_inst/multiple_read_latency.read_enable_out_reg[0] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/xsdb_memory_read_inst/multiple_enable_latency.enable_out_reg[0] ) is unused and will be removed from module ila_v6_0_1_ila.
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
@@ -12039,89 +12052,89 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\ila_c
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\ila_core_inst/u_ila_regs/slaveRegDo_mux_1_reg[13] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\ila_core_inst/u_ila_regs/slaveRegDo_mux_1_reg[14] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\ila_core_inst/u_ila_regs/slaveRegDo_mux_1_reg[15] )
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1023] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1022] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1021] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1020] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1019] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1018] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1017] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1016] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1015] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1014] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1013] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1012] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1011] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1010] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1009] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1008] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1007] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1006] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1005] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1004] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1003] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1002] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1001] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1000] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[999] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[998] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[997] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[996] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[995] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[994] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[993] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[992] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[991] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[990] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[989] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[988] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[987] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[986] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[985] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[984] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[983] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[982] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[981] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[980] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[979] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[978] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[977] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[976] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[975] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[974] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[973] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[972] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[971] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[970] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[969] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[968] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[967] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[966] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[965] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[964] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[963] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[962] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[961] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[960] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[959] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[958] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[957] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[956] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[955] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[954] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[953] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[952] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[951] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[950] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[949] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[948] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[947] ) is unused and will be removed from module ila_v6_0_0_ila.
-INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[946] ) is unused and will be removed from module ila_v6_0_0_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1023] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1022] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1021] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1020] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1019] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1018] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1017] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1016] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1015] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1014] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1013] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1012] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1011] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1010] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1009] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1008] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1007] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1006] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1005] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1004] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1003] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1002] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1001] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[1000] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[999] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[998] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[997] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[996] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[995] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[994] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[993] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[992] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[991] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[990] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[989] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[988] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[987] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[986] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[985] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[984] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[983] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[982] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[981] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[980] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[979] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[978] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[977] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[976] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[975] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[974] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[973] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[972] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[971] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[970] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[969] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[968] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[967] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[966] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[965] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[964] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[963] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[962] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[961] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[960] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[959] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[958] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[957] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[956] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[955] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[954] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[953] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[952] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[951] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[950] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[949] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[948] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[947] ) is unused and will be removed from module ila_v6_0_1_ila.
+INFO: [Synth 8-3332] Sequential element (\ila_core_inst/u_ila_regs/shift_reg0_reg[946] ) is unused and will be removed from module ila_v6_0_1_ila.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:02:00 ; elapsed = 00:02:00 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10147 ; free virtual = 20085
+Finished Area Optimization : Time (s): cpu = 00:01:54 ; elapsed = 00:01:56 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 2104 ; free virtual = 7430
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:02:00 ; elapsed = 00:02:00 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10147 ; free virtual = 20085
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:54 ; elapsed = 00:01:56 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 2104 ; free virtual = 7430
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -12139,31 +12152,31 @@ WARNING: [Synth 8-3321] Empty from list for constraint at line 53 of /home/evka/
 WARNING: [Synth 8-3321] Empty from list for constraint at line 59 of /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0/constraints/ila.xdc. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0/constraints/ila.xdc:59]
 WARNING: [Synth 8-3321] Empty from list for constraint at line 60 of /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0/constraints/ila.xdc. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_v6_0/constraints/ila.xdc:60]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:12 ; elapsed = 00:02:12 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10125 ; free virtual = 20063
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:05 ; elapsed = 00:02:08 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 3734 ; free virtual = 9061
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:13 ; elapsed = 00:02:14 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10105 ; free virtual = 20043
+Finished Timing Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:02:09 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 3701 ; free virtual = 9028
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:02:13 ; elapsed = 00:02:14 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10105 ; free virtual = 20043
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:13 ; elapsed = 00:02:14 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10105 ; free virtual = 20043
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:14 ; elapsed = 00:02:14 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10104 ; free virtual = 20042
+Finished Technology Mapping : Time (s): cpu = 00:02:08 ; elapsed = 00:02:10 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 3700 ; free virtual = 9027
 ---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:02:08 ; elapsed = 00:02:10 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 3700 ; free virtual = 9027
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:08 ; elapsed = 00:02:10 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 3700 ; free virtual = 9027
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -12204,7 +12217,7 @@ INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[17] to constant 0
 INFO: [Synth 8-3295] tying undriven pin U0:sl_iport0[16] to constant 0
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:14 ; elapsed = 00:02:15 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10104 ; free virtual = 20042
+Finished IO Insertion : Time (s): cpu = 00:02:08 ; elapsed = 00:02:10 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 3699 ; free virtual = 9026
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -12217,7 +12230,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:14 ; elapsed = 00:02:15 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10104 ; free virtual = 20042
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:08 ; elapsed = 00:02:10 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 3699 ; free virtual = 9026
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -12229,25 +12242,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:14 ; elapsed = 00:02:15 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10104 ; free virtual = 20042
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:08 ; elapsed = 00:02:11 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 3699 ; free virtual = 9026
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:14 ; elapsed = 00:02:15 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10104 ; free virtual = 20042
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:08 ; elapsed = 00:02:11 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 3699 ; free virtual = 9026
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:14 ; elapsed = 00:02:15 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10104 ; free virtual = 20042
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:08 ; elapsed = 00:02:11 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 3699 ; free virtual = 9025
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:14 ; elapsed = 00:02:15 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10104 ; free virtual = 20042
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:08 ; elapsed = 00:02:11 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 3699 ; free virtual = 9025
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -12257,11 +12270,11 @@ Static Shift Register:
 +---------------+----------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 |Module Name    | RTL Name                                                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
 +---------------+----------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|ila_v6_0_0_ila | ila_core_inst/u_ila_regs/adv_rb_drdy4_reg                                        | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|ila_v6_0_0_ila | ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/i_o_to_64k.cfg_data_vec_reg[16]       | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|ila_v6_0_0_ila | ila_core_inst/shifted_data_in_reg[8][47]                                         | 9      | 48    | NO           | NO                 | YES               | 48     | 0       | 
-|ila_v6_0_0_ila | ila_core_inst/xsdb_memory_read_inst/multiple_read_latency.read_enable_out_reg[3] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|ila_v6_0_0_ila | ila_core_inst/xsdb_memory_read_inst/multiple_enable_latency.enable_out_reg[3]    | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|ila_v6_0_1_ila | ila_core_inst/u_ila_regs/adv_rb_drdy4_reg                                        | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|ila_v6_0_1_ila | ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/i_o_to_64k.cfg_data_vec_reg[16]       | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|ila_v6_0_1_ila | ila_core_inst/shifted_data_in_reg[8][47]                                         | 9      | 48    | NO           | NO                 | YES               | 48     | 0       | 
+|ila_v6_0_1_ila | ila_core_inst/xsdb_memory_read_inst/multiple_read_latency.read_enable_out_reg[3] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|ila_v6_0_1_ila | ila_core_inst/xsdb_memory_read_inst/multiple_enable_latency.enable_out_reg[3]    | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
 +---------------+----------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
@@ -12285,10 +12298,10 @@ Report Cell Usage:
 |2     |CFGLUT5  |    69|
 |3     |LUT1     |    15|
 |4     |LUT2     |    40|
-|5     |LUT3     |    99|
-|6     |LUT4     |   106|
-|7     |LUT5     |   103|
-|8     |LUT6     |   346|
+|5     |LUT3     |   101|
+|6     |LUT4     |   112|
+|7     |LUT5     |   101|
+|8     |LUT6     |   341|
 |9     |MUXF7    |     1|
 |10    |RAMB18E1 |     1|
 |11    |RAMB36E1 |     1|
@@ -12303,25 +12316,25 @@ Report Instance Areas:
 +------+------------------------------------------------------------------------+------------------------------------------------+------+
 |      |Instance                                                                |Module                                          |Cells |
 +------+------------------------------------------------------------------------+------------------------------------------------+------+
-|1     |top                                                                     |                                                |  2139|
-|2     |  U0                                                                    |ila_v6_0_0_ila                                  |  2139|
-|3     |    ila_core_inst                                                       |ila_v6_0_0_ila_core                             |  2042|
-|4     |      ila_trace_memory_inst                                             |ila_v6_0_0_ila_trace_memory                     |     2|
-|5     |        \SUBCORE_RAM_BLK_MEM_1.trace_block_memory                       |blk_mem_gen_v8_3_0                              |     2|
-|6     |          inst_blk_mem_gen                                              |blk_mem_gen_v8_3_0_synth                        |     2|
+|1     |top                                                                     |                                                |  2140|
+|2     |  U0                                                                    |ila_v6_0_1_ila                                  |  2140|
+|3     |    ila_core_inst                                                       |ila_v6_0_1_ila_core                             |  2043|
+|4     |      ila_trace_memory_inst                                             |ila_v6_0_1_ila_trace_memory                     |     2|
+|5     |        \SUBCORE_RAM_BLK_MEM_1.trace_block_memory                       |blk_mem_gen_v8_3_1                              |     2|
+|6     |          inst_blk_mem_gen                                              |blk_mem_gen_v8_3_1_synth                        |     2|
 |7     |            \gnativebmg.native_blk_mem_gen                              |blk_mem_gen_top                                 |     2|
 |8     |              \valid.cstr                                               |blk_mem_gen_generic_cstr                        |     2|
 |9     |                \ramloop[0].ram.r                                       |blk_mem_gen_prim_width                          |     1|
 |10    |                  \prim_noinit.ram                                      |blk_mem_gen_prim_wrapper                        |     1|
 |11    |                \ramloop[1].ram.r                                       |blk_mem_gen_prim_width__parameterized0          |     1|
 |12    |                  \prim_noinit.ram                                      |blk_mem_gen_prim_wrapper__parameterized0        |     1|
-|13    |      u_ila_cap_ctrl                                                    |ila_v6_0_0_ila_cap_ctrl_legacy                  |   189|
+|13    |      u_ila_cap_ctrl                                                    |ila_v6_0_1_ila_cap_ctrl_legacy                  |   189|
 |14    |        U_CDONE                                                         |ltlib_v1_0_0_cfglut6__parameterized0            |     5|
 |15    |        U_NS0                                                           |ltlib_v1_0_0_cfglut7                            |     6|
 |16    |        U_NS1                                                           |ltlib_v1_0_0_cfglut7_28                         |     7|
-|17    |        u_cap_addrgen                                                   |ila_v6_0_0_ila_cap_addrgen                      |   167|
+|17    |        u_cap_addrgen                                                   |ila_v6_0_1_ila_cap_addrgen                      |   167|
 |18    |          U_CMPRESET                                                    |ltlib_v1_0_0_cfglut6                            |     3|
-|19    |          u_cap_sample_counter                                          |ila_v6_0_0_ila_cap_sample_counter               |    59|
+|19    |          u_cap_sample_counter                                          |ila_v6_0_1_ila_cap_sample_counter               |    59|
 |20    |            U_SCE                                                       |ltlib_v1_0_0_cfglut4_35                         |     1|
 |21    |            U_SCMPCE                                                    |ltlib_v1_0_0_cfglut5_36                         |     1|
 |22    |            U_SCRST                                                     |ltlib_v1_0_0_cfglut6_37                         |     3|
@@ -12330,7 +12343,7 @@ Report Instance Areas:
 |25    |                DUT                                                     |ltlib_v1_0_0_all_typeA__parameterized1_40       |    12|
 |26    |                  \I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE         |ltlib_v1_0_0_all_typeA_slice__parameterized3_41 |     5|
 |27    |                  \I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE         |ltlib_v1_0_0_all_typeA_slice__parameterized4_42 |     5|
-|28    |          u_cap_window_counter                                          |ila_v6_0_0_ila_cap_window_counter               |    60|
+|28    |          u_cap_window_counter                                          |ila_v6_0_1_ila_cap_window_counter               |    60|
 |29    |            U_WCE                                                       |ltlib_v1_0_0_cfglut4                            |     1|
 |30    |            U_WHCMPCE                                                   |ltlib_v1_0_0_cfglut5                            |     1|
 |31    |            U_WLCMPCE                                                   |ltlib_v1_0_0_cfglut5_29                         |     1|
@@ -12344,8 +12357,8 @@ Report Instance Areas:
 |39    |                DUT                                                     |ltlib_v1_0_0_all_typeA__parameterized1          |    12|
 |40    |                  \I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE         |ltlib_v1_0_0_all_typeA_slice__parameterized3    |     5|
 |41    |                  \I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE         |ltlib_v1_0_0_all_typeA_slice__parameterized4    |     5|
-|42    |      u_ila_regs                                                        |ila_v6_0_0_ila_register                         |  1413|
-|43    |        U_XSDB_SLAVE                                                    |xsdbs_v1_0_2_xsdbs                              |   120|
+|42    |      u_ila_regs                                                        |ila_v6_0_1_ila_register                         |  1414|
+|43    |        U_XSDB_SLAVE                                                    |xsdbs_v1_0_2_xsdbs                              |   121|
 |44    |        reg_890                                                         |xsdbs_v1_0_2_reg__parameterized52               |    16|
 |45    |          \I_EN_STAT_EQ1.U_STAT                                         |xsdbs_v1_0_2_reg_stat_27                        |    16|
 |46    |        \MU_SRL[0].mu_srl_reg                                           |xsdbs_v1_0_2_reg_p2s                            |    75|
@@ -12395,19 +12408,19 @@ Report Instance Areas:
 |90    |          \I_EN_CTL_EQ1.U_CTL                                           |xsdbs_v1_0_2_reg_ctl                            |    49|
 |91    |        reg_stream_ffe                                                  |xsdbs_v1_0_2_reg_stream__parameterized0         |    16|
 |92    |          \I_EN_STAT_EQ1.U_STAT                                         |xsdbs_v1_0_2_reg_stat                           |    16|
-|93    |      u_ila_reset_ctrl                                                  |ila_v6_0_0_ila_reset_ctrl                       |    38|
+|93    |      u_ila_reset_ctrl                                                  |ila_v6_0_1_ila_reset_ctrl                       |    38|
 |94    |        arm_detection_inst                                              |ltlib_v1_0_0_rising_edge_detection              |     5|
 |95    |        \asyncrounous_transfer.arm_in_transfer_inst                     |ltlib_v1_0_0_async_edge_xfer                    |     5|
 |96    |        \asyncrounous_transfer.arm_out_transfer_inst                    |ltlib_v1_0_0_async_edge_xfer_9                  |     4|
 |97    |        \asyncrounous_transfer.halt_in_transfer_inst                    |ltlib_v1_0_0_async_edge_xfer_10                 |     5|
 |98    |        \asyncrounous_transfer.halt_out_transfer_inst                   |ltlib_v1_0_0_async_edge_xfer_11                 |     4|
 |99    |        halt_detection_inst                                             |ltlib_v1_0_0_rising_edge_detection_12           |     6|
-|100   |      u_trig                                                            |ila_v6_0_0_ila_trigger                          |   172|
+|100   |      u_trig                                                            |ila_v6_0_1_ila_trigger                          |   172|
 |101   |        \N_DDR_TC.N_DDR_TC_INST[0].U_TC                                 |ltlib_v1_0_0_match                              |    15|
 |102   |          \allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst      |ltlib_v1_0_0_allx_typeA                         |    13|
 |103   |            DUT                                                         |ltlib_v1_0_0_all_typeA_7                        |     8|
 |104   |              \I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE             |ltlib_v1_0_0_all_typeA_slice_8                  |     6|
-|105   |        U_TM                                                            |ila_v6_0_0_ila_trig_match                       |   156|
+|105   |        U_TM                                                            |ila_v6_0_1_ila_trig_match                       |   156|
 |106   |          \N_DDR_MODE.G_NMU[0].U_M                                      |ltlib_v1_0_0_match__parameterized0              |    88|
 |107   |            \allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst    |ltlib_v1_0_0_allx_typeA__parameterized0         |    87|
 |108   |              DUT                                                       |ltlib_v1_0_0_all_typeA__parameterized0          |    23|
@@ -12434,11 +12447,11 @@ Report Instance Areas:
 |129   |      xsdb_memory_read_inst                                             |ltlib_v1_0_0_generic_memrd                      |   129|
 +------+------------------------------------------------------------------------+------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:14 ; elapsed = 00:02:15 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10104 ; free virtual = 20042
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:08 ; elapsed = 00:02:11 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 3699 ; free virtual = 9025
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:01 ; elapsed = 00:02:01 . Memory (MB): peak = 1659.953 ; gain = 355.715 ; free physical = 10104 ; free virtual = 20042
-Synthesis Optimization Complete : Time (s): cpu = 00:02:15 ; elapsed = 00:02:15 . Memory (MB): peak = 1659.953 ; gain = 789.297 ; free physical = 10104 ; free virtual = 20042
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:54 ; elapsed = 00:01:54 . Memory (MB): peak = 1627.590 ; gain = 354.715 ; free physical = 3699 ; free virtual = 9025
+Synthesis Optimization Complete : Time (s): cpu = 00:02:09 ; elapsed = 00:02:11 . Memory (MB): peak = 1627.590 ; gain = 779.375 ; free physical = 3699 ; free virtual = 9025
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 95 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -12454,9 +12467,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   CFGLUT5 => SRLC32E: 9 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-733 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
+733 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:14 ; elapsed = 00:02:15 . Memory (MB): peak = 1675.961 ; gain = 679.949 ; free physical = 10104 ; free virtual = 20041
+synth_design: Time (s): cpu = 00:02:08 ; elapsed = 00:02:10 . Memory (MB): peak = 1651.605 ; gain = 683.922 ; free physical = 3689 ; free virtual = 9015
 INFO: [Coretcl 2-1174] Renamed 128 cell refs.
-report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1707.980 ; gain = 0.000 ; free physical = 10102 ; free virtual = 20040
-INFO: [Common 17-206] Exiting Vivado at Fri Apr  8 16:09:58 2016...
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1683.625 ; gain = 0.000 ; free physical = 3686 ; free virtual = 9014
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 11 20:45:46 2016...

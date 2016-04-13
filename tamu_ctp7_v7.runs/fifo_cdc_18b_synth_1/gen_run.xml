@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="fifo_cdc_18b_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1460034600">
+<GenRun Id="fifo_cdc_18b_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1460400202">
   <File Type="VDS-TIMING-PB" Name="fifo_cdc_18b_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="fifo_cdc_18b_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="fifo_cdc_18b.dcp"/>
   <File Type="RDS-UTIL-PB" Name="fifo_cdc_18b_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="fifo_cdc_18b_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="fifo_cdc_18b_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="fifo_cdc_18b.vds"/>
-  <File Type="PA-TCL" Name="fifo_cdc_18b.tcl"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/fifo_cdc_18b_synth_1/fifo_cdc_18b_synth_1.psg"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/fifo_cdc_18b_synth_1/sources.xml"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/fifo_cdc_18b_synth_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/fifo_cdc_18b_synth_1/sources.xml"/>
+  <File Type="RDS-RDS" Name="fifo_cdc_18b.vds"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/fifo_cdc_18b_synth_1/fifo_cdc_18b_synth_1.psg"/>
+  <File Type="PA-TCL" Name="fifo_cdc_18b.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="fifo_cdc_18b_drc_synth.rpt"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_cdc_18b">
     <File Path="$PSRCDIR/fifo_cdc_18b/ip/fifo_cdc_18b/fifo_cdc_18b.xci">
       <FileInfo>
@@ -42,12 +42,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="stage2_strategy" Flow="Vivado Synthesis 2015"/>
-    <Step Id="synth_design">
-      <Option Id="KeepEquivalentRegisters">1</Option>
-      <Option Id="RepFanoutThreshold">400</Option>
-      <Option Id="ShregMinSize">5</Option>
-      <Option Id="NoCombineLuts">1</Option>
-    </Step>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -8,12 +8,15 @@ create_project -in_memory -part xc7vx690tffg1927-2
 
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.cache/wt [current_project]
 set_property parent.project_path /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_repo_paths /home/evka/code/ip_repo/myip_1.0 [current_project]
+set_property ip_repo_paths {
+  /home/evka/code/tamu_ctp7_v7/ip/registers_1.0
+  /home/evka/code/ip_repo/myip_1.0
+} [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]
 read_ip /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_4p8g.xci
 set_property is_locked true [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_4p8g.xci]
@@ -25,6 +28,7 @@ catch { report_utilization -file ila_4p8g_utilization_synth.rpt -pb ila_4p8g_uti
 if { [catch {
   file copy -force /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/ila_4p8g_synth_1/ila_4p8g.dcp /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/ila_4p8g/ip/ila_4p8g/ila_4p8g.dcp
 } _RESULT ] } { 
+  send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 if { [catch {

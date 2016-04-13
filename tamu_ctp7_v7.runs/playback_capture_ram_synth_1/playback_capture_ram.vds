@@ -2,8 +2,8 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Thu Apr  7 15:15:24 2016
-# Process ID: 27071
+# Start of session at: Mon Apr 11 20:43:23 2016
+# Process ID: 1783
 # Current directory: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/playback_capture_ram_synth_1
 # Command line: vivado -log playback_capture_ram.vds -mode batch -messageDb vivado.pb -notrace -source playback_capture_ram.tcl
 # Log file: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/playback_capture_ram_synth_1/playback_capture_ram.vds
@@ -11,6 +11,7 @@
 #-----------------------------------------------------------
 source playback_capture_ram.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/evka/code/tamu_ctp7_v7/ip/registers_1.0'.
 WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/evka/code/ip_repo/myip_1.0'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
@@ -19,16 +20,12 @@ WARNING: [IP_Flow 19-3664] IP 'playback_capture_ram' generated file not found '/
 WARNING: [IP_Flow 19-3664] IP 'playback_capture_ram' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/playback_capture_ram_stub.vhdl'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'playback_capture_ram' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/playback_capture_ram_sim_netlist.v'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'playback_capture_ram' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/playback_capture_ram_sim_netlist.vhdl'. Please regenerate to continue.
-Command: synth_design -top playback_capture_ram -part xc7vx690tffg1927-2 -fanout_limit 400 -keep_equivalent_registers -no_lc -shreg_min_size 5 -mode out_of_context
+Command: synth_design -top playback_capture_ram -part xc7vx690tffg1927-2 -mode out_of_context
 Starting synth_design
-INFO: [IP_Flow 19-2162] IP 'playback_capture_ram' is locked:
-* IP definition 'Block Memory Generator (8.3)' for IP 'playback_capture_ram' has a different revision in the IP Catalog.
-Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
-INFO: [Common 17-1223] The version limit for your license is '2016.04' and will expire in 23 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1052.520 ; gain = 204.301 ; free physical = 8831 ; free virtual = 14731
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1052.520 ; gain = 204.301 ; free physical = 2954 ; free virtual = 8271
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'playback_capture_ram' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/synth/playback_capture_ram.vhd:77]
 	Parameter C_FAMILY bound to: virtex7 - type: string 
@@ -104,8 +101,8 @@ INFO: [Synth 8-638] synthesizing module 'playback_capture_ram' [/home/evka/code/
 	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     6.08305 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_0' declared at '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:133' bound to instance 'U0' of component 'blk_mem_gen_v8_3_0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/synth/playback_capture_ram.vhd:244]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_1' declared at '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd:133' bound to instance 'U0' of component 'blk_mem_gen_v8_3_1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/synth/playback_capture_ram.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd:277]
 	Parameter C_FAMILY bound to: virtex7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -179,7 +176,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/evka/code/ta
 	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     6.08305 mW - type: string 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_synth' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
 	Parameter C_FAMILY bound to: virtex7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -248,7 +245,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/evka/c
 	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
@@ -319,22 +316,22 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/evka/code/tamu_
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_MEM_TYPE bound to: 2 - type: integer 
 	Parameter C_HAS_RSTA bound to: 1 - type: integer 
@@ -371,13 +368,13 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/evka/code/t
 	Parameter C_USE_ECC bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
 	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_input_block' (1#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193270]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193274]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193278]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193282]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193296]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_input_block' (1#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193270]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193274]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193278]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193282]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193296]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
@@ -451,7 +448,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/evka/c
 	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
@@ -509,9 +506,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/evka/cod
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 10 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183567]
-INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183568]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:96243]
+INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183564]
+INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183565]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:96243]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
@@ -566,9 +563,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init' [/home/e
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 10 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 10 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:106052]
-INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:106333]
-INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:106334]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:106052]
+INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:106333]
+INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:106334]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 1 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
@@ -744,15 +741,13 @@ INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_
 	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter WRITE_WIDTH_A bound to: 36 - type: integer 
 	Parameter WRITE_WIDTH_B bound to: 36 - type: integer 
-INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:106379]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper_init' (2#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:96243]
-WARNING: [Synth 8-3848] Net RSTA_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182740]
-WARNING: [Synth 8-3848] Net RSTB_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182741]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width' (3#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:185950]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:186103]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr' (4#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
+INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:106379]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper_init' (2#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:96243]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width' (3#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:185950]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:186103]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr' (4#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
 	Parameter C_MEM_TYPE bound to: 2 - type: integer 
 	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
@@ -763,13 +758,13 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/evka/code/
 	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
 	Parameter C_USE_ECC bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block' (5#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top' (6#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0_synth' (7#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0' (8#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block' (5#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top' (6#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1_synth' (7#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1' (8#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd:277]
 INFO: [Synth 8-256] done synthesizing module 'playback_capture_ram' (9#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/synth/playback_capture_ram.vhd:77]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1222.117 ; gain = 373.898 ; free physical = 8658 ; free virtual = 14559
+Finished RTL Elaboration : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1222.586 ; gain = 374.367 ; free physical = 1987 ; free virtual = 7311
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -778,16 +773,16 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[8] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[8] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[8] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
+INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[8] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183929]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1222.117 ; gain = 373.898 ; free physical = 8658 ; free virtual = 14559
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1222.586 ; gain = 374.367 ; free physical = 1986 ; free virtual = 7310
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -803,27 +798,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1477.078 ; gain = 0.000 ; free physical = 8479 ; free virtual = 14380
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1477.953 ; gain = 0.000 ; free physical = 1485 ; free virtual = 6809
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 27097 
+INFO: Helper process launched with PID 1971 
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1477.078 ; gain = 628.859 ; free physical = 8460 ; free virtual = 14361
+Finished Constraint Validation : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1477.953 ; gain = 629.734 ; free physical = 2473 ; free virtual = 7797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx690tffg1927-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1477.078 ; gain = 628.859 ; free physical = 8460 ; free virtual = 14361
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1477.953 ; gain = 629.734 ; free physical = 2473 ; free virtual = 7797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1477.078 ; gain = 628.859 ; free physical = 8460 ; free virtual = 14361
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1477.953 ; gain = 629.734 ; free physical = 2473 ; free virtual = 7797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1477.078 ; gain = 628.859 ; free physical = 8457 ; free virtual = 14358
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1477.953 ; gain = 629.734 ; free physical = 2467 ; free virtual = 7791
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -854,14 +849,14 @@ BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1477.078 ; gain = 628.859 ; free physical = 8455 ; free virtual = 14356
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1477.953 ; gain = 629.734 ; free physical = 2467 ; free virtual = 7791
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1477.078 ; gain = 628.859 ; free physical = 8457 ; free virtual = 14357
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1477.953 ; gain = 629.734 ; free physical = 2470 ; free virtual = 7793
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1477.078 ; gain = 628.859 ; free physical = 8457 ; free virtual = 14357
+Finished Parallel Reinference  : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1477.953 ; gain = 629.734 ; free physical = 2470 ; free virtual = 7793
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -872,9 +867,9 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1477.078 ; gain = 628.859 ; free physical = 8456 ; free virtual = 14357
+Finished Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1477.953 ; gain = 629.734 ; free physical = 2470 ; free virtual = 7793
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1477.078 ; gain = 628.859 ; free physical = 8456 ; free virtual = 14357
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1477.953 ; gain = 629.734 ; free physical = 2470 ; free virtual = 7793
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -888,10 +883,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1478.062 ; gain = 629.844 ; free physical = 8422 ; free virtual = 14323
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1477.953 ; gain = 629.734 ; free physical = 2344 ; free virtual = 7668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1478.062 ; gain = 629.844 ; free physical = 8422 ; free virtual = 14323
+Finished Timing Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1477.953 ; gain = 629.734 ; free physical = 2344 ; free virtual = 7668
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -903,16 +898,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1488.078 ; gain = 639.859 ; free physical = 8412 ; free virtual = 14313
+Finished Technology Mapping : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1487.953 ; gain = 639.734 ; free physical = 2333 ; free virtual = 7658
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1488.078 ; gain = 639.859 ; free physical = 8412 ; free virtual = 14313
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1487.953 ; gain = 639.734 ; free physical = 2333 ; free virtual = 7658
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1488.078 ; gain = 639.859 ; free physical = 8412 ; free virtual = 14313
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1487.953 ; gain = 639.734 ; free physical = 2333 ; free virtual = 7658
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -929,7 +924,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 1488.078 ; gain = 639.859 ; free physical = 8414 ; free virtual = 14315
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1487.953 ; gain = 639.734 ; free physical = 2323 ; free virtual = 7648
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -942,7 +937,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 1488.078 ; gain = 639.859 ; free physical = 8414 ; free virtual = 14315
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1487.953 ; gain = 639.734 ; free physical = 2323 ; free virtual = 7648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -954,25 +949,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 1488.078 ; gain = 639.859 ; free physical = 8414 ; free virtual = 14315
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1487.953 ; gain = 639.734 ; free physical = 2323 ; free virtual = 7647
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 1488.078 ; gain = 639.859 ; free physical = 8414 ; free virtual = 14315
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1487.953 ; gain = 639.734 ; free physical = 2323 ; free virtual = 7647
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 1488.078 ; gain = 639.859 ; free physical = 8414 ; free virtual = 14315
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 1487.953 ; gain = 639.734 ; free physical = 2323 ; free virtual = 7647
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 1488.078 ; gain = 639.859 ; free physical = 8414 ; free virtual = 14315
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 1487.953 ; gain = 639.734 ; free physical = 2323 ; free virtual = 7647
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -996,19 +991,19 @@ Report Instance Areas:
 |      |Instance                              |Module                        |Cells |
 +------+--------------------------------------+------------------------------+------+
 |1     |top                                   |                              |     1|
-|2     |  U0                                  |blk_mem_gen_v8_3_0            |     1|
-|3     |    inst_blk_mem_gen                  |blk_mem_gen_v8_3_0_synth      |     1|
+|2     |  U0                                  |blk_mem_gen_v8_3_1            |     1|
+|3     |    inst_blk_mem_gen                  |blk_mem_gen_v8_3_1_synth      |     1|
 |4     |      \gnativebmg.native_blk_mem_gen  |blk_mem_gen_top               |     1|
 |5     |        \valid.cstr                   |blk_mem_gen_generic_cstr      |     1|
 |6     |          \ramloop[0].ram.r           |blk_mem_gen_prim_width        |     1|
 |7     |            \prim_init.ram            |blk_mem_gen_prim_wrapper_init |     1|
 +------+--------------------------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 1488.078 ; gain = 639.859 ; free physical = 8414 ; free virtual = 14315
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 1487.953 ; gain = 639.734 ; free physical = 2323 ; free virtual = 7647
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:01:12 . Memory (MB): peak = 1488.078 ; gain = 238.863 ; free physical = 8412 ; free virtual = 14313
-Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 1488.078 ; gain = 639.859 ; free physical = 8412 ; free virtual = 14313
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:14 ; elapsed = 00:01:14 . Memory (MB): peak = 1487.953 ; gain = 238.332 ; free physical = 2315 ; free virtual = 7640
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 1487.953 ; gain = 639.734 ; free physical = 2315 ; free virtual = 7640
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1020,9 +1015,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-49 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+48 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 1488.082 ; gain = 540.262 ; free physical = 8412 ; free virtual = 14313
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1487.957 ; gain = 540.137 ; free physical = 2195 ; free virtual = 7519
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1496.086 ; gain = 0.000 ; free physical = 8410 ; free virtual = 14311
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  7 15:16:56 2016...
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1495.961 ; gain = 0.000 ; free physical = 2189 ; free virtual = 7513
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 11 20:44:59 2016...

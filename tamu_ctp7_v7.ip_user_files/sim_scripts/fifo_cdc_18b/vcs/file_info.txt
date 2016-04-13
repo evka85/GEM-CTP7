@@ -1,0 +1,4 @@
+Language File-Name                     IP            Library                 File-Path                                                                      
+VHDL,    fifo_generator_vhdl_beh.vhd,  fifo_cdc_18b, fifo_generator_v13_0_1, ../../../ipstatic/fifo_generator_v13_0_1/simulation/fifo_generator_vhdl_beh.vhd
+VHDL,    fifo_generator_v13_0_rfs.vhd, fifo_cdc_18b, fifo_generator_v13_0_1, ../../../ipstatic/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_rfs.vhd      
+VHDL,    fifo_cdc_18b.vhd,             fifo_cdc_18b, xil_defaultlib,         ../../../../tamu_ctp7_v7.srcs/fifo_cdc_18b/ip/fifo_cdc_18b/sim/fifo_cdc_18b.vhd

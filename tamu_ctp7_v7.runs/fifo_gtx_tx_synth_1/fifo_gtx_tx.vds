@@ -1,9 +1,9 @@
 #-----------------------------------------------------------
-# Vivado v2015.3 (64-bit)
-# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
-# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Fri Apr  8 16:06:40 2016
-# Process ID: 3585
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Apr 11 20:43:23 2016
+# Process ID: 1782
 # Current directory: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/fifo_gtx_tx_synth_1
 # Command line: vivado -log fifo_gtx_tx.vds -mode batch -messageDb vivado.pb -notrace -source fifo_gtx_tx.tcl
 # Log file: /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.runs/fifo_gtx_tx_synth_1/fifo_gtx_tx.vds
@@ -11,8 +11,10 @@
 #-----------------------------------------------------------
 source fifo_gtx_tx.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/evka/code/ip_repo/myip_1.0'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.3/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/evka/code/tamu_ctp7_v7/ip/registers_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/evka/code/ip_repo/myip_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
 WARNING: [IP_Flow 19-3664] IP 'fifo_gtx_tx' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx.dcp'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'fifo_gtx_tx' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx_stub.v'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'fifo_gtx_tx' generated file not found '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx_stub.vhdl'. Please regenerate to continue.
@@ -23,7 +25,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1087.883 ; gain = 217.223 ; free physical = 10712 ; free virtual = 20489
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1054.520 ; gain = 206.301 ; free physical = 2898 ; free virtual = 8215
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'fifo_gtx_tx' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/synth/fifo_gtx_tx.vhd:74]
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
@@ -227,8 +229,8 @@ INFO: [Synth 8-638] synthesizing module 'fifo_gtx_tx' [/home/evka/code/tamu_ctp7
 	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'fifo_generator_v13_0_0' declared at '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0.vhd:137' bound to instance 'U0' of component 'fifo_generator_v13_0_0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/synth/fifo_gtx_tx.vhd:532]
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_v13_0_0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0.vhd:676]
+INFO: [Synth 8-3491] module 'fifo_generator_v13_0_1' declared at '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0.vhd:137' bound to instance 'U0' of component 'fifo_generator_v13_0_1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/synth/fifo_gtx_tx.vhd:532]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_v13_0_1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0.vhd:676]
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
 	Parameter C_DATA_COUNT_WIDTH bound to: 4 - type: integer 
@@ -430,7 +432,7 @@ INFO: [Synth 8-638] synthesizing module 'fifo_generator_v13_0_0' [/home/evka/cod
 	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_v13_0_0_synth' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:33685]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_v13_0_1_synth' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:33659]
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
 	Parameter C_DATA_COUNT_WIDTH bound to: 4 - type: integer 
@@ -632,8 +634,8 @@ INFO: [Synth 8-638] synthesizing module 'fifo_generator_v13_0_0_synth' [/home/ev
 	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:33749]
-INFO: [Synth 8-638] synthesizing module 'reset_blk_ramfifo' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12410]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:33723]
+INFO: [Synth 8-638] synthesizing module 'reset_blk_ramfifo' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12376]
 	Parameter C_FAMILY bound to: virtex7 - type: string 
 	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
@@ -645,17 +647,17 @@ INFO: [Synth 8-638] synthesizing module 'reset_blk_ramfifo' [/home/evka/code/tam
 	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12517]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12518]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12519]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12520]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12837]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12838]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12839]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12840]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12841]
-INFO: [Synth 8-256] done synthesizing module 'reset_blk_ramfifo' (1#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12410]
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_top' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:32446]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12483]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12484]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12485]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12486]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12803]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12804]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12805]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12806]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12807]
+INFO: [Synth 8-256] done synthesizing module 'reset_blk_ramfifo' (1#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12376]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_top' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:32420]
 	Parameter C_FAMILY bound to: virtex7 - type: string 
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
@@ -728,7 +730,7 @@ INFO: [Synth 8-638] synthesizing module 'fifo_generator_top' [/home/evka/code/ta
 	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
 	Parameter C_WR_FREQ bound to: 1 - type: integer 
 	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_ramfifo' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:20617]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_ramfifo' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:20583]
 	Parameter C_FAMILY bound to: virtex7 - type: string 
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
@@ -784,7 +786,7 @@ INFO: [Synth 8-638] synthesizing module 'fifo_generator_ramfifo' [/home/evka/cod
 	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_AXI_TYPE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'reset_blk_ramfifo__parameterized0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12410]
+INFO: [Synth 8-638] synthesizing module 'reset_blk_ramfifo__parameterized0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12376]
 	Parameter C_FAMILY bound to: virtex7 - type: string 
 	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
@@ -796,8 +798,8 @@ INFO: [Synth 8-638] synthesizing module 'reset_blk_ramfifo__parameterized0' [/ho
 	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'reset_blk_ramfifo__parameterized0' (1#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12410]
-INFO: [Synth 8-638] synthesizing module 'input_blk' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:4030]
+INFO: [Synth 8-256] done synthesizing module 'reset_blk_ramfifo__parameterized0' (1#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:12376]
+INFO: [Synth 8-638] synthesizing module 'input_blk' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:3996]
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
 	Parameter C_DIN_WIDTH bound to: 65 - type: integer 
@@ -816,8 +818,8 @@ INFO: [Synth 8-638] synthesizing module 'input_blk' [/home/evka/code/tamu_ctp7_v
 	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
 	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
 	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'input_blk' (2#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:4030]
-INFO: [Synth 8-638] synthesizing module 'memory' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:5666]
+INFO: [Synth 8-256] done synthesizing module 'input_blk' (2#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:3996]
+INFO: [Synth 8-638] synthesizing module 'memory' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:5632]
 	Parameter C_FAMILY bound to: virtex7 - type: string 
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_HAS_RST bound to: 1 - type: integer 
@@ -911,8 +913,8 @@ INFO: [Synth 8-638] synthesizing module 'memory' [/home/evka/code/tamu_ctp7_v7/t
 	Parameter C_COMMON_CLK bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_0' declared at '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:133' bound to instance 'bmg' of component 'blk_mem_gen_v8_3_0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:6296]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_1' declared at '/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd:133' bound to instance 'bmg' of component 'blk_mem_gen_v8_3_1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:6262]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd:277]
 	Parameter C_FAMILY bound to: virtex7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: (null) - type: string 
@@ -986,7 +988,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/evka/code/ta
 	Parameter C_COUNT_36K_BRAM bound to: (null) - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: (null) - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: (null) - type: string 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_1_synth' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
 	Parameter C_FAMILY bound to: virtex7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: (null) - type: string 
@@ -1055,7 +1057,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/evka/c
 	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
@@ -1126,22 +1128,22 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/evka/code/tamu_
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -1178,13 +1180,13 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/evka/code/t
 	Parameter C_USE_ECC bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
 	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_input_block' (3#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193270]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193274]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193278]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193282]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193296]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_input_block' (3#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193270]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193274]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193278]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193282]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193296]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
@@ -1258,7 +1260,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/evka/c
 	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
@@ -1316,7 +1318,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/evka/cod
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 4 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: (null) - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
@@ -1373,7 +1375,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper' [/home/evka/c
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 4 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 4 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:16984]
+INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:16984]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
@@ -1549,15 +1551,13 @@ INFO: [Synth 8-3919] null assignment ignored [/home/evka/code/tamu_ctp7_v7/tamu_
 	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter WRITE_WIDTH_A bound to: 0 - type: integer 
 	Parameter WRITE_WIDTH_B bound to: 72 - type: integer 
-INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:17045]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper' (4#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
-WARNING: [Synth 8-3848] Net RSTA_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182740]
-WARNING: [Synth 8-3848] Net RSTB_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182741]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width' (5#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:185950]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:186103]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr' (6#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
+INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:17045]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper' (4#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width' (5#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:185950]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:186103]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr' (6#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_WRITE_WIDTH_A bound to: 65 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 65 - type: integer 
@@ -1568,24 +1568,24 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/evka/code/
 	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
 	Parameter C_USE_ECC bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block' (7#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top' (8#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0_synth' (9#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0' (10#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
-INFO: [Synth 8-256] done synthesizing module 'memory' (11#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:5666]
-INFO: [Synth 8-638] synthesizing module 'clk_x_pntrs' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:13084]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block' (7#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top' (8#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1_synth' (9#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_1' (10#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd:277]
+INFO: [Synth 8-256] done synthesizing module 'memory' (11#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:5632]
+INFO: [Synth 8-638] synthesizing module 'clk_x_pntrs' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:13050]
 	Parameter C_HAS_RST bound to: 1 - type: integer 
 	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
 	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
 	Parameter C_MSGON_VAL bound to: 1 - type: integer 
 	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'synchronizer_ff' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:4797]
+INFO: [Synth 8-638] synthesizing module 'synchronizer_ff' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:4763]
 	Parameter C_HAS_RST bound to: 1 - type: integer 
 	Parameter C_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:4802]
-INFO: [Synth 8-256] done synthesizing module 'synchronizer_ff' (12#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:4797]
-INFO: [Synth 8-256] done synthesizing module 'clk_x_pntrs' (13#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:13084]
-INFO: [Synth 8-638] synthesizing module 'rd_logic' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:19722]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:4768]
+INFO: [Synth 8-256] done synthesizing module 'synchronizer_ff' (12#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:4763]
+INFO: [Synth 8-256] done synthesizing module 'clk_x_pntrs' (13#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:13050]
+INFO: [Synth 8-638] synthesizing module 'rd_logic' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:19688]
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
 	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
@@ -1608,22 +1608,22 @@ INFO: [Synth 8-638] synthesizing module 'rd_logic' [/home/evka/code/tamu_ctp7_v7
 	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
 	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
 	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'rd_bin_cntr' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:8212]
+INFO: [Synth 8-638] synthesizing module 'rd_bin_cntr' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:8178]
 	Parameter C_HAS_RST bound to: 1 - type: integer 
 	Parameter C_HAS_SRST bound to: 0 - type: integer 
 	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
 	Parameter C_PNTR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'rd_bin_cntr' (14#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:8212]
-INFO: [Synth 8-638] synthesizing module 'rd_status_flags_as' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:8581]
+INFO: [Synth 8-256] done synthesizing module 'rd_bin_cntr' (14#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:8178]
+INFO: [Synth 8-638] synthesizing module 'rd_status_flags_as' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:8547]
 	Parameter C_HAS_RST bound to: 1 - type: integer 
 	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
 	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
 	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'compare' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:7596]
+INFO: [Synth 8-638] synthesizing module 'compare' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:7562]
 	Parameter C_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'compare' (15#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:7596]
-INFO: [Synth 8-256] done synthesizing module 'rd_status_flags_as' (16#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:8581]
-INFO: [Synth 8-638] synthesizing module 'rd_handshaking_flags' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:10309]
+INFO: [Synth 8-256] done synthesizing module 'compare' (15#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:7562]
+INFO: [Synth 8-256] done synthesizing module 'rd_status_flags_as' (16#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:8547]
+INFO: [Synth 8-638] synthesizing module 'rd_handshaking_flags' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:10275]
 	Parameter C_HAS_RST bound to: 1 - type: integer 
 	Parameter C_HAS_SRST bound to: 0 - type: integer 
 	Parameter C_HAS_VALID bound to: 1 - type: integer 
@@ -1631,9 +1631,9 @@ INFO: [Synth 8-638] synthesizing module 'rd_handshaking_flags' [/home/evka/code/
 	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
 	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
 	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'rd_handshaking_flags' (17#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:10309]
-INFO: [Synth 8-256] done synthesizing module 'rd_logic' (18#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:19722]
-INFO: [Synth 8-638] synthesizing module 'wr_logic' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:16283]
+INFO: [Synth 8-256] done synthesizing module 'rd_handshaking_flags' (17#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:10275]
+INFO: [Synth 8-256] done synthesizing module 'rd_logic' (18#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:19688]
+INFO: [Synth 8-638] synthesizing module 'wr_logic' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:16249]
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
 	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
@@ -1656,7 +1656,7 @@ INFO: [Synth 8-638] synthesizing module 'wr_logic' [/home/evka/code/tamu_ctp7_v7
 	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 13 - type: integer 
 	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 12 - type: integer 
 	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'wr_bin_cntr' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:7795]
+INFO: [Synth 8-638] synthesizing module 'wr_bin_cntr' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:7761]
 	Parameter C_HAS_RST bound to: 1 - type: integer 
 	Parameter C_HAS_SRST bound to: 0 - type: integer 
 	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
@@ -1665,16 +1665,16 @@ INFO: [Synth 8-638] synthesizing module 'wr_bin_cntr' [/home/evka/code/tamu_ctp7
 	Parameter C_PNTR_WIDTH bound to: 4 - type: integer 
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_WR_RD_RATIO bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'wr_bin_cntr' (19#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:7795]
-INFO: [Synth 8-638] synthesizing module 'wr_status_flags_as' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:13568]
+INFO: [Synth 8-256] done synthesizing module 'wr_bin_cntr' (19#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:7761]
+INFO: [Synth 8-638] synthesizing module 'wr_status_flags_as' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:13534]
 	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
 	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
 	Parameter C_HAS_RST bound to: 1 - type: integer 
 	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
 	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'wr_status_flags_as' (20#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:13568]
-INFO: [Synth 8-256] done synthesizing module 'wr_logic' (21#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:16283]
-INFO: [Synth 8-638] synthesizing module 'output_blk' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:4470]
+INFO: [Synth 8-256] done synthesizing module 'wr_status_flags_as' (20#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:13534]
+INFO: [Synth 8-256] done synthesizing module 'wr_logic' (21#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:16249]
+INFO: [Synth 8-638] synthesizing module 'output_blk' [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:4436]
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_DATA_COUNT_WIDTH bound to: 4 - type: integer 
 	Parameter C_DIN_WIDTH bound to: 65 - type: integer 
@@ -1700,14 +1700,14 @@ INFO: [Synth 8-638] synthesizing module 'output_blk' [/home/evka/code/tamu_ctp7_
 	Parameter C_USE_ECC bound to: 0 - type: integer 
 	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
 	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'output_blk' (22#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:4470]
-INFO: [Synth 8-256] done synthesizing module 'fifo_generator_ramfifo' (23#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:20617]
-INFO: [Synth 8-256] done synthesizing module 'fifo_generator_top' (24#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:32446]
-INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v13_0_0_synth' (25#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:33685]
-INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v13_0_0' (26#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_0/hdl/fifo_generator_v13_0.vhd:676]
+INFO: [Synth 8-256] done synthesizing module 'output_blk' (22#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:4436]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_ramfifo' (23#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:20583]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_top' (24#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:32420]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v13_0_1_synth' (25#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd:33659]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v13_0_1' (26#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_generator_v13_0_1/hdl/fifo_generator_v13_0.vhd:676]
 INFO: [Synth 8-256] done synthesizing module 'fifo_gtx_tx' (27#1) [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/synth/fifo_gtx_tx.vhd:74]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:39 ; elapsed = 00:01:39 . Memory (MB): peak = 1270.230 ; gain = 399.570 ; free physical = 8569 ; free virtual = 18535
+Finished RTL Elaboration : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 1236.867 ; gain = 388.648 ; free physical = 2468 ; free virtual = 7792
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1716,22 +1716,22 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[71] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[62] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[53] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[44] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[71] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[62] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[53] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[44] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[71] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[62] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[53] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[44] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[71] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[62] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[53] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[44] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[35] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[26] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[17] to constant 0 [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:39 ; elapsed = 00:01:39 . Memory (MB): peak = 1270.230 ; gain = 399.570 ; free physical = 8570 ; free virtual = 18534
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 1236.867 ; gain = 388.648 ; free physical = 2468 ; free virtual = 7792
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1755,28 +1755,28 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1529.879 ; gain = 0.000 ; free physical = 9004 ; free virtual = 18967
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1497.516 ; gain = 0.000 ; free physical = 2207 ; free virtual = 7531
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3914 
+INFO: Helper process launched with PID 2037 
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:53 ; elapsed = 00:01:53 . Memory (MB): peak = 1529.879 ; gain = 659.219 ; free physical = 8990 ; free virtual = 18954
+Finished Constraint Validation : Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 1497.516 ; gain = 649.297 ; free physical = 2692 ; free virtual = 8017
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx690tffg1927-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:53 ; elapsed = 00:01:53 . Memory (MB): peak = 1529.879 ; gain = 659.219 ; free physical = 8990 ; free virtual = 18954
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 1497.516 ; gain = 649.297 ; free physical = 2692 ; free virtual = 8017
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:53 ; elapsed = 00:01:53 . Memory (MB): peak = 1529.879 ; gain = 659.219 ; free physical = 8990 ; free virtual = 18954
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 1497.516 ; gain = 649.297 ; free physical = 2692 ; free virtual = 8017
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 1529.879 ; gain = 659.219 ; free physical = 8932 ; free virtual = 18896
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 1497.516 ; gain = 649.297 ; free physical = 2688 ; free virtual = 8013
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1872,14 +1872,14 @@ BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 1529.879 ; gain = 659.219 ; free physical = 8919 ; free virtual = 18883
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1497.516 ; gain = 649.297 ; free physical = 2688 ; free virtual = 8013
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:01:54 ; elapsed = 00:01:54 . Memory (MB): peak = 1529.879 ; gain = 659.219 ; free physical = 8907 ; free virtual = 18870
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1497.516 ; gain = 649.297 ; free physical = 2675 ; free virtual = 8009
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:01:54 ; elapsed = 00:01:54 . Memory (MB): peak = 1529.879 ; gain = 659.219 ; free physical = 8907 ; free virtual = 18870
+Finished Parallel Reinference  : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1497.516 ; gain = 649.297 ; free physical = 2675 ; free virtual = 8009
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1890,9 +1890,9 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:54 ; elapsed = 00:01:54 . Memory (MB): peak = 1529.879 ; gain = 659.219 ; free physical = 8889 ; free virtual = 18853
+Finished Area Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1497.516 ; gain = 649.297 ; free physical = 2667 ; free virtual = 7992
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:01:54 ; elapsed = 00:01:54 . Memory (MB): peak = 1529.879 ; gain = 659.219 ; free physical = 8889 ; free virtual = 18853
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1497.516 ; gain = 649.297 ; free physical = 2667 ; free virtual = 7992
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1906,37 +1906,37 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:03 ; elapsed = 00:02:03 . Memory (MB): peak = 1529.879 ; gain = 659.219 ; free physical = 9687 ; free virtual = 19617
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1497.516 ; gain = 649.297 ; free physical = 2612 ; free virtual = 7937
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:03 ; elapsed = 00:02:03 . Memory (MB): peak = 1536.887 ; gain = 666.227 ; free physical = 9677 ; free virtual = 19608
+Finished Timing Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1503.531 ; gain = 655.312 ; free physical = 2602 ; free virtual = 7927
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:02:03 ; elapsed = 00:02:03 . Memory (MB): peak = 1536.887 ; gain = 666.227 ; free physical = 9677 ; free virtual = 19608
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:03 ; elapsed = 00:02:03 . Memory (MB): peak = 1536.887 ; gain = 666.227 ; free physical = 9677 ; free virtual = 19608
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/reset_gen_ic.rstblk_cc/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg ) is unused and will be removed from module fifo_generator_v13_0_0.
-WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/reset_gen_ic.rstblk_cc/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg ) is unused and will be removed from module fifo_generator_v13_0_0.
-WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/reset_gen_ic.rstblk_cc/ngwrdrst.grst.g7serrst.wr_rst_asreg_d2_reg ) is unused and will be removed from module fifo_generator_v13_0_0.
-WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/reset_gen_ic.rstblk_cc/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg ) is unused and will be removed from module fifo_generator_v13_0_0.
-WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/reset_gen_ic.rstblk_cc/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg ) is unused and will be removed from module fifo_generator_v13_0_0.
-WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/reset_gen_ic.rstblk_cc/ngwrdrst.grst.g7serrst.rd_rst_asreg_d2_reg ) is unused and will be removed from module fifo_generator_v13_0_0.
+WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/reset_gen_ic.rstblk_cc/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg ) is unused and will be removed from module fifo_generator_v13_0_1.
+WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/reset_gen_ic.rstblk_cc/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg ) is unused and will be removed from module fifo_generator_v13_0_1.
+WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/reset_gen_ic.rstblk_cc/ngwrdrst.grst.g7serrst.wr_rst_asreg_d2_reg ) is unused and will be removed from module fifo_generator_v13_0_1.
+WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/reset_gen_ic.rstblk_cc/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg ) is unused and will be removed from module fifo_generator_v13_0_1.
+WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/reset_gen_ic.rstblk_cc/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg ) is unused and will be removed from module fifo_generator_v13_0_1.
+WARNING: [Synth 8-3332] Sequential element (\inst_fifo_gen/reset_gen_ic.rstblk_cc/ngwrdrst.grst.g7serrst.rd_rst_asreg_d2_reg ) is unused and will be removed from module fifo_generator_v13_0_1.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:03 ; elapsed = 00:02:03 . Memory (MB): peak = 1545.902 ; gain = 675.242 ; free physical = 9668 ; free virtual = 19599
+Finished Technology Mapping : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1513.547 ; gain = 665.328 ; free physical = 2592 ; free virtual = 7917
 ---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1513.547 ; gain = 665.328 ; free physical = 2592 ; free virtual = 7917
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1513.547 ; gain = 665.328 ; free physical = 2592 ; free virtual = 7917
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -1953,7 +1953,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:03 ; elapsed = 00:02:03 . Memory (MB): peak = 1545.902 ; gain = 675.242 ; free physical = 9667 ; free virtual = 19598
+Finished IO Insertion : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1513.547 ; gain = 665.328 ; free physical = 2591 ; free virtual = 7916
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1966,7 +1966,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:03 ; elapsed = 00:02:03 . Memory (MB): peak = 1545.902 ; gain = 675.242 ; free physical = 9667 ; free virtual = 19598
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1513.547 ; gain = 665.328 ; free physical = 2591 ; free virtual = 7916
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1978,25 +1978,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:03 ; elapsed = 00:02:03 . Memory (MB): peak = 1545.902 ; gain = 675.242 ; free physical = 9667 ; free virtual = 19598
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1513.547 ; gain = 665.328 ; free physical = 2591 ; free virtual = 7916
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:03 ; elapsed = 00:02:03 . Memory (MB): peak = 1545.902 ; gain = 675.242 ; free physical = 9667 ; free virtual = 19598
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1513.547 ; gain = 665.328 ; free physical = 2591 ; free virtual = 7916
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:03 ; elapsed = 00:02:03 . Memory (MB): peak = 1545.902 ; gain = 675.242 ; free physical = 9667 ; free virtual = 19598
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1513.547 ; gain = 665.328 ; free physical = 2591 ; free virtual = 7916
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:03 ; elapsed = 00:02:03 . Memory (MB): peak = 1545.902 ; gain = 675.242 ; free physical = 9667 ; free virtual = 19598
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1513.547 ; gain = 665.328 ; free physical = 2591 ; free virtual = 7916
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2028,8 +2028,8 @@ Report Instance Areas:
 |      |Instance                                        |Module                            |Cells |
 +------+------------------------------------------------+----------------------------------+------+
 |1     |top                                             |                                  |   121|
-|2     |  U0                                            |fifo_generator_v13_0_0            |   121|
-|3     |    inst_fifo_gen                               |fifo_generator_v13_0_0_synth      |   121|
+|2     |  U0                                            |fifo_generator_v13_0_1            |   121|
+|3     |    inst_fifo_gen                               |fifo_generator_v13_0_1_synth      |   121|
 |4     |      \gconvfifo.rf                             |fifo_generator_top                |   113|
 |5     |        \grf.rf                                 |fifo_generator_ramfifo            |   113|
 |6     |          \gntv_or_sync_fifo.gcx.clkx           |clk_x_pntrs                       |    49|
@@ -2045,8 +2045,8 @@ Report Instance Areas:
 |16    |            \gwas.wsts                          |wr_status_flags_as                |     4|
 |17    |            wpntr                               |wr_bin_cntr                       |    16|
 |18    |          \gntv_or_sync_fifo.mem                |memory                            |     1|
-|19    |            \gbm.gbmg.gbmga.ngecc.bmg           |blk_mem_gen_v8_3_0                |     1|
-|20    |              inst_blk_mem_gen                  |blk_mem_gen_v8_3_0_synth          |     1|
+|19    |            \gbm.gbmg.gbmga.ngecc.bmg           |blk_mem_gen_v8_3_1                |     1|
+|20    |              inst_blk_mem_gen                  |blk_mem_gen_v8_3_1_synth          |     1|
 |21    |                \gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                   |     1|
 |22    |                  \valid.cstr                   |blk_mem_gen_generic_cstr          |     1|
 |23    |                    \ramloop[0].ram.r           |blk_mem_gen_prim_width            |     1|
@@ -2055,11 +2055,11 @@ Report Instance Areas:
 |26    |      \reset_gen_ic.rstblk_cc                   |reset_blk_ramfifo                 |     8|
 +------+------------------------------------------------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:03 ; elapsed = 00:02:03 . Memory (MB): peak = 1545.902 ; gain = 675.242 ; free physical = 9667 ; free virtual = 19598
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1513.547 ; gain = 665.328 ; free physical = 2591 ; free virtual = 7916
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:51 ; elapsed = 00:01:51 . Memory (MB): peak = 1545.902 ; gain = 265.637 ; free physical = 9666 ; free virtual = 19598
-Synthesis Optimization Complete : Time (s): cpu = 00:02:03 ; elapsed = 00:02:03 . Memory (MB): peak = 1545.902 ; gain = 675.242 ; free physical = 9666 ; free virtual = 19598
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:28 ; elapsed = 00:01:28 . Memory (MB): peak = 1513.547 ; gain = 258.645 ; free physical = 2591 ; free virtual = 7916
+Synthesis Optimization Complete : Time (s): cpu = 00:01:40 ; elapsed = 00:01:43 . Memory (MB): peak = 1513.547 ; gain = 665.328 ; free physical = 2591 ; free virtual = 7916
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -2070,16 +2070,16 @@ Parsing XDC File [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fi
 Finished Parsing XDC File [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx/fifo_gtx_tx.xdc] for cell 'U0'
 Parsing XDC File [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx/fifo_gtx_tx_clocks.xdc] for cell 'U0'
 INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx/fifo_gtx_tx_clocks.xdc:53]
-get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2151.176 ; gain = 573.258 ; free physical = 9169 ; free virtual = 19108
+get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2117.820 ; gain = 572.258 ; free physical = 1943 ; free virtual = 7269
 Finished Parsing XDC File [/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/ip/fifo_gtx_tx/fifo_gtx_tx/fifo_gtx_tx_clocks.xdc] for cell 'U0'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-102 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
+102 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:17 ; elapsed = 00:02:17 . Memory (MB): peak = 2151.176 ; gain = 1181.027 ; free physical = 9168 ; free virtual = 19107
+synth_design: Time (s): cpu = 00:01:52 ; elapsed = 00:01:54 . Memory (MB): peak = 2118.820 ; gain = 1171.000 ; free physical = 1942 ; free virtual = 7268
 INFO: [Coretcl 2-1174] Renamed 25 cell refs.
-report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2183.195 ; gain = 0.000 ; free physical = 9166 ; free virtual = 19105
-INFO: [Common 17-206] Exiting Vivado at Fri Apr  8 16:09:04 2016...
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2150.840 ; gain = 0.000 ; free physical = 1947 ; free virtual = 7273
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 11 20:45:26 2016...

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1460520760">
+  <File Type="VDS-TIMING-PB" Name="registers_v1_0_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="registers_v1_0_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="registers_v1_0.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="registers_v1_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="registers_v1_0_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="registers_v1_0_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="registers_v1_0.vds"/>
+  <File Type="PA-TCL" Name="registers_v1_0.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/registers_1.0/hdl/ipbus_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/registers_1.0/hdl/registers_v1_0_AXI.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/registers_1.0/hdl/registers_v1_0.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/registers_1.0/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="registers_v1_0"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/registers_1.0/hdl/registers_v1_0.vhd"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/registers_1.0/src/constrs/registers.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_axi_regs"/>
+</GenRun>
