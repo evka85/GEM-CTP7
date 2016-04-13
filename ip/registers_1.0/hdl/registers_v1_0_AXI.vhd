@@ -170,6 +170,7 @@ begin
 
   ipb_clk_o <= ipb_clk; 
   ipb_clk <= S_AXI_ACLK;
+  ipb_mosi_o <= ipb_mosi;
 
 	S_AXI_AWREADY	<= axi_awready;
 	S_AXI_WREADY	<= axi_wready;
@@ -231,7 +232,7 @@ begin
           -- initiate IPBus read request
           when READ =>
             axi_arready         <= '0';
-            ipb_mosi(0).ipb_addr   <= x"4" & axi_awaddr(ADDR_LSB + 19 downto ADDR_LSB + 16) & x"00" & axi_awaddr(ADDR_LSB + 15 downto ADDR_LSB);
+            ipb_mosi(0).ipb_addr   <= x"4" & axi_araddr(ADDR_LSB + 19 downto ADDR_LSB + 16) & x"00" & axi_araddr(ADDR_LSB + 15 downto ADDR_LSB);
             ipb_mosi(0).ipb_strobe <= '1';
             ipb_mosi(0).ipb_write  <= '0';
             ipb_state           <= WAIT_FOR_READ_ACK;

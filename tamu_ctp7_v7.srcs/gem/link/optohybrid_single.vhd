@@ -28,6 +28,7 @@ library work;
 use work.gth_pkg.all;
 use work.ttc_pkg.all;
 use work.gem_pkg.all;
+use work.ipbus_pkg.all;
 
 entity optohybrid_single is
 port (
@@ -39,7 +40,10 @@ port (
     gth_rx_data_i           : in t_gth_rx_data;
     gth_tx_data_o           : out t_gth_tx_data;
     reg_request_i           : in t_reg_request;
-    reg_response_o          : out t_reg_response
+    reg_response_o          : out t_reg_response;
+    ipb_clk_i               : in std_logic;
+    ipb_reg_miso_o          : out ipb_rbus;
+    ipb_reg_mosi_i          : in ipb_wbus
 );
 end optohybrid_single;
 
@@ -102,40 +106,58 @@ begin
         rx_data_i   => gth_rx_data_i.rxdata(15 downto 0)        
     );
 
-    -- temporary hack to try out register reads/writes on the OH
+    --============================--
+    --== GTX request forwarding ==--
+    --============================--
     
-    --== TX buffer ==--
-    
-    fifo_gtx_tx_inst : entity work.fifo_gtx_tx
+    link_request_inst : entity work.link_request
     port map(
-        rst     => reset_i,
-        wr_clk  => reg_request_i.axi_reg_clk,
-        wr_en   => reg_request_i.en,
-        din     => reg_request_i.we & reg_request_i.addr(31 downto 24) & "0000" & reg_request_i.addr(19 downto 0) & reg_request_i.data,        
-        rd_clk  => gth_tx_usrclk_i,
-        rd_en   => g2o_req_en,
-        valid   => g2o_req_valid,
-        dout    => g2o_req_data,
-        full    => open,
-        empty   => open
+        ipb_clk_i   => ipb_clk_i,
+        gtx_clk_i   => gth_rx_usrclk_i,
+        reset_i     => reset_i,        
+        ipb_mosi_i  => ipb_reg_mosi_i,
+        ipb_miso_o  => ipb_reg_miso_o,        
+        tx_en_i     => g2o_req_en,
+        tx_valid_o  => g2o_req_valid,
+        tx_data_o   => g2o_req_data,        
+        rx_en_i     => o2g_req_en,
+        rx_data_i   => o2g_req_data        
     );
+     
+--    -- temporary hack to try out register reads/writes on the OH
     
-    --== Process inbetween is handled by the optical link ==--
+--    --== TX buffer ==--
+    
+--    fifo_gtx_tx_inst : entity work.fifo_gtx_tx
+--    port map(
+--        rst     => reset_i,
+--        wr_clk  => reg_request_i.axi_reg_clk,
+--        wr_en   => reg_request_i.en,
+--        din     => reg_request_i.we & reg_request_i.addr(31 downto 24) & "0000" & reg_request_i.addr(19 downto 0) & reg_request_i.data,        
+--        rd_clk  => gth_tx_usrclk_i,
+--        rd_en   => g2o_req_en,
+--        valid   => g2o_req_valid,
+--        dout    => g2o_req_data,
+--        full    => open,
+--        empty   => open
+--    );
+    
+--    --== Process inbetween is handled by the optical link ==--
 
-    --== RX buffer ==--
+--    --== RX buffer ==--
     
-    fifo_gtx_rx_inst : entity work.fifo_gtx_rx
-    port map(
-        rst     => reset_i,
-        wr_clk  => gth_rx_usrclk_i,
-        wr_en   => o2g_req_en,
-        din     => o2g_req_data,        
-        rd_clk  => reg_request_i.axi_reg_clk,
-        rd_en   => '1',
-        valid   => reg_response_o.en,
-        dout    => reg_response_o.data,
-        full    => open,
-        empty   => open
-    );
+--    fifo_gtx_rx_inst : entity work.fifo_gtx_rx
+--    port map(
+--        rst     => reset_i,
+--        wr_clk  => gth_rx_usrclk_i,
+--        wr_en   => o2g_req_en,
+--        din     => o2g_req_data,        
+--        rd_clk  => reg_request_i.axi_reg_clk,
+--        rd_en   => '1',
+--        valid   => reg_response_o.en,
+--        dout    => reg_response_o.data,
+--        full    => open,
+--        empty   => open
+--    );
     
 end Behavioral;

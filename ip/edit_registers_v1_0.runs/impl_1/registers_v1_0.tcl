@@ -54,7 +54,6 @@ set rc [catch {
   set_property ip_repo_paths {
   /home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.cache/ip
   /home/evka/code/tamu_ctp7_v7/ip/registers_1.0
-  /home/evka/code/ip_repo/myip_1.0
   /home/evka/code/tamu_ctp7_v7/ip/ipbus_interface
 } [current_project]
   set_property ip_output_repo /home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.cache/ip [current_project]

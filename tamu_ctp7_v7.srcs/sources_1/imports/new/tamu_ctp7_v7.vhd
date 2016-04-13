@@ -27,6 +27,7 @@ use work.ttc_pkg.all;
 use work.capture_playback_pkg.all;
 use work.tamu_ctp7_v7_build_cfg.all;
 use work.gem_pkg.all;
+use work.ipbus_pkg.all;
 
 --============================================================================
 --                                                          Entity declaration
@@ -177,8 +178,17 @@ architecture tamu_ctp7_v7_arch of tamu_ctp7_v7 is
       clk_200_diff_in_clk_p : in std_logic;
 
       clk_out1_200mhz : out std_logic;
-      clk_out2_50mhz  : out std_logic
-      );
+      clk_out2_50mhz  : out std_logic;
+      
+      ipb_clk_o : out STD_LOGIC;
+      ipb_oh_miso_i_ack : in STD_LOGIC;
+      ipb_oh_miso_i_err : in STD_LOGIC;
+      ipb_oh_miso_i_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+      ipb_oh_mosi_o_addr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+      ipb_oh_mosi_o_strobe : out STD_LOGIC;
+      ipb_oh_mosi_o_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+      ipb_oh_mosi_o_write : out STD_LOGIC     
+    );
   end component v7_bd;
 
 --============================================================================
@@ -301,6 +311,11 @@ architecture tamu_ctp7_v7_arch of tamu_ctp7_v7 is
   signal oh_reg_request_arr  : t_reg_request_arr(11 downto 0);
   signal oh_reg_response_arr : t_reg_response_arr(11 downto 0);
 
+  -------------------------- IPbus ----------------------------------
+  signal ipb_clk             : std_logic;
+  signal ipb_oh_miso         : ipb_rbus_array(0 downto 0); 
+  signal ipb_oh_mosi         : ipb_wbus_array(0 downto 0); 
+
   -------------------------- DEBUG ----------------------------------
   attribute mark_debug : string;
   attribute mark_debug of oh_reg_request_arr: signal is "true";
@@ -373,8 +388,17 @@ begin
       clk_200_diff_in_clk_p => clk_200_diff_in_clk_p,
 
       clk_out1_200mhz => s_clk_200,
-      clk_out2_50mhz  => s_clk_50
-      );
+      clk_out2_50mhz  => s_clk_50,
+      
+      ipb_clk_o             => ipb_clk,
+      ipb_oh_miso_i_ack     => ipb_oh_miso(0).ipb_ack,
+      ipb_oh_miso_i_err     => ipb_oh_miso(0).ipb_err,
+      ipb_oh_miso_i_rdata   => ipb_oh_miso(0).ipb_rdata,
+      ipb_oh_mosi_o_addr    => ipb_oh_mosi(0).ipb_addr,
+      ipb_oh_mosi_o_strobe  => ipb_oh_mosi(0).ipb_strobe,
+      ipb_oh_mosi_o_wdata   => ipb_oh_mosi(0).ipb_wdata,
+      ipb_oh_mosi_o_write   => ipb_oh_mosi(0).ipb_write
+    );
       
   i_ctp7_ttc : entity work.ctp7_ttc
         port map(
@@ -593,22 +617,25 @@ begin
 
   ------------------------------- GEM ------------------------------
   
-  gen_optohybrids : for i in 0 to 11 generate
+  --optohybrids : for i in 6 to 6 generate
 
     optohybrid_single_inst : entity work.optohybrid_single
       port map(
-        reset_i                 => s_gth_gt_rxreset(i),
+        reset_i                 => s_gth_gt_rxreset(6),
         ttc_clk_i               => s_ttc_clks,
         ttc_cmds_i              => s_ttc_cmds,
-        gth_rx_usrclk_i         => s_clk_gth_rx_usrclk_arr(i),
-        gth_tx_usrclk_i         => s_clk_gth_tx_usrclk_arr(i),
-        gth_rx_data_i           => s_gth_rx_data_arr(i),
-        gth_tx_data_o           => s_gth_tx_data_arr(i),
-        reg_request_i           => oh_reg_request_arr(i),
-        reg_response_o          => oh_reg_response_arr(i)
+        gth_rx_usrclk_i         => s_clk_gth_rx_usrclk_arr(6),
+        gth_tx_usrclk_i         => s_clk_gth_tx_usrclk_arr(6),
+        gth_rx_data_i           => s_gth_rx_data_arr(6),
+        gth_tx_data_o           => s_gth_tx_data_arr(6),
+        reg_request_i           => oh_reg_request_arr(6),
+        reg_response_o          => open,
+        ipb_clk_i               => ipb_clk,
+        ipb_reg_miso_o          => ipb_oh_miso(0),
+        ipb_reg_mosi_i          => ipb_oh_mosi(0)
       );
       
-  end generate;
+  --end generate;
 
 end tamu_ctp7_v7_arch;
 

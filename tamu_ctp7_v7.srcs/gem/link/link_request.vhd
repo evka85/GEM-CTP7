@@ -16,19 +16,18 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 library work;
-use work.ipbus.all;
-use work.system_package.all;
-use work.user_package.all;
+use work.gem_pkg.all;
+use work.ipbus_pkg.all;
 
 entity link_request is
 port(
 
-	ipb_clk_i   : in std_logic;
-	gtx_clk_i   : in std_logic;
-	reset_i     : in std_logic;
+  	ipb_clk_i   : in std_logic;
+  	gtx_clk_i   : in std_logic;
+    reset_i     : in std_logic;
     
-	ipb_mosi_i  : in ipb_wbus;
-	ipb_miso_o  : out ipb_rbus;
+    ipb_mosi_i  : in ipb_wbus;
+    ipb_miso_o  : out ipb_rbus;
     
     tx_en_i     : in std_logic;
     tx_valid_o  : out std_logic;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1460402752">
+<GenRun Id="synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1460538044">
   <File Type="VDS-TIMING-PB" Name="tamu_ctp7_v7_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="tamu_ctp7_v7_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="tamu_ctp7_v7.dcp"/>
@@ -13,6 +13,12 @@
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/gem/ipbus_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/new/TTC_decoder.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/sources/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/new/TTC_decoder.vhd"/>
@@ -62,6 +68,12 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/gem/gem_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/gem/link/link_request.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -183,18 +195,18 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/gem/link/optohybrid_single.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/bd/v7_bd/v7_bd.bd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../data/alex/repos/CTP7-v7-TAMU-link-demo/workspace/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/v7_bd.bd"/>
         <Attr Name="ImportTime" Val="1455640925"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/gem/link/optohybrid_single.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -295,13 +307,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/gem/link/link_request.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/new/io_link_3p2g_demo_ctrl.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -353,6 +358,7 @@
     <File Path="$PSRCDIR/sources_1/bd/v7_bd/ip/v7_bd_blk_mem_gen_0_0/v7_bd_blk_mem_gen_0_0.upgrade_log"/>
     <File Path="$PSRCDIR/sources_1/bd/v7_bd/ip/v7_bd_clk_wiz_0_0/v7_bd_clk_wiz_0_0.upgrade_log"/>
     <File Path="$PSRCDIR/vio_4p8g/ip/vio_4p8g/vio_4p8g.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/v7_bd/ip/v7_bd_registers_0_0/v7_bd_registers_0_0.upgrade_log"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="tamu_ctp7_v7"/>

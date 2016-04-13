@@ -13,10 +13,7 @@ set_property webtalk.parent_dir /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.cache/
 set_property parent.project_path /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_repo_paths {
-  /home/evka/code/tamu_ctp7_v7/ip/registers_1.0
-  /home/evka/code/ip_repo/myip_1.0
-} [current_project]
+set_property ip_repo_paths /home/evka/code/tamu_ctp7_v7/ip [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]
 add_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/imports/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/pb_cap_ram.coe
 add_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/playback_capture_ram/ip/playback_capture_ram/pb_cap_ram.coe
@@ -51,16 +48,13 @@ set_property used_in_implementation false [get_files -all /home/evka/code/tamu_c
 set_property used_in_implementation false [get_files -all /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_xbar_0/v7_bd_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_registers_0_0/src/ila_axi_regs/ila_v6_0/constraints/ila.xdc]
 set_property used_in_implementation false [get_files -all /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_registers_0_0/src/ila_axi_regs/ila_axi_regs_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_registers_0_0/src/vio_regs/vio_regs.xdc]
-set_property used_in_implementation false [get_files -all /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_registers_0_0/src/vio_regs/vio_regs_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_registers_0_0/src/fifo_axi_write_cmds/fifo_axi_write_cmds/fifo_axi_write_cmds_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_registers_0_0/src/fifo_axi_write_cmds/fifo_axi_write_cmds/fifo_axi_write_cmds.xdc]
-set_property used_in_implementation false [get_files -all /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_registers_0_0/src/fifo_axi_write_cmds/fifo_axi_write_cmds_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_registers_0_0/src/constrs/registers.xdc]
 set_property used_in_implementation false [get_files -all /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/ip/v7_bd_auto_pc_0/v7_bd_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/v7_bd_ooc.xdc]
 set_property is_locked true [get_files /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/bd/v7_bd/v7_bd.bd]
 
 read_vhdl -library xil_defaultlib {
+  /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/gem/ipbus_pkg.vhd
   /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/imports/new/TTC_decoder.vhd
   /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/imports/new/gth_single_sync_pulse.vhd
   /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/imports/new/gth_single_sync_block.vhd
@@ -68,6 +62,7 @@ read_vhdl -library xil_defaultlib {
   /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/imports/new/gth_4p8_raw_CLOCK_MODULE.vhd
   /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/imports/new/gth_pkg.vhd
   /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/gem/gem_pkg.vhd
+  /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/gem/link/link_request.vhd
   /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/gem/link/link_tx_tracking.vhd
   /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/gem/link/link_rx_tracking.vhd
   /home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.srcs/sources_1/imports/new/ttc_pkg.vhd

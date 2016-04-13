@@ -14,7 +14,6 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
   /home/evka/code/tamu_ctp7_v7/ip/registers_1.0
-  /home/evka/code/ip_repo/myip_1.0
   /home/evka/code/tamu_ctp7_v7/ip/ipbus_interface
 } [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]

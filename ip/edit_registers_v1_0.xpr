@@ -19,7 +19,6 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/registers_1.0"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../ip_repo/myip_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/ipbus_interface"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>

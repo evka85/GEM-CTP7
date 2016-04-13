@@ -51,12 +51,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_registers
 # IP: bd/v7_bd/ip/v7_bd_registers_0_0/src/ila_axi_regs/ila_axi_regs.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ila_axi_regs || ORIG_REF_NAME==ila_axi_regs}]
 
-# IP: bd/v7_bd/ip/v7_bd_registers_0_0/src/vio_regs/vio_regs.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==vio_regs || ORIG_REF_NAME==vio_regs}]
-
-# IP: bd/v7_bd/ip/v7_bd_registers_0_0/src/fifo_axi_write_cmds/fifo_axi_write_cmds.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_axi_write_cmds || ORIG_REF_NAME==fifo_axi_write_cmds}]
-
 # IP: bd/v7_bd/ip/v7_bd_auto_pc_0/v7_bd_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_auto_pc_0 || ORIG_REF_NAME==v7_bd_auto_pc_0}]
 
@@ -113,18 +107,8 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/ila_axi_regs/ila_axi_regs_ooc.xdc
 
-# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/vio_regs/vio_regs.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==vio_regs || ORIG_REF_NAME==vio_regs}]
-
-# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/vio_regs/vio_regs_ooc.xdc
-
-# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/fifo_axi_write_cmds/fifo_axi_write_cmds/fifo_axi_write_cmds_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_axi_write_cmds || ORIG_REF_NAME==fifo_axi_write_cmds}] {/U0 }]/U0 ]]
-
-# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/fifo_axi_write_cmds/fifo_axi_write_cmds/fifo_axi_write_cmds.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_axi_write_cmds || ORIG_REF_NAME==fifo_axi_write_cmds}] {/U0 }]/U0 ]]
-
-# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/fifo_axi_write_cmds/fifo_axi_write_cmds_ooc.xdc
+# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/constrs/registers.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==v7_bd_registers_0_0 || ORIG_REF_NAME==v7_bd_registers_0_0}] {/U0 }]/U0 ]]
 
 # XDC: bd/v7_bd/ip/v7_bd_auto_pc_0/v7_bd_auto_pc_0_ooc.xdc
 

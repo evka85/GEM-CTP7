@@ -2,15 +2,18 @@
    guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
 #  -string -flagsOSRD
 preplace port clk_out1_200mhz -pg 1 -y 1150 -defaultsOSRD
+preplace port ipb_oh_miso_i -pg 1 -y 60 -defaultsOSRD
+preplace port ipb_clk_o -pg 1 -y 100 -defaultsOSRD
 preplace port clk_out2_50mhz -pg 1 -y 1170 -defaultsOSRD
+preplace port ipb_oh_mosi_o -pg 1 -y 80 -defaultsOSRD
 preplace port BRAM_CTRL_TX_RAM -pg 1 -y 730 -defaultsOSRD
 preplace port axi_c2c_v7_to_zynq_link_status -pg 1 -y 1080 -defaultsOSRD
-preplace port BRAM_CTRL_RX_RAM -pg 1 -y 430 -defaultsOSRD
+preplace port BRAM_CTRL_RX_RAM -pg 1 -y 530 -defaultsOSRD
 preplace port axi_c2c_v7_to_zynq_clk -pg 1 -y 1040 -defaultsOSRD
 preplace port clk_200_diff_in -pg 1 -y 1240 -defaultsOSRD
-preplace port BRAM_CTRL_REG_FILE -pg 1 -y 310 -defaultsOSRD
-preplace port BRAM_CTRL_GTH_REG_FILE -pg 1 -y 190 -defaultsOSRD
-preplace port BRAM_CTRL_DRP -pg 1 -y 70 -defaultsOSRD
+preplace port BRAM_CTRL_REG_FILE -pg 1 -y 400 -defaultsOSRD
+preplace port BRAM_CTRL_GTH_REG_FILE -pg 1 -y 270 -defaultsOSRD
+preplace port BRAM_CTRL_DRP -pg 1 -y -80 -defaultsOSRD
 preplace port axi_c2c_zynq_to_v7_clk -pg 1 -y 1060 -defaultsOSRD
 preplace port axi_c2c_zynq_to_v7_reset -pg 1 -y 740 -defaultsOSRD
 preplace portBus axi_c2c_zynq_to_v7_data -pg 1 -y 1080 -defaultsOSRD
@@ -28,34 +31,37 @@ preplace inst axi_interconnect_0 -pg 1 -lvl 2 -y 390 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 3 -y 1320 -defaultsOSRD
 preplace inst axi_chip2chip_0 -pg 1 -lvl 3 -y 1150 -defaultsOSRD
 preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -y 980 -defaultsOSRD
-preplace netloc axi_bram_ctrl_1_BRAM_PORTA1 1 3 2 NJ 430 NJ
-preplace netloc axi_chip2chip_0_m_axi_lite 1 1 3 340 1390 NJ 1390 1240
-preplace netloc clk_wiz_0_locked 1 0 4 -40 1420 NJ 1420 NJ 1420 1230
+preplace netloc registers_0_ipb_miso 1 3 2 N 60 NJ
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA1 1 3 2 NJ 530 NJ
+preplace netloc axi_chip2chip_0_m_axi_lite 1 1 3 260 1390 NJ 1390 1130
+preplace netloc registers_0_ipb_clk_o 1 3 2 N 100 NJ
+preplace netloc clk_wiz_0_locked 1 0 4 -110 1420 NJ 1420 NJ 1420 1120
 preplace netloc axi_bram_ctrl_1_BRAM_PORTA2 1 3 2 NJ 730 NJ
 preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 NJ
 preplace netloc axi_bram_ctrl_1_BRAM_PORTA4 1 3 2 NJ -80 NJ
-preplace netloc axi_interconnect_0_M02_AXI 1 2 1 730
+preplace netloc axi_interconnect_0_M02_AXI 1 2 1 650
 preplace netloc axi_chip2chip_0_axi_c2c_link_status_out 1 3 2 NJ 1080 NJ
-preplace netloc ARESETN_1 1 1 2 330 790 NJ
+preplace netloc ARESETN_1 1 1 2 250 790 NJ
 preplace netloc clk_200_diff_in_1 1 0 3 NJ 1240 NJ 1240 NJ
-preplace netloc axi_interconnect_0_M07_AXI 1 2 1 710
-preplace netloc vio_0_probe_out0 1 1 2 310 -10 740
-preplace netloc axi_interconnect_0_M04_AXI 1 2 1 660
+preplace netloc axi_interconnect_0_M07_AXI 1 2 1 630
+preplace netloc vio_0_probe_out0 1 1 2 240 -10 660
+preplace netloc registers_0_ipb_mosi 1 3 2 N 80 NJ
+preplace netloc axi_interconnect_0_M04_AXI 1 2 1 580
 preplace netloc axi_c2c_zynq_to_v7_clk_1 1 0 3 NJ 1060 NJ 1060 NJ
-preplace netloc clk_wiz_0_clk_out1 1 2 3 720 1400 1280 1150 NJ
+preplace netloc clk_wiz_0_clk_out1 1 2 3 640 1400 1170 1150 NJ
 preplace netloc axi_c2c_zynq_to_v7_reset_1 1 0 1 NJ
 preplace netloc axi_c2c_zynq_to_v7_data_1 1 0 3 NJ 1080 NJ 1080 NJ
-preplace netloc axi_interconnect_0_M05_AXI 1 2 1 720
-preplace netloc axi_interconnect_0_M00_AXI 1 2 1 690
-preplace netloc axi_interconnect_0_M01_AXI 1 2 1 640
-preplace netloc clk_wiz_0_clk_out3 1 0 5 -40 670 320 -20 670 1410 1290 1170 NJ
+preplace netloc axi_interconnect_0_M05_AXI 1 2 1 640
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 610
+preplace netloc axi_interconnect_0_M01_AXI 1 2 1 560
+preplace netloc clk_wiz_0_clk_out3 1 0 5 -120 850 230 -20 590 1410 1180 1170 NJ
 preplace netloc axi_chip2chip_0_axi_c2c_selio_tx_data_out 1 3 2 NJ 1060 NJ
-preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 3 2 NJ 310 NJ
-preplace netloc axi_bram_ctrl_reg_file1_BRAM_PORTA 1 3 2 NJ 190 NJ
-preplace netloc axi_interconnect_0_M06_AXI 1 2 1 680
-preplace netloc axi_interconnect_0_M03_AXI 1 2 1 700
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 3 2 NJ 400 NJ
+preplace netloc axi_bram_ctrl_reg_file1_BRAM_PORTA 1 3 2 NJ 270 NJ
+preplace netloc axi_interconnect_0_M06_AXI 1 2 1 600
+preplace netloc axi_interconnect_0_M03_AXI 1 2 1 620
 preplace netloc axi_chip2chip_0_axi_c2c_selio_tx_clk_out 1 3 2 NJ 1040 NJ
-levelinfo -pg 1 -60 140 490 1000 1410 1560 -top -270 -bot 1430
+levelinfo -pg 1 -140 60 410 890 1290 1420 -top -150 -bot 1570
 ",
 }
 0
