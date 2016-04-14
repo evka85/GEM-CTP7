@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.hw/hw_1/wave/hw_ila_data_7/hw_ila_data_7.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="10">
+	</WVObjectSize>
+	<wvobject fp_name="s_gth_rx_data_arr[6][rxnotintable]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxnotintable][3:0]</obj_property>
+		<obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxnotintable][3:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="s_gth_rx_data_arr[6][rxdisperr]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxdisperr][3:0]</obj_property>
+		<obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxdisperr][3:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="s_gth_rx_data_arr[6][rxdata]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxdata][31:0]</obj_property>
+		<obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxdata][31:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="s_gth_rx_data_arr[6][rxcharisk]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxcharisk][3:0]</obj_property>
+		<obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxcharisk][3:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="s_gth_rx_data_arr[6][rxchariscomma]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxchariscomma][3:0]</obj_property>
+		<obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxchariscomma][3:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="s_gth_rx_data_arr[6][rxbyteisaligned]" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxbyteisaligned]</obj_property>
+		<obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxbyteisaligned]</obj_property>
+	</wvobject>
+	<wvobject fp_name="s_gth_rx_data_arr[6][rxbyterealign]" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxbyterealign]</obj_property>
+		<obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxbyterealign]</obj_property>
+	</wvobject>
+	<wvobject fp_name="s_gth_rx_data_arr[6][rxcommadet]" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">s_gth_rx_data_arr[6][rxcommadet]</obj_property>
+		<obj_property name="ObjectShortName">s_gth_rx_data_arr[6][rxcommadet]</obj_property>
+	</wvobject>
+	<wvobject fp_name="oh_reg_request_arr[7][en]" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">oh_reg_request_arr[7][en]</obj_property>
+		<obj_property name="ObjectShortName">oh_reg_request_arr[7][en]</obj_property>
+	</wvobject>
+	<wvobject fp_name="oh_reg_response_arr[7][en]" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">oh_reg_response_arr[7][en]</obj_property>
+		<obj_property name="ObjectShortName">oh_reg_response_arr[7][en]</obj_property>
+	</wvobject>
+</wave_config>
+

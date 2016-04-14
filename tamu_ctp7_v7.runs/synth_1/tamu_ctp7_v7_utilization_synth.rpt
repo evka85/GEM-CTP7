@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Wed Apr 13 11:12:47 2016
+| Date         : Thu Apr 14 18:33:49 2016
 | Host         : evka-pc running 64-bit Ubuntu 14.04.4 LTS
 | Command      : report_utilization -file tamu_ctp7_v7_utilization_synth.rpt -pb tamu_ctp7_v7_utilization_synth.pb
 | Design       : tamu_ctp7_v7
@@ -30,16 +30,16 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 24887 |     0 |    433200 |  5.74 |
-|   LUT as Logic             | 24197 |     0 |    433200 |  5.59 |
-|   LUT as Memory            |   690 |     0 |    174200 |  0.40 |
+| Slice LUTs*                | 23075 |     0 |    433200 |  5.33 |
+|   LUT as Logic             | 23023 |     0 |    433200 |  5.31 |
+|   LUT as Memory            |    52 |     0 |    174200 |  0.03 |
 |     LUT as Distributed RAM |    48 |     0 |           |       |
-|     LUT as Shift Register  |   642 |     0 |           |       |
-| Slice Registers            | 28069 |     0 |    866400 |  3.24 |
-|   Register as Flip Flop    | 28069 |     0 |    866400 |  3.24 |
+|     LUT as Shift Register  |     4 |     0 |           |       |
+| Slice Registers            | 24045 |     0 |    866400 |  2.78 |
+|   Register as Flip Flop    | 24045 |     0 |    866400 |  2.78 |
 |   Register as Latch        |     0 |     0 |    866400 |  0.00 |
-| F7 Muxes                   |   400 |     0 |    216600 |  0.18 |
-| F8 Muxes                   |    51 |     0 |    108300 |  0.05 |
+| F7 Muxes                   |   323 |     0 |    216600 |  0.15 |
+| F8 Muxes                   |    45 |     0 |    108300 |  0.04 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -58,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 228   |          Yes |           - |          Set |
 | 1674  |          Yes |           - |        Reset |
-| 476   |          Yes |         Set |            - |
-| 25691 |          Yes |       Reset |            - |
+| 465   |          Yes |         Set |            - |
+| 21678 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -69,9 +69,9 @@ Table of Contents
 +-------------------+------+-------+-----------+-------+
 |     Site Type     | Used | Fixed | Available | Util% |
 +-------------------+------+-------+-----------+-------+
-| Block RAM Tile    | 28.5 |     0 |      1470 |  1.94 |
-|   RAMB36/FIFO*    |   28 |     0 |      1470 |  1.90 |
-|     RAMB36E1 only |   28 |       |           |       |
+| Block RAM Tile    | 19.5 |     0 |      1470 |  1.33 |
+|   RAMB36/FIFO*    |   19 |     0 |      1470 |  1.29 |
+|     RAMB36E1 only |   19 |       |           |       |
 |   RAMB18          |    1 |     0 |      2940 |  0.03 |
 |     RAMB18E1 only |    1 |       |           |       |
 +-------------------+------+-------+-----------+-------+
@@ -94,9 +94,9 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   40 |     0 |       600 |  6.67 |
+| Bonded IOB                  |   42 |     0 |       600 |  7.00 |
 | Bonded IPADs                |   28 |     0 |       242 | 11.57 |
-| Bonded OPADs                |    2 |     0 |       160 |  1.25 |
+| Bonded OPADs                |    0 |     0 |       160 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |        20 |  0.00 |
 | PHASER_REF                  |    0 |     0 |        20 |  0.00 |
 | OUT_FIFO                    |    0 |     0 |        80 |  0.00 |
@@ -157,26 +157,24 @@ Table of Contents
 +---------------+-------+---------------------+
 |    Ref Name   |  Used | Functional Category |
 +---------------+-------+---------------------+
-| FDRE          | 25691 |        Flop & Latch |
-| LUT1          |  8050 |                 LUT |
-| LUT6          |  7126 |                 LUT |
-| LUT5          |  5014 |                 LUT |
-| LUT4          |  2865 |                 LUT |
-| CARRY4        |  1985 |          CarryLogic |
-| LUT2          |  1853 |                 LUT |
+| FDRE          | 21678 |        Flop & Latch |
+| LUT1          |  8670 |                 LUT |
+| LUT6          |  6489 |                 LUT |
+| LUT5          |  4287 |                 LUT |
+| LUT4          |  2490 |                 LUT |
+| CARRY4        |  1784 |          CarryLogic |
+| LUT2          |  1698 |                 LUT |
 | FDCE          |  1674 |        Flop & Latch |
-| LUT3          |  1579 |                 LUT |
-| SRL16E        |   590 |  Distributed Memory |
-| FDSE          |   476 |        Flop & Latch |
-| MUXF7         |   400 |               MuxFx |
-| SRLC32E       |   314 |  Distributed Memory |
+| LUT3          |  1448 |                 LUT |
+| FDSE          |   465 |        Flop & Latch |
+| MUXF7         |   323 |               MuxFx |
 | FDPE          |   228 |        Flop & Latch |
-| MUXF8         |    51 |               MuxFx |
 | RAMD32        |    48 |  Distributed Memory |
+| MUXF8         |    45 |               MuxFx |
 | IBUF          |    45 |                  IO |
 | BUFH          |    38 |               Clock |
 | GTHE2_CHANNEL |    36 |                  IO |
-| RAMB36E1      |    28 |        Block Memory |
+| RAMB36E1      |    19 |        Block Memory |
 | OBUF          |    19 |                  IO |
 | RAMS32        |    16 |  Distributed Memory |
 | RAMD64E       |    16 |  Distributed Memory |
@@ -185,10 +183,10 @@ Table of Contents
 | IDELAYE2      |    15 |                  IO |
 | IBUFDS_GTE2   |    14 |                  IO |
 | BUFG          |    12 |               Clock |
+| SRL16E        |     4 |  Distributed Memory |
 | MMCME2_ADV    |     4 |               Clock |
 | IBUFDS        |     3 |                  IO |
 | BUFGCTRL      |     3 |               Clock |
-| SRLC16E       |     2 |  Distributed Memory |
 | XADC          |     1 |              Others |
 | RAMB18E1      |     1 |        Block Memory |
 | IDELAYCTRL    |     1 |                  IO |
@@ -201,11 +199,8 @@ Table of Contents
 +-------------+------+
 |   Ref Name  | Used |
 +-------------+------+
-| vio_4p8g    |    1 |
-| ila_4p8g    |    1 |
 | fifo_gtx_tx |    1 |
 | fifo_gtx_rx |    1 |
-| dbg_hub_CV  |    1 |
 +-------------+------+
 
 

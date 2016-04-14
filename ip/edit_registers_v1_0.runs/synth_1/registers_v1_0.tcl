@@ -21,6 +21,7 @@ add_files -quiet /home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/ila_ax
 set_property used_in_implementation false [get_files /home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/ila_axi_regs_synth_1/ila_axi_regs.dcp]
 read_vhdl -library xil_defaultlib {
   /home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/ipbus_pkg.vhd
+  /home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/ipb_addr_decode.vhd
   /home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0_AXI.vhd
   /home/evka/code/tamu_ctp7_v7/ip/registers_1.0/hdl/registers_v1_0.vhd
 }

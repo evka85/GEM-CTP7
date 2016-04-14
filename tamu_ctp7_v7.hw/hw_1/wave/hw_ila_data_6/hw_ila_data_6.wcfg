@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="/home/evka/code/tamu_ctp7_v7/tamu_ctp7_v7.hw/hw_1/wave/hw_ila_data_6/hw_ila_data_6.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="5">
+	</WVObjectSize>
+	<wvobject fp_name="i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxdata]_1" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxdata]_1[31:0]</obj_property>
+		<obj_property name="ObjectShortName">i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxdata]_1[31:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxdisperr]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxdisperr][3:0]</obj_property>
+		<obj_property name="ObjectShortName">i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxdisperr][3:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxnotintable]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxnotintable][3:0]</obj_property>
+		<obj_property name="ObjectShortName">i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxnotintable][3:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxchariscomma]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxchariscomma][3:0]</obj_property>
+		<obj_property name="ObjectShortName">i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxchariscomma][3:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxcharisk]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxcharisk][3:0]</obj_property>
+		<obj_property name="ObjectShortName">i_io_link_4p8g_demo_ctrl/gth_rx_data_i[1][rxcharisk][3:0]</obj_property>
+	</wvobject>
+</wave_config>
+

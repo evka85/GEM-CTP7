@@ -4,6 +4,7 @@ use ieee.numeric_std.all;
 
 library work;
 use work.ipbus_pkg.all;
+use work.ipb_addr_decode.all;
 
 entity registers_v1_0_AXI is
 	generic (
@@ -24,10 +25,10 @@ entity registers_v1_0_AXI is
     ipb_clk_o   : out std_logic;
     
     -- slave to master IPbus
-    ipb_miso_i  : in ipb_rbus_array(0 to 0);
+    ipb_miso_i  : in ipb_rbus_array(63 to 0);
     
     -- master to slave IPbus
-    ipb_mosi_o  : out ipb_wbus_array(0 to 0);  
+    ipb_mosi_o  : out ipb_wbus_array(63 to 0);  
     
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -162,8 +163,8 @@ architecture arch_imp of registers_v1_0_AXI is
   signal ipb_clk            : std_logic;
   signal ipb_state          : ipb_state_t;
   signal ipb_timer          : unsigned(23 downto 0) := (others => '0');
-
-  signal ipb_mosi           : ipb_wbus_array(0 to 0);  
+  signal ipb_mosi           : ipb_wbus_array(63 to 0);
+  signal ipb_slv_select     : integer := 0; -- ipbus slave select
 
 begin
 	-- I/O Connections assignments
@@ -186,7 +187,7 @@ begin
     if (rising_edge(ipb_clk)) then    
       -- reset  
       if (S_AXI_ARESETN = '0') then    
-        ipb_mosi(0)  <= (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0'); 
+        ipb_mosi    <= (others => (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0')); 
         ipb_state   <= IDLE;
         ipb_timer   <= (others => '0');
         axi_arready <= '0';
@@ -203,21 +204,23 @@ begin
         
           -- check for read and write requests
           when IDLE =>
-            ipb_mosi(0) <= (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0'); 
-            ipb_timer  <= (others => '0');
-            axi_wdata  <= (others => '0');
+            ipb_mosi(ipb_slv_select) <= (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0'); 
+            ipb_timer <= (others => '0');
+            axi_wdata <= (others => '0');
             
             -- axi read request
             if (S_AXI_ARVALID = '1') then
 	            axi_arready <= '1';
-              axi_araddr  <= S_AXI_ARADDR;
-              ipb_state   <= READ;
+              axi_araddr <= S_AXI_ARADDR;
+              ipb_slv_select <= ipb_addr_sel(S_AXI_ARADDR);
+              ipb_state <= READ;
             
             -- axi write request
             elsif (S_AXI_AWVALID = '1' and S_AXI_WVALID = '1') then
               axi_awready <= '1';
-              axi_wready  <= '1';
-              axi_awaddr  <= S_AXI_AWADDR;
+              axi_wready <= '1';
+              axi_awaddr <= S_AXI_AWADDR;
+              ipb_slv_select <= ipb_addr_sel(S_AXI_AWADDR);
               
               -- Respective byte enables are asserted as per write strobes                   
               for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
@@ -226,36 +229,36 @@ begin
                 end if;
               end loop;
               
-              ipb_state   <= WRITE;
+              ipb_state <= WRITE;
             end if;
           
           -- initiate IPBus read request
           when READ =>
-            axi_arready         <= '0';
-            ipb_mosi(0).ipb_addr   <= x"4" & axi_araddr(ADDR_LSB + 19 downto ADDR_LSB + 16) & x"00" & axi_araddr(ADDR_LSB + 15 downto ADDR_LSB);
-            ipb_mosi(0).ipb_strobe <= '1';
-            ipb_mosi(0).ipb_write  <= '0';
-            ipb_state           <= WAIT_FOR_READ_ACK;
+            axi_arready <= '0';
+            ipb_mosi(ipb_slv_select).ipb_addr <= x"4" & axi_araddr(ADDR_LSB + 19 downto ADDR_LSB + 16) & x"00" & axi_araddr(ADDR_LSB + 15 downto ADDR_LSB);
+            ipb_mosi(ipb_slv_select).ipb_strobe <= '1';
+            ipb_mosi(ipb_slv_select).ipb_write <= '0';
+            ipb_state <= WAIT_FOR_READ_ACK;
         
           -- wait for IPbus read ack
           when WAIT_FOR_READ_ACK =>
             -- got ack from IPBus
-            if (ipb_miso_i(0).ipb_ack = '1') then
-              ipb_mosi(0) <= (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0'); 
-              ipb_state  <= AXI_READ_HANDSHAKE;
-              ipb_timer  <= (others => '0');
-              axi_rdata  <= ipb_miso_i(0).ipb_rdata;
+            if (ipb_miso_i(ipb_slv_select).ipb_ack = '1') then
+              ipb_mosi(ipb_slv_select) <= (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0'); 
+              ipb_state <= AXI_READ_HANDSHAKE;
+              ipb_timer <= (others => '0');
+              axi_rdata <= ipb_miso_i(ipb_slv_select).ipb_rdata;
               axi_rvalid <= '1';
-              axi_rresp  <= "00";
+              axi_rresp <= "00"; -- OKAY response
               
             -- IPbus timed out
             elsif (ipb_timer > ipb_timeout) then
-              ipb_mosi(0) <= (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0'); 
-              ipb_state  <= AXI_READ_HANDSHAKE;
-              ipb_timer  <= (others => '0');
-              axi_rdata  <= ipb_miso_i(0).ipb_rdata;
+              ipb_mosi(ipb_slv_select) <= (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0'); 
+              ipb_state <= AXI_READ_HANDSHAKE;
+              ipb_timer <= (others => '0');
+              axi_rdata <= (others => '0');
               axi_rvalid <= '1';
-              axi_rresp  <= "10";
+              axi_rresp <= "10"; -- error response
               
             -- still waiting for IPbus
             else
@@ -265,36 +268,36 @@ begin
           -- IPBus read transaction finished and axi response is set, so lets finish the axi transaction here
           when AXI_READ_HANDSHAKE =>
             if (S_AXI_RREADY = '1') then
-              ipb_state  <= IDLE;
+              ipb_state <= IDLE;
               axi_rvalid <= '0';
             end if;
 
           -- initiate IPBus write request
           when WRITE =>
             axi_awready <= '0';
-            axi_wready  <= '0';
-            ipb_mosi(0).ipb_addr   <= x"4" & axi_awaddr(ADDR_LSB + 19 downto ADDR_LSB + 16) & x"00" & axi_awaddr(ADDR_LSB + 15 downto ADDR_LSB);
-            ipb_mosi(0).ipb_strobe <= '1';
-            ipb_mosi(0).ipb_write  <= '1';
-            ipb_state           <= WAIT_FOR_WRITE_ACK;
+            axi_wready <= '0';
+            ipb_mosi(ipb_slv_select).ipb_addr <= x"4" & axi_awaddr(ADDR_LSB + 19 downto ADDR_LSB + 16) & x"00" & axi_awaddr(ADDR_LSB + 15 downto ADDR_LSB);
+            ipb_mosi(ipb_slv_select).ipb_strobe <= '1';
+            ipb_mosi(ipb_slv_select).ipb_write <= '1';
+            ipb_state <= WAIT_FOR_WRITE_ACK;
                       
           -- wait for IPBus write ack
           when WAIT_FOR_WRITE_ACK =>          
             -- got ack from IPBus
-            if (ipb_miso_i(0).ipb_ack = '1') then
-              ipb_mosi(0) <= (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0'); 
-              ipb_state  <= AXI_WRITE_HANDSHAKE;
-              ipb_timer  <= (others => '0');
+            if (ipb_miso_i(ipb_slv_select).ipb_ack = '1') then
+              ipb_mosi(ipb_slv_select) <= (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0'); 
+              ipb_state <= AXI_WRITE_HANDSHAKE;
+              ipb_timer <= (others => '0');
               axi_bvalid <= '1';
-              axi_bresp  <= "00";
+              axi_bresp <= "00";
               
             -- IPbus timed out
             elsif (ipb_timer > ipb_timeout) then
-              ipb_mosi(0) <= (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0'); 
-              ipb_state  <= AXI_WRITE_HANDSHAKE;
-              ipb_timer  <= (others => '0');
+              ipb_mosi(ipb_slv_select) <= (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0'); 
+              ipb_state <= AXI_WRITE_HANDSHAKE;
+              ipb_timer <= (others => '0');
               axi_bvalid <= '1';
-              axi_bresp  <= "10";
+              axi_bresp <= "10";
               
             -- still waiting for IPbus
             else
@@ -304,13 +307,13 @@ begin
           -- IPBus read transaction finished and axi response is set, so lets finish the axi transaction here
           when AXI_WRITE_HANDSHAKE =>
             if (S_AXI_BREADY = '1') then
-              ipb_state  <= IDLE;
+              ipb_state <= IDLE;
               axi_bvalid <= '0';
             end if;
            
           -- hmm           
           when others =>
-            ipb_mosi(0)  <= (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0'); 
+            ipb_mosi    <= (others => (ipb_addr => (others => '0'), ipb_wdata => (others => '0'), ipb_strobe => '0', ipb_write => '0')); 
             ipb_state   <= IDLE;
             ipb_timer   <= (others => '0');
             axi_arready <= '0';

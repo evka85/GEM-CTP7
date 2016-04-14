@@ -2,8 +2,8 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Wed Apr 13 12:23:59 2016
-# Process ID: 18114
+# Start of session at: Wed Apr 13 15:52:30 2016
+# Process ID: 3147
 # Current directory: /home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/synth_1
 # Command line: vivado -log registers_v1_0.vds -mode batch -messageDb vivado.pb -notrace -source registers_v1_0.tcl
 # Log file: /home/evka/code/tamu_ctp7_v7/ip/edit_registers_v1_0.runs/synth_1/registers_v1_0.vds

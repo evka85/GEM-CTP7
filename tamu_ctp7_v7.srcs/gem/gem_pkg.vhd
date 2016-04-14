@@ -3,30 +3,30 @@ use ieee.std_logic_1164.all;
  
 package gem_pkg is
 
-	--=== system options ========--
+    --=== system options ========--
     
-   constant sys_eth_p1_enable           : boolean  := false;   
-   constant sys_pcie_enable             : boolean  := false;      
-  
-	--=== i2c master components ==--
+    constant sys_eth_p1_enable          : boolean  := false;   
+    constant sys_pcie_enable            : boolean  := false;      
     
-	constant i2c_master_enable			: boolean  := true;
-	constant auto_eeprom_read_enable    : boolean  := true;    
-
+    --=== i2c master components ==--
+    
+    constant i2c_master_enable			    : boolean  := true;
+    constant auto_eeprom_read_enable    : boolean  := true;    
+    
     --=== wishbone slaves ========--
     
-	constant number_of_wb_slaves		: positive := 1;
-
-	constant user_wb_regs               : integer  := 0;
-	
+    constant number_of_wb_slaves		    : positive := 1;
+    
+    constant user_wb_regs               : integer  := 0;
+    
     --=== ipb slaves =============--
     
-	constant number_of_ipb_slaves		: positive := 8;
-   
-	constant ipb_gtx_forward_0          : integer  := 0;
-	constant ipb_gtx_forward_1          : integer  := 1;
-	constant ipb_evt_data_0             : integer  := 2;
-	constant ipb_evt_data_1             : integer  := 3;
+    constant number_of_ipb_slaves		    : positive := 8;
+
+    constant ipb_gtx_forward_0          : integer  := 0;
+    constant ipb_gtx_forward_1          : integer  := 1;
+    constant ipb_evt_data_0             : integer  := 2;
+    constant ipb_evt_data_1             : integer  := 3;
     constant ipb_counters               : integer  := 4;
     constant ipb_daq                    : integer  := 5;
     constant ipb_trigger                : integer  := 6;

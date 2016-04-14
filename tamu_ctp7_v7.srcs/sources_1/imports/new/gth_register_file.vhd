@@ -395,6 +395,7 @@ begin
           when addr_encode(C_GTH_PRBS_CNT_CH0_ADDR, C_GTH_CH_to_CH_ADDR_OFFSET, C_CH33, 17) => s_gth_prbs_cnt_rst_reg(C_CH33) <= BRAM_CTRL_GTH_REG_FILE_din;
           when addr_encode(C_GTH_PRBS_CNT_CH0_ADDR, C_GTH_CH_to_CH_ADDR_OFFSET, C_CH34, 17) => s_gth_prbs_cnt_rst_reg(C_CH34) <= BRAM_CTRL_GTH_REG_FILE_din;
           when addr_encode(C_GTH_PRBS_CNT_CH0_ADDR, C_GTH_CH_to_CH_ADDR_OFFSET, C_CH35, 17) => s_gth_prbs_cnt_rst_reg(C_CH35) <= BRAM_CTRL_GTH_REG_FILE_din;
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------
           when addr_encode(C_GTH_RX_NOTINTABLE_CNT_CH0_ADDR, C_GTH_CH_to_CH_ADDR_OFFSET, C_CH0, 17)  => s_gth_rxerror_rst_reg(C_CH0)  <= BRAM_CTRL_GTH_REG_FILE_din;
           when addr_encode(C_GTH_RX_NOTINTABLE_CNT_CH0_ADDR, C_GTH_CH_to_CH_ADDR_OFFSET, C_CH1, 17)  => s_gth_rxerror_rst_reg(C_CH1)  <= BRAM_CTRL_GTH_REG_FILE_din;
@@ -432,6 +433,7 @@ begin
           when addr_encode(C_GTH_RX_NOTINTABLE_CNT_CH0_ADDR, C_GTH_CH_to_CH_ADDR_OFFSET, C_CH33, 17) => s_gth_rxerror_rst_reg(C_CH33) <= BRAM_CTRL_GTH_REG_FILE_din;
           when addr_encode(C_GTH_RX_NOTINTABLE_CNT_CH0_ADDR, C_GTH_CH_to_CH_ADDR_OFFSET, C_CH34, 17) => s_gth_rxerror_rst_reg(C_CH34) <= BRAM_CTRL_GTH_REG_FILE_din;
           when addr_encode(C_GTH_RX_NOTINTABLE_CNT_CH0_ADDR, C_GTH_CH_to_CH_ADDR_OFFSET, C_CH35, 17) => s_gth_rxerror_rst_reg(C_CH35) <= BRAM_CTRL_GTH_REG_FILE_din;
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
           when addr_encode(C_GTH_OH_REG_EN_CH0_ADDR, C_GTH_CH_to_CH_ADDR_OFFSET, C_CH0, 17)  => oh_reg_request_arr_o(C_CH0).en <= BRAM_CTRL_GTH_REG_FILE_din(0); oh_reg_request_arr_o(C_CH0).we <= BRAM_CTRL_GTH_REG_FILE_din(1); 
           when addr_encode(C_GTH_OH_REG_EN_CH0_ADDR, C_GTH_CH_to_CH_ADDR_OFFSET, C_CH1, 17)  => oh_reg_request_arr_o(C_CH1).en <= BRAM_CTRL_GTH_REG_FILE_din(0); oh_reg_request_arr_o(C_CH1).we <= BRAM_CTRL_GTH_REG_FILE_din(1); 

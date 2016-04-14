@@ -1,7 +1,7 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
---Date        : Wed Apr 13 08:32:49 2016
+--Date        : Wed Apr 13 12:30:18 2016
 --Host        : evka-pc running 64-bit Ubuntu 14.04.4 LTS
 --Command     : generate_target v7_bd.bd
 --Design      : v7_bd
@@ -4690,7 +4690,7 @@ entity v7_bd is
     ipb_oh_mosi_o_write : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of v7_bd : entity is "v7_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=v7_bd,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=31,numReposBlks=14,numNonXlnxBlks=1,numHierBlks=17,maxHierDepth=0,synth_mode=Global}";
+  attribute CORE_GENERATION_INFO of v7_bd : entity is "v7_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=v7_bd,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=31,numReposBlks=14,numNonXlnxBlks=1,numHierBlks=17,maxHierDepth=0,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of v7_bd : entity is "v7_bd.hwdef";
 end v7_bd;

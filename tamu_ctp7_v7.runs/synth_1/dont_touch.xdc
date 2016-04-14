@@ -45,12 +45,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_xadc_wiz_
 # IP: bd/v7_bd/ip/v7_bd_xbar_0/v7_bd_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_xbar_0 || ORIG_REF_NAME==v7_bd_xbar_0}]
 
-# IP: bd/v7_bd/ip/v7_bd_registers_0_0/v7_bd_registers_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_registers_0_0 || ORIG_REF_NAME==v7_bd_registers_0_0}]
-
-# IP: bd/v7_bd/ip/v7_bd_registers_0_0/src/ila_axi_regs/ila_axi_regs.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ila_axi_regs || ORIG_REF_NAME==ila_axi_regs}]
-
 # IP: bd/v7_bd/ip/v7_bd_auto_pc_0/v7_bd_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==v7_bd_auto_pc_0 || ORIG_REF_NAME==v7_bd_auto_pc_0}]
 
@@ -101,14 +95,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==v7_bd_xadc_wiz_0_0 || ORIG_REF_NAME==v7_bd_xadc_wiz_0_0}] {/U0 }]/U0 ]]
 
 # XDC: bd/v7_bd/ip/v7_bd_xbar_0/v7_bd_xbar_0_ooc.xdc
-
-# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/ila_axi_regs/ila_v6_0/constraints/ila.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ila_axi_regs || ORIG_REF_NAME==ila_axi_regs}]
-
-# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/ila_axi_regs/ila_axi_regs_ooc.xdc
-
-# XDC: bd/v7_bd/ip/v7_bd_registers_0_0/src/constrs/registers.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==v7_bd_registers_0_0 || ORIG_REF_NAME==v7_bd_registers_0_0}] {/U0 }]/U0 ]]
 
 # XDC: bd/v7_bd/ip/v7_bd_auto_pc_0/v7_bd_auto_pc_0_ooc.xdc
 

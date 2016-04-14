@@ -110,54 +110,54 @@ begin
     --== GTX request forwarding ==--
     --============================--
     
-    link_request_inst : entity work.link_request
-    port map(
-        ipb_clk_i   => ipb_clk_i,
-        gtx_clk_i   => gth_rx_usrclk_i,
-        reset_i     => reset_i,        
-        ipb_mosi_i  => ipb_reg_mosi_i,
-        ipb_miso_o  => ipb_reg_miso_o,        
-        tx_en_i     => g2o_req_en,
-        tx_valid_o  => g2o_req_valid,
-        tx_data_o   => g2o_req_data,        
-        rx_en_i     => o2g_req_en,
-        rx_data_i   => o2g_req_data        
-    );
+--    link_request_inst : entity work.link_request
+--    port map(
+--        ipb_clk_i   => ipb_clk_i,
+--        gtx_clk_i   => gth_rx_usrclk_i,
+--        reset_i     => reset_i,        
+--        ipb_mosi_i  => ipb_reg_mosi_i,
+--        ipb_miso_o  => ipb_reg_miso_o,        
+--        tx_en_i     => g2o_req_en,
+--        tx_valid_o  => g2o_req_valid,
+--        tx_data_o   => g2o_req_data,        
+--        rx_en_i     => o2g_req_en,
+--        rx_data_i   => o2g_req_data        
+--    );
      
 --    -- temporary hack to try out register reads/writes on the OH
     
 --    --== TX buffer ==--
     
---    fifo_gtx_tx_inst : entity work.fifo_gtx_tx
---    port map(
---        rst     => reset_i,
---        wr_clk  => reg_request_i.axi_reg_clk,
---        wr_en   => reg_request_i.en,
---        din     => reg_request_i.we & reg_request_i.addr(31 downto 24) & "0000" & reg_request_i.addr(19 downto 0) & reg_request_i.data,        
---        rd_clk  => gth_tx_usrclk_i,
---        rd_en   => g2o_req_en,
---        valid   => g2o_req_valid,
---        dout    => g2o_req_data,
---        full    => open,
---        empty   => open
---    );
+    fifo_gtx_tx_inst : entity work.fifo_gtx_tx
+    port map(
+        rst     => reset_i,
+        wr_clk  => reg_request_i.axi_reg_clk,
+        wr_en   => reg_request_i.en,
+        din     => reg_request_i.we & reg_request_i.addr(31 downto 24) & "0000" & reg_request_i.addr(19 downto 0) & reg_request_i.data,        
+        rd_clk  => gth_tx_usrclk_i,
+        rd_en   => g2o_req_en,
+        valid   => g2o_req_valid,
+        dout    => g2o_req_data,
+        full    => open,
+        empty   => open
+    );
     
---    --== Process inbetween is handled by the optical link ==--
+    --== Process inbetween is handled by the optical link ==--
 
---    --== RX buffer ==--
+    --== RX buffer ==--
     
---    fifo_gtx_rx_inst : entity work.fifo_gtx_rx
---    port map(
---        rst     => reset_i,
---        wr_clk  => gth_rx_usrclk_i,
---        wr_en   => o2g_req_en,
---        din     => o2g_req_data,        
---        rd_clk  => reg_request_i.axi_reg_clk,
---        rd_en   => '1',
---        valid   => reg_response_o.en,
---        dout    => reg_response_o.data,
---        full    => open,
---        empty   => open
---    );
+    fifo_gtx_rx_inst : entity work.fifo_gtx_rx
+    port map(
+        rst     => reset_i,
+        wr_clk  => gth_rx_usrclk_i,
+        wr_en   => o2g_req_en,
+        din     => o2g_req_data,        
+        rd_clk  => reg_request_i.axi_reg_clk,
+        rd_en   => '1',
+        valid   => reg_response_o.en,
+        dout    => reg_response_o.data,
+        full    => open,
+        empty   => open
+    );
     
 end Behavioral;

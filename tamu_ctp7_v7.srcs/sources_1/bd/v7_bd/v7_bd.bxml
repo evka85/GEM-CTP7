@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root MajorVersion="0" MinorVersion="33">
-  <CompositeFile CompositeFileTopName="v7_bd" CanBeSetAsTop="true" CanDisplayChildGraph="true">
+  <CompositeFile CompositeFileTopName="v7_bd" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1460537498"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1460537498"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1460537498"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1460651048"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1460651048"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1460651048"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/v7_bd_axi_bram_ctrl_0_0/v7_bd_axi_bram_ctrl_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_bram_ctrl_0"/>
@@ -110,12 +110,10 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/v7_bd_registers_0_0/v7_bd_registers_0_0.xci" Type="IP">
-        <Instance HierarchyPath="registers_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+      <File Name="hdl/v7_bd.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/v7_bd_auto_pc_0/v7_bd_auto_pc_0.xci" Type="IP">
@@ -124,12 +122,6 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="hdl/v7_bd.vhd" Type="VHDL">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="v7_bd_ooc.xdc" Type="XDC">

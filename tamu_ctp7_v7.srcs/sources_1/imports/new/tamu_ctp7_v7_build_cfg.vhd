@@ -20,7 +20,7 @@ use IEEE.STD_LOGIC_1164.all;
 package tamu_ctp7_v7_build_cfg is
 
   constant g_NUM_OF_GTH_COMMONs : integer := 16;
-  constant g_NUM_OF_GTH_GTs     : integer := 36;
+  constant g_NUM_OF_GTH_GTs     : integer := 36; -- was 36; -- changing to 6 also had to comment out stuff in gth_register_file.vhd, drp_controller.vhd as well as here below
 
   constant BCFG_FW_PROJECT_CODE : std_logic_vector(31 downto 0) := X"B1050001";  -- BIOS 0x1 
 
